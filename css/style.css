@@ -37,3 +37,19 @@ ul {
 	color: green;
 	background: gray;
 }*/
+.container {
+
+}
+.left {
+	background: green;
+	height: 200px;
+	width: 200px;
+	display: inline-block;
+
+}
+.right {
+	height: 200px;
+	width: 200px;
+	background: blue;
+
+}
