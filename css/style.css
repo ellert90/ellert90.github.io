@@ -2,6 +2,7 @@ body {
 	padding: 0;
 	margin: 0;
 	background: #f3f3f3;/*#f9f9f9*/
+	font-family: OpenSans;
 }
 .wrapper {
 	background: #fff;
@@ -9,6 +10,7 @@ body {
 	height: 1000px;
 	margin: 0 auto;
 	position: relative;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 .container {
 	width: 965px;
@@ -24,7 +26,8 @@ body {
 	background: linear-gradient(to bottom, #5e5e5e, #444343);
 	line-height: 30px;
 	margin-top: 40px;
-	text-shadow: 1px 1px 2px #4a4a4a;
+	text-shadow: 2px 3px #4a4a4a;
+	font-size: 14.667px;
 
 }
 .header ul {
@@ -89,6 +92,10 @@ body {
 .sidebar a:hover {
 	color: black;
 	padding-left: 15px;
+	
+}
+.sidebar li:hover {
+	background: #f9f9f9;
 }
 .contant {
 	height: 400px;
@@ -111,12 +118,14 @@ p {
 	left: 288px;
 	width: 625px;
 	top: 40px;
+	font-size: 13.333px
 }
 .footer {
 	position: relative;
 	margin-top: 80px;
 	background: #e1e1e1;
 	height: 30px;
+	font-size: 13.333px;
 	
 }
 .footer ul {
@@ -140,10 +149,16 @@ p {
 }
 .footer li:last-child {
 	float: right;
-	padding-right: 0;
-	margin-right: 25px;
-	text-align: right;
-
+	/*text-align: right;*/
+	padding: 0;
 }
+/*.footer li a:last-child{
+	padding-right: 25px;
+}*/
 .footer a:hover {
 	text-decoration: underline;
+}
+@font-face {
+    font-family: OpenSans; 
+    src: url(2211.ttf);
+   }
