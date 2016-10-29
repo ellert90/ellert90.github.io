@@ -139,19 +139,16 @@ p {
 	display: inline-block;
 	height: 30px;
 	color: #2c2c2c;
-
-
 }
-
 .footer li {
 	display: inline;
 }
-
-.footer li:last-child {
-	float: right;
-}
 .footer a:hover {
 	text-decoration: underline;
+}
+.footer li:last-child a {
+  padding-right: 20px;
+  float: right;
 }
 @font-face {
     font-family: OpenSans; 
