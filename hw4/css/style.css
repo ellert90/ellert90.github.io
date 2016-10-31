@@ -1,0 +1,46 @@
+body {
+	background: url(../img/bg.jpg);
+	font-family: "Tahoma";
+}
+.wrapper {
+	margin: 0 auto;
+	background: white;
+	height: 1000px;
+	width: 1000px;
+	box-shadow: -1px -1px 6px 0px rgba(0,0,0,0.75);
+}
+.top {
+	width: 1000px;
+	height: 175px;
+	position: relative;
+	display: inline-block;
+}
+.logo {
+	margin-left: 28px;
+	margin-top: 10px;
+}
+.logo p{
+	position: absolute;
+	left: 4%;
+	top: 105px;
+}
+.logo {
+	float: left;
+}
+.contact {
+	position: absolute;
+	float: right;
+	right: 32px;
+	top: 12px;
+}
+.country {
+	float: right;
+	position: absolute;
+	/*right: 32px;*/
+	top: 100px;
+	display: inline-block;
+}
+
+.conutry li {
+	display: inline-block;
+}
