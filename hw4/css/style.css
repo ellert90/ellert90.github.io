@@ -27,10 +27,13 @@ body {
 	margin-left: 28px;
 	margin-bottom: -3px;
 }
-.logo p{
+.logo h1{
 	position: absolute;
 	left: 95px;
-	top: 100px;
+	top: 95px;
+	font-size: 12px;
+	font-weight: normal;
+
 }
 .logo {
 	float: left;
@@ -66,7 +69,6 @@ body {
 	text-align: center;
 	font-size: 10px;
 }
-
 .country:nth-child(5) {
   margin-left: 6px;
 }
@@ -171,23 +173,27 @@ body {
 	line-height: 24px;
 	border-top: 1px solid #000;
 	margin-top: 10px; 
+	box-shadow: 0px 6px 18px -1px rgba(0,0,0,0.75);
 
 }
 
 .nav > li:hover > ul {
 	display: block;
 }
+.nav span {
+	padding-left: 3px;
+}
 
 /*********CONTANT***********/
 
 .info {
-  width: 208px;
+  width: 193px;
   display: table-cell;
   background: #edeef0;
   padding-bottom: 10px;
   border-left: 1px solid #c7cacf;
   border-right: 1px solid #c7cacf;
-  text-align: center;
+  padding-left: 15px;
 }
 
 .container {
@@ -205,27 +211,30 @@ body {
 
 .news {
   display: table-cell;
-  width: 208px;
+  width: 193px;
   padding-bottom: 10px;
   border-left: 1px solid #c7cacf;
   border-right: 1px solid #c7cacf;
   background: #edeef0;
-  text-align: center;
-
+  padding-left: 15px;
 }
 .clearfix::before,
 .clearfix::after {
   content: "";
   display: table;
 }
-*/
+
 .clearfix::after {
   clear: both;
 }
-h1 {
+h2 {
 	font-size: 18px;
 	font-weight: 600;
 	line-height: 40px;
+	padding-left: 53px;
+}
+.info h2 {
+	padding-left: 25px;
 }
 .footer {
 	background: #0c739f;
