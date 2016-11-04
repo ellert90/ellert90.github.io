@@ -1,0 +1,82 @@
+body {
+	font-family: 'Helvetica Neue', Tahoma;
+
+}
+.header {
+	height: 36px;
+	width: 100%;
+	background: url('../img/bg.jpg');
+
+}
+.header li {
+	display: inline-block;
+	
+
+}
+.header ul {
+	margin-left: 470px;
+}
+.header a {
+	color: #60b5ed;
+	text-decoration: none;
+	display: block;
+	height: 36px;
+	line-height: 36px;
+	padding-left: 12px;
+	padding-right: 12px;
+
+
+}
+.header a:hover {
+	background: #4eabda;
+	color: #fff;
+}
+li:nth-child(6) {
+	
+	background: url(../img/flag.png) no-repeat left center;
+	padding-left: 20px;
+}
+.border::after {
+	content: '';
+	margin-left: 20px;
+	border-left: 1px solid #60b5ed;
+}
+	
+.wrapper {
+	background: url('../img/background.jpg') no-repeat local ;
+	position: relative;
+	height: 1015px;
+	width: 1028px;
+
+}
+.form {
+	height: 612px;
+	width: 560px;
+	background: rgba(0, 0, 0,.5);
+	overflow: auto;
+  	margin: auto;
+ 	position: absolute;
+  	top: 0; left: 0; bottom: 0; right: 0;
+}
+.form h1 {
+	border-bottom: 1px solid #fff;
+	line-height: 62px;
+	text-align: center;
+	color: #fff;
+	font-size: 24px;
+}
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url(../css/HelveticaNeueCyr-Medium.otf);
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url(../css/HelveticaNeueCyr-Bold.otf);
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+
