@@ -1,7 +1,9 @@
 body {
 	font-family: 'Helvetica Neue', Tahoma;
-
 }
+
+			/**************HEADER**************/
+
 .header {
 	height: 36px;
 	width: 100%;
@@ -10,11 +12,9 @@ body {
 }
 .header li {
 	display: inline-block;
-	
-
 }
 .header ul {
-	margin-left: 470px;
+	float: right;
 }
 .header a {
 	color: #60b5ed;
@@ -24,29 +24,28 @@ body {
 	line-height: 36px;
 	padding-left: 12px;
 	padding-right: 12px;
-
-
 }
-.header a:hover {
+.header li:hover {
 	background: #4eabda;
 	color: #fff;
 }
-li:nth-child(6) {
-	
+li:nth-child(6) {  /*підключив прапор*/
 	background: url(../img/flag.png) no-repeat left center;
 	padding-left: 20px;
 }
-.border::after {
-	content: '';
-	margin-left: 20px;
-	border-left: 1px solid #60b5ed;
+
+li:nth-child(5) {
+	border-right: 1px solid #60b5ed;
 }
-	
+
+					/************WRAPER*************/
+
 .wrapper {
-	background: url('../img/background.jpg') no-repeat local ;
+	background: url('../img/background.jpg') no-repeat ;
+	background-size: 100%;
+	background-position: cover;
 	position: relative;
 	height: 1015px;
-	width: 1028px;
 
 }
 .form {
@@ -65,6 +64,9 @@ li:nth-child(6) {
 	color: #fff;
 	font-size: 24px;
 }
+
+	 				/********FONTS**********/
+
 @font-face {
     font-family: 'Helvetica Neue';
     src: url(../css/HelveticaNeueCyr-Medium.otf);
