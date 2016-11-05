@@ -8,7 +8,8 @@ body {
 	height: 36px;
 	width: 100%;
 	background: url('../img/bg.jpg');
-	overflow: hidden;
+
+
 }
 
 .header li {
@@ -29,7 +30,7 @@ body {
 	padding-right: 15px;
 }
 
-li:nth-child(5) a::after {
+/*li:nth-child(5) a::after {
 display: inline-block;
 position: relative;
 content: '';
@@ -38,6 +39,16 @@ width: 1px;
 top: 3px;
 left: 20px;
 background-color: #60b5ed;
+}*/
+
+li:nth-child(5)::after {
+	content: '';
+	display: inline-block;
+	width: 1px;
+	height: 30px;
+	vertical-align: top;
+	margin: 3px;
+	background-color: red;
 }
 
 li:nth-child(6)::before {
@@ -59,7 +70,7 @@ li:nth-child(6)::before {
 }
 
 .form {
-	height: 612px;
+	height: 635px;
 	width: 560px;
 	background: rgba(0, 0, 0,.5);
 	overflow: auto;
@@ -76,7 +87,7 @@ li:nth-child(6)::before {
 }
 
 .container {
-	width: 275px;
+	width: 255px;
 	margin: 0 auto;
 }
 
@@ -86,6 +97,7 @@ li:nth-child(6)::before {
 	background-position: center;
 	margin-top: 35px;
 	margin-bottom: 35px;
+	width: 275px;
 }
 
 .line {
@@ -100,7 +112,7 @@ li:nth-child(6)::before {
 	display: inline-block;
 	vertical-align: middle;
 	box-sizing: border-box;
-	width: 100%;
+	width: 275px;
 	height: 2px;
 	background: linear-gradient(to bottom, #666 0%, #666 49%, #000 50%, #000 100%);
 }
@@ -128,22 +140,24 @@ input[type="password"] {
 }
 
 input:focus {
+	color: white;
 	box-shadow: 0px 0px 9px 2px rgba(104,155,204,1);
 	border-bottom: 1px solid #689bcc;
 	outline: none;
 	background-image: linear-gradient(to top, #1f5384, #1e4b76);
-	color: #fff;
+	
 }
 
 label {
 	font-size: 14px;
 	color: #fff;
 	font-weight: 300;
-	margin-bottom: 24px;
+
 	display: inline-block;
 }
-input[submit] {
-
+input[type="checkbox"] {
+	margin-bottom: 0;
+	vertical-align: bottom;
 }
 input[type="submit"] {
 	height: 35px;
@@ -156,9 +170,17 @@ input[type="submit"] {
 	color: #fff;
 	border-top: 2px solid rgba(66,153,210,.5);
 	border-bottom: 2px solid rgba(66,153,210,.5);
+	margin-top: 24px;
 }
 
-
+.form p {
+	text-align: center;
+	color: #ccc;
+	font-size: 11px;
+	margin-top: 20px;
+	margin-left: 115px;
+	margin-right: 115px;
+}
 
 
 
