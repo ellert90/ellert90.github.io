@@ -96,7 +96,7 @@ ul:last-of-type>li>a:hover {
 
 .wrapper {
 	background: url('../img/background.jpg') no-repeat;
-	background-size: 100%;
+	background-size: cover;
 	background-position: cover;
 	position: relative;
 	height: 100vh;
