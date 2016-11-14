@@ -1,0 +1,56 @@
+.wrapper {
+	width: 908px;
+	margin: 0 auto;
+}
+
+header {
+	margin-top: 25px;
+	display: inline-block;
+	position: absolute;
+
+}
+
+.phone_image {
+	height: 16px;
+	padding: 2px;
+	background: url(../img/phone.png) center no-repeat;
+}
+
+header span {
+	color: #5e696d;
+	font-size: 18px;
+	display: inline-block;
+}
+.phone {
+	height: 20px;
+	width: 20px;
+	border-radius: 100%;
+	background: linear-gradient(to bottom, #1f6787, #0d3458);
+	display: inline-block;
+}
+
+.forms {
+	top: 50px;
+	width: 495px;
+	height: 25px;
+	background: linear-gradient(to bottom, #1f6787, #0d3458);
+	display: inline-block;
+	border-radius: 3px;
+	border: 1px solid rgba(166, 195, 207, .8);
+	box-shadow: 3px 1px 3px black;
+}
+.icon {
+	display: inline-block;
+	background: url(../img/user.png) center no-repeat;
+}
+form {
+	color: #97a2a6;
+	display: inline-block;
+}
+
+.baner {
+	margin-top: 10px;
+}
+input {
+	padding-left: 4px;
+}
