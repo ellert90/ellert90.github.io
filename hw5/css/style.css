@@ -115,8 +115,7 @@ ul>li>.hv:hover {
 	height: 635px;
 	width: 560px;
 	background: rgba(0, 0, 0,.5);
-	overflow: auto;
-  	margin: auto;
+	
  	position: absolute;
   	top: 10%; 
   	left: 10%;

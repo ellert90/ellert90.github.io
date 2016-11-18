@@ -4,19 +4,17 @@
 	position: relative;
 	font-family: arial;
 }
-@import url(//db.onlinewebfonts.com/c/bcccd674c3fe808a4b01b8914c6898d5?family=Lucida+Sans+Unicode);
-/*@font-face {
+@font-face {
     font-family: 'Lusida Sans Unicode';
     src: url('bcccd674c3fe808a4b01b8914c6898d5.woff');
     font-weight: normal;
     font-style: normal;
-}*/
+}
 img[alt="phone"] {
 	height: 21px;
 	width: 21px;
 	border-radius: 100%;
 	background: linear-gradient(to bottom, #1f6787, #0d3458);
-	margin-top: -1px;
 }
 .phone {
 	margin-left: 8px;
@@ -24,20 +22,20 @@ img[alt="phone"] {
 	display: inline-block;
 }
 .phone span {
-	font-size: 18px;
+	font-size: 17.5px;
 	vertical-align: top;
 	color: #5e696d;
 	font-family: "Arial";
-    letter-spacing: 0.44px;
+    letter-spacing: 0.66px;
 }
 .forms {
 	height: 25px;
 	width: 495px;
 	background: linear-gradient(to bottom, #1f6787, #0d3458);
-	border-radius: 4px;
-	border: 1px solid rgba(136,165,177,.5);
+	border-radius: 3.5px;
+	border-top: 2px solid #a6c3cf;
 	margin-left: 11px;
-	margin-top: 30px;
+	margin-top: 29px;
 	vertical-align: top;
 	display: inline-block;
 	box-shadow:  1px 2px 4px 0 rgba(0,0,0,0.5);
@@ -45,9 +43,9 @@ img[alt="phone"] {
 	font-size: 10.91px;
 }
 .forms img {
-	
-	padding-top: 4px;
-	padding-left: 6px;
+	height: 18.5px;
+	padding-top: 4.5px;
+	padding-left: 6.5px;
 	padding-right: 1px;
 	padding-bottom: 4px;
 
@@ -61,34 +59,54 @@ form {
 input {
 	border-radius: 1px;
 	border: 1px solid #d6d8d9;
-	width: 110px;
-	height: 13px;
-	margin-top: 3px;
+	width: 106px;
+	height: 12.8px;
+	margin-top: 2.8px;
 	margin-right: 3px;
 	padding-left: 4px;
-	letter-spacing: 0.25px;
-	font-size: 10.91px;
-	line-height: 13px;
+	letter-spacing: 0.65px;
+	font-size: 10.4px;
+	line-height: 15px;
+	border: 2px solid rgba(120,120,120,.5);
+	border-radius: 2px;
+
+}
+input[type="password"] {
+	margin-left: 1px;
+	width: 106px;
+	letter-spacing: 0.95px;
+
 }
 
 button {
 	background: none;
 	border: none;
 	display: inline-block;
-	margin-right: -5px;
+	padding-left: 3px;
+}
 
+button:after {
+	content: '';
+	height: 10px;
+	width: 1px;
+	background: #fff;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 5px;
+	margin-left: 5px;
 }
 button,
-form span,
 form a {
 	color: #fff;
 	font-size: 10.91px;
 	text-decoration: none;
+	font-family: 'Lusida Sans Unicode';
 }
+
 form>a:last-child {
 	margin-left: 15px;
 	text-decoration: underline;
-	color: #bfbfbf
+	color: #bfbfbf;
 }
 
     /***********NAVIGATION PANEL***********/
