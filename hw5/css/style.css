@@ -115,12 +115,11 @@ ul>li>.hv:hover {
 	height: 635px;
 	width: 560px;
 	background: rgba(0, 0, 0,.5);
-	
  	position: absolute;
-  	top: 10%; 
-  	left: 10%;
-  	margin-left: 280px;
-  	margin-top: 317.5px;
+  	top: 50%; 
+  	left: 50%;
+  	margin-left: -280px;
+  	margin-top: -280px;
 }
 .form h1 {
 	border-bottom: 1px solid #fff;
