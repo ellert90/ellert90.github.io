@@ -1,0 +1,92 @@
+@font-face {
+  font-family: 'League Gothic';
+  src: url("leaguegothic-regular-webfont.woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url("opensans-regular-webfont.woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans Light';
+  src: url("opensans-light-webfont.woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+.h-wrp {
+	height: 200px;
+	background-color: hsla(225, 50%, 50%, 0.5);
+	background: url(../img/bg.jpg);
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-size: cover;
+}
+.m-wrp {
+	height: 500px;
+	background-color: hsla(245, 70%, 30%, 0.5);
+}
+.f-wrp {
+	height: 200px;
+	background-color: hsla(195, 30%, 50%, 0.5);
+	background-position: top center;
+}
+header,
+main,
+footer {
+	width: 960px;
+	height: 100%;
+	margin: auto;
+}
+header {
+	font-family: 'League Gothic';
+	color: #fff;
+}
+a {
+	text-decoration: none;
+}
+.head_top .logo-end {
+	color: #61436f;
+}
+.head_top {
+	text-align: center;
+	margin: auto;
+	padding-top: 4.375rem;
+
+}
+
+.head_top a {
+	font-size: 3rem;
+	color: #fff;
+}
+.head_top .menu a {
+	font-size: 1.5rem;
+
+}
+/****keep dropdown menu****/
+.menu>ul>li a:hover {  
+	text-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+	border-bottom: 2px;
+	display: block;
+	border-bottom: 2px solid #edbfff;
+	width: auto;
+}
+
+.head--menu {
+
+}
+
+ul.dropdown {
+	display: none;
+	position: absolute;
+}
+ul > li:hover > ul.dropdown {
+	display: block;
+	width: 960px;
+}
+
+
