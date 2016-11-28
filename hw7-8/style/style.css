@@ -45,9 +45,6 @@ footer {
 header {
 	font-family: 'League Gothic';
 	color: #fff;
-	display: flex;
-    flex-direction: column;
-    align-content: center;
 }
 a {
 	text-decoration: none;
@@ -57,11 +54,19 @@ a {
 }
 .head_top {
 	padding-top: 4.375rem;
+	display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .head_top a {              
 	font-size: 3rem;
 	color: #fff;
 	display: flex;
+}
+.menu {
+	/*display: flex;
+    flex-direction: column;
+    align-items: center;*/
 }
 
 
