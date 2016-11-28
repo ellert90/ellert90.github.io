@@ -19,7 +19,7 @@
   font-style: normal;
 }
 .h-wrp {
-	height: 200px;
+	height: 515px;
 	background-color: hsla(225, 50%, 50%, 0.5);
 	background: url(../img/bg.jpg);
 	background-repeat: no-repeat;
@@ -45,6 +45,9 @@ footer {
 header {
 	font-family: 'League Gothic';
 	color: #fff;
+	display: flex;
+    flex-direction: column;
+    align-content: center;
 }
 a {
 	text-decoration: none;
@@ -53,40 +56,81 @@ a {
 	color: #61436f;
 }
 .head_top {
-	text-align: center;
-	margin: auto;
 	padding-top: 4.375rem;
-
 }
-
-.head_top a {
+.head_top a {              
 	font-size: 3rem;
 	color: #fff;
+	display: flex;
 }
-.head_top .menu a {
-	font-size: 1.5rem;
 
+
+/********HEAD MENU************/
+
+
+.head_top .menu a {           /*розмір і колір силок*/
+	font-size: 1.5rem;
+	display: flex;
+
+}
+
+a.visible_link:hover {        /* ховер для видимого пункту меню*/
+	text-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+	border-bottom: 2px solid #edbfff;
+	padding-left: 3px;
+	padding-right: 3px;
+}
+.menu__list a:hover {
+	text-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
 }
 /****keep dropdown menu****/
-.menu>ul>li a:hover {  
-	text-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
-	border-bottom: 2px;
-	display: block;
-	border-bottom: 2px solid #edbfff;
-	width: auto;
-}
+.menu {
 
-.head--menu {
 
 }
-
-ul.dropdown {
-	display: none;
+.menu__list {
 	position: absolute;
+	z-index: 100;
 }
-ul > li:hover > ul.dropdown {
-	display: block;
+
+.hidden_link {
+	position: relative;
+	visibility: hidden;
+}
+
+
+a.visivle_link:hover {
+	visibility: visible;
+	position: relative;
+	opacity: 1;
 	width: 960px;
+	margin: auto;
+	background-color: rgba(54, 41, 62, 0.9);
+	border: 1px solid #051116;
+	box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
 }
 
 
+
+
+
+
+/*
+.slider {
+	width: 13rem;
+	margin: auto;
+}
+.slider h2 {
+	font-size: 2.25rem;
+	text-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+}
+.slider span {
+	font-size: 1.125rem;
+	color: #edbfff;
+	text-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+}
+.slider p {
+	font-size: 1rem;
+	font-family: 'Open Sans Light', Arial;
+}
+*/
