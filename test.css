@@ -1,0 +1,63 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+  }
+header {
+	height: 5rem;
+	background: #378;
+	width: 100%;
+}
+		
+.box {
+	width: 29%;
+	height: 5rem;
+	background: #935;
+	float: left;
+	margin: 20px 2%;
+			
+}
+	footer {
+	height: 5rem;
+	background: #673;
+	width: 100%;
+	clear: both;
+}
+li {
+	list-style: none;
+	float: left;
+}
+@media (max-width: 1000px) {
+	.box {
+	width: 44%;
+	background: #396;
+	}
+}
+@media (max-width: 500px) {
+	.box {
+		width: 96%;
+		background: #349;
+	}
+	.list {
+	visibility: hidden;
+}
+.list:hover {
+	visibility: visible;
+}
+.visible:hover .hidden {
+	display: block;
+	background: green;
+}
+.visible {
+	visibility: visible;
+}
+li {
+	float: none;
+}
+}
+main {
+	margin: 0 auto;
+	width: 100%;
+}
+
+
