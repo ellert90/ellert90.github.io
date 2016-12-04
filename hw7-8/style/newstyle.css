@@ -503,13 +503,14 @@ input[type=radio]:checked + .button--abbout:before {
   display: inline-block;
   height: 63px;
   width: 69px;
+  margin-left: 0.2rem;
 }
 .partner__link2 {
   background: url('../img/partner__sprite.png');
-  background-position: 396px 0;
+  background-position: 402px 0;
   display: inline-block;
   height: 63px;
-  width: 65px;
+  width: 72px;
 }
 .partner__link3 {
   background: url('../img/partner__sprite.png');
@@ -524,6 +525,7 @@ input[type=radio]:checked + .button--abbout:before {
   display: inline-block;
   height: 63px;
   width: 54px;
+  margin-left: 1rem;
 }
 .partner__link5 {
   background: url('../img/partner__sprite.png');
@@ -540,16 +542,20 @@ input[type=radio]:checked + .button--abbout:before {
   width: 82px;
 }
 
+/****************coments part****************/
 
 .coments_wrp {
   background-color: #ececec;
-  padding-top: 6rem;
+  padding-top: 5.9rem;
+  margin-left: 0.2rem;
+  padding-bottom: 5rem;
 }
 .coments {
   width: 960px;
   display: flex;
   justify-content: space-between;
   margin: auto;
+  font-family: 'Open Sans';
 }
 .coments_h2 {
   font-family: 'League Gothic';
@@ -557,6 +563,7 @@ input[type=radio]:checked + .button--abbout:before {
   display: block;
   text-shadow: inset 0 2px 3px #7a7a7a;
   background-clip: text;
+  letter-spacing: -0.5px;
 }
 .coments_h2_end {
   color: #b9b9b9;
@@ -564,11 +571,32 @@ input[type=radio]:checked + .button--abbout:before {
 .coments__italic {
   text-shadow: 0.5px 0.9px 0 #fff;
   font-style: italic;
+  font-family: 'Georgia';
+  color: #ccc;
+  display: block;
+  margin-top: 0.9rem;
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.2px;
 }
 .coments_h3 {
   font-size: 1.875rem;
+  margin-left: -0.1rem;
   font-family: 'League Gothic';
   font-weight: 500;
+}
+.coments_p {
+  text-shadow: 0.5px 0.9px 0 white;
+  color: #787878;
+  line-height: 1.5rem;
+  width: 17.5rem;
+  letter-spacing: -0.4px;
+}
+.coments__left,
+.coments__center,
+.coments__right {
+  height: 13rem;
+  overflow: hidden;
+
 }
 /*
 .menu {
