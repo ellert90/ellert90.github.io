@@ -113,3 +113,6 @@ footer {
 	background: yellow;
 	overflow: hidden;
 }
+.box8 {
+	word-wrap: break-word;
+}
