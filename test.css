@@ -27,7 +27,13 @@ header {
 }
 li {
 	list-style: none;
-	float: left;
+  height: 5px;
+	width: 5px;
+	background: #953;
+}
+.list {
+	display: flex;
+	justify-content: space-between;
 }
 @media (max-width: 1000px) {
 	.box {
@@ -115,4 +121,14 @@ footer {
 }
 .box8 {
 	word-wrap: break-word;
+}
+.flex_box {
+	display: flex;
+	justify-content: space-between;
+}
+li {
+	display: inline-block;
+	height: 50px;
+	width: 75px;
+	border: 1px solid red;
 }

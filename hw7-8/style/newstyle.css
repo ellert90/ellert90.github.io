@@ -52,7 +52,7 @@
 header,
 main,
 footer {
-	width: 960px;
+	max-width: 960px;
 	height: 100%;
 	margin: auto;
 
@@ -142,7 +142,7 @@ p {
   padding-bottom: 5rem;
 	letter-spacing: 0.1;
   font-family: 'League Gothic';
-  width: 960px;
+  max-width: 960px;
   margin: auto;
   display: flex;
   justify-content: space-between;
@@ -167,6 +167,7 @@ p {
   line-height: 1.35em;
 	font-family: 'Open Sans Light', Arial;
   color: #fff;
+  max-width: 75%;
 }
 .slider__content {
   display: flex;
@@ -187,8 +188,7 @@ p {
   position: absolute;
   top: -6rem;
   width: 17.125rem;
-  left: 29%;
-  transform: translateX(-50%);
+  right: 0;
 }
 
 /*радіо кнопки під слайдером*/
@@ -246,7 +246,7 @@ input[type=radio]:checked + .button--slider:before {
 section {
   color: #fff;
   font-family: 'League Gothic', Arial;
-  width: 960px;
+  max-width: 960px;
   margin: auto;
   display: flex;
   justify-content: space-between;
@@ -267,7 +267,7 @@ section p {
   font-family: 'Open Sans Light', Arial;
   overflow: hidden;
   height: 7.5rem;
-  width: 15rem;
+  max-width: 15rem;
   line-height: 1.5rem;
   margin-top: 0.5rem;
   word-wrap: break-word;
@@ -318,7 +318,7 @@ main {
   padding-bottom: 5.6rem;
 }
 .main__wrp {
-  width: 960px;
+  max-width: 960px;
   margin: auto;
 
 }
@@ -334,7 +334,7 @@ main {
 }
 .main__top  {
   background: #fff;
-  width: 26.8rem;
+  max-width: 26.8rem;
   padding-left: 2.38rem;
   padding-top: 2rem;
   padding-right: 2rem;
@@ -489,7 +489,7 @@ input[type=radio]:checked + .button--abbout:before {
   padding-bottom: 2rem;
 }
 .main__partners {
-  width: 775px;
+  max-width: 775px;
   height: 100%;
   margin: auto;
   display: flex;
@@ -548,7 +548,7 @@ input[type=radio]:checked + .button--abbout:before {
   width: 100%;
 }
 .coments {
-  width: 960px;
+  max-width: 960px;
   display: flex;
   justify-content: space-between;
   margin: auto;
@@ -584,7 +584,6 @@ input[type=radio]:checked + .button--abbout:before {
   text-shadow: 0.5px 0.9px 0 white;
   color: #787878;
   line-height: 1.5rem;
-  width: 17.5rem;
   letter-spacing: -0.4px;
   height: 10rem;
   padding-top: 0.5rem;
@@ -593,6 +592,7 @@ input[type=radio]:checked + .button--abbout:before {
 .coments__center,
 .coments__right {
   height: 12.7rem;
+
   overflow: hidden;
 }
 
@@ -615,6 +615,10 @@ footer .menu__link {
 }
 .menu__bottom {
   width: 55%;
+}
+footer .menu__list {
+  display: flex;
+  justify-content: space-between;
 }
 .author__first {
   line-height: 2.5rem;
