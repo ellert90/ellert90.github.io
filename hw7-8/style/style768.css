@@ -2,4 +2,107 @@
   .head_top {
     flex-direction: column;
   }
+  .menu__list {
+    margin-top: 1.4rem;
+    float: left;
+    margin-bottom: 4.4rem;
+  }
+  .menu__link {
+    margin-right: 3.3rem;
+  }
+ /*********slider***********/
+ .slider {
+   max-width: 768px;
+   padding-top: 6.1rem;
+   padding-left: 1.6rem;
+   padding-bottom: 6.6rem;
+ }
+ .slider__h2 {
+   font-size: 3rem;
+ }
+ .slider__span {
+   font-size: 1.5rem;
+   padding-top: 0.5rem;
+   letter-spacing: -0.7px;
+   word-spacing: -0.5px;
+   max-height: 2rem;
+   overflow: hidden;
+ }
+ .slider__p {
+   font-size: 1rem;
+   line-height: 1.8rem;
+   max-height: 7rem;
+   max-width: 18rem;
+   overflow: hidden;
+ }
+.slider__img {
+  top: -7.5rem;
+  right: 2.8rem;
+}
+.radio__button--slider {
+  margin-top: 2.6rem;
+  margin-bottom: 6rem;
+}
+section {
+  max-width: 768px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.about__h3 {
+  font-size: 1.5rem;
+}
+.about {
+  height: 11.5rem;
+  margin-top: 0.1rem;
+  margin-left: 0;
+}
+.about__p {
+  height: 9rem;
+  margin-top: 0.1rem;
+}
+.about__link {
+  margin-top: 0.5rem;
+}
+
+/***********main*************/
+
+.main_h__start {
+  font-size: 1.5rem;
+  max-width: 8rem;
+  margin-bottom: -0.15rem;
+}
+.main__top {
+  margin-top: -0.2rem;
+  max-width: 19.8rem;
+}
+.main__top_p {
+  max-height: 10rem;
+  max-width: 16rem;
+  overflow: hidden;
+}
+.main__right {
+  padding-left: 1.2rem;
+}
+.main__p {
+  max-height: 1.6rem;
+  max-width: 16rem;
+  overflow: hidden;
+}
+.main_end__link {
+  margin-top: 1.1rem;
+  margin-bottom: 0.1rem;
+}
+
+/*********partner*********/
+
+.main__partners {
+  padding-right: 1.1rem;
+}
+
+
+
+
+
+
+
 }

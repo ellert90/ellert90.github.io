@@ -112,6 +112,7 @@ p {
 	flex-direction: row;
 	align-items: center;
 	justify-content: space-between;
+  margin-bottom: 10.9rem;
 
 }
 
@@ -132,7 +133,7 @@ p {
      /*slider*/
 
 .s-wrp {
-  margin-top: 10.2rem;
+/*  margin-top: 10.2rem;*/
   background: rgba(0, 0, 0, 0.2);
   /*margin-bottom: 10.65rem;*/
 
@@ -149,25 +150,26 @@ p {
   position: relative;
 
 }
-.slider h2 {
+.slider__h2 {
 	font-size: 3.75rem;
 	text-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
   color: #fff;
   letter-spacing: 0.1px;
 
 }
-.slider span {
+.slider__span {
 	font-size: 2rem;
 	color: #edbfff;
 	text-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+  word-wrap: normal;
 }
-.slider p {
+.slider__p {
   margin-top: 0.3rem;
 	font-size: 1.125rem;
   line-height: 1.35em;
 	font-family: 'Open Sans Light', Arial;
   color: #fff;
-  max-width: 75%;
+  max-width: 100%;
 }
 .slider__content {
   display: flex;
@@ -188,7 +190,7 @@ p {
   position: absolute;
   top: -6rem;
   width: 17.125rem;
-  right: 0;
+  right: 4.5rem;
 }
 
 /*радіо кнопки під слайдером*/
@@ -241,7 +243,7 @@ input[type=radio]:checked + .button--slider:before {
   justify-content: space-between;
   padding-top: 4.75rem;
   padding-bottom: 6.4rem;
-    box-shadow: 0px 6px 20px -10px rgba(0,0,0,0.75);
+  box-shadow: 0px 6px 20px -10px rgba(0,0,0,0.75);
 }
 section {
   color: #fff;
@@ -250,24 +252,28 @@ section {
   margin: auto;
   display: flex;
   justify-content: space-between;
+    flex-grow: 1;
 }
 .about {
-  max-width: 30%;
+  max-width: 33%;
   max-height: 10rem;
   margin-left: 0.7rem;
   display: flex;
 }
-.about__link {
-  color: #fff;
+.about:nth-child(2) {
+  margin-left: 3rem;
 }
-section h3 {
+.about:nth-child(3) {
+  margin-left: 3rem;
+}
+.about__h3 {
   font-size: 1.875rem;
 }
-section p {
+.about__p {
   font-family: 'Open Sans Light', Arial;
   overflow: hidden;
   height: 7.5rem;
-  max-width: 15rem;
+  max-width: 100%;
   line-height: 1.5rem;
   margin-top: 0.5rem;
   word-wrap: break-word;
@@ -294,17 +300,15 @@ section p {
 .about__content {
   margin-left: 1.45rem;
 }
-.about:last-child {
-  margin-right: 0.5rem;
-}
-.about__content a {
+.about__link {
+  color: #fff;
   float: right;
   margin-top: 1.16rem;
   margin-right: 1rem;
   font-size: 1.2rem;
   letter-spacing: 0.01rem;
 }
-.about__content a:hover {
+.about__link:hover {
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
 }
 
@@ -320,7 +324,6 @@ main {
 .main__wrp {
   max-width: 960px;
   margin: auto;
-
 }
 .main__content {
   display: flex;
@@ -355,7 +358,7 @@ main {
   bottom: -1.2rem;
   left: 22.8rem;
 }
-.main__top p {
+.main__top_p {
   font-size: 1rem;
   padding-top: 0.75rem;
   letter-spacing: -0.5px;
