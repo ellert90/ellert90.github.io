@@ -249,19 +249,13 @@ section {
   margin: auto;
   display: flex;
   justify-content: space-between;
-    flex-grow: 1;
+  flex-grow: 1;
 }
 .about {
   max-width: 33%;
   max-height: 10rem;
   margin-left: 0.7rem;
   display: flex;
-}
-.about:nth-child(2) {
-  margin-left: 3rem;
-}
-.about:nth-child(3) {
-  margin-left: 3rem;
 }
 .about__h3 {
   font-size: 1.875rem;
