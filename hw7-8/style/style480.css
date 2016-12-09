@@ -84,7 +84,7 @@
 .slider__span {
   padding-top: 0.2rem;
   font-size: 1.125rem;
-  max-height: 1.7rem;
+  max-height: 1.6rem;
 }
 .slider__content {
   max-width: 13rem;
@@ -101,7 +101,8 @@
 /*********radio button**********/
 
 .radio__button--slider {
-  width: 84px;
+  width: 100px;
+  padding-left: 15px;
   margin: auto;
   padding-top: 1.75rem;
   padding-bottom: 3.5rem;
@@ -131,6 +132,15 @@ section {
   margin-right: 0;
 }
 
+/**********main**********/
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+.main__left {
+  width: 97%;
+}
 
 
 }

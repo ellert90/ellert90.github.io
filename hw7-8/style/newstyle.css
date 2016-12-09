@@ -69,20 +69,6 @@ h4 {
 p {
   font-family: 'Open Sans';
 }
-/*сітка*/
-.box__size2_3 {
-  width: 65%;
-}
-.box__size2 {
-	width: 49%;
-}
-.box__size3 {
-	width: 32%;
-}
-.box__size6 {
-	width: 15%;
-}
-
 .head_top {
 	padding-top: 4.375rem;
 	display: flex;
@@ -312,10 +298,11 @@ main {
   padding-bottom: 5.6rem;
   margin: auto;
   max-width: 960px;
-}
-.main__content {
   display: flex;
   justify-content: space-around;
+}
+.main__left {
+  width: 49%;
 }
 .main_h__start {
   font-size: 1.875rem;
@@ -388,6 +375,7 @@ input[type=radio]:checked + .button--abbout:before {
 
 .main__right {
   height: 100%;
+  width: 49%;
   padding-top: 1.95rem;
   padding-left: 1.7rem;
 }
