@@ -37,9 +37,13 @@
    max-width: 18rem;
    overflow: hidden;
  }
+.slider__img_parent {
+  width: 48%;
+}
 .slider__img {
   top: -7.5rem;
   right: 2.8rem;
+  max-width: 100%;
 }
 .radio__button--slider {
   margin-top: 2.6rem;
@@ -124,7 +128,7 @@ section {
   padding-top: 0.45rem;
 }
 
-
+/*******footer*******/
 
 footer {
   align-items: flex-end;
