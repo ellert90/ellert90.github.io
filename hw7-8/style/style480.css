@@ -21,7 +21,6 @@
   flex-direction: column;
 }
 .menu__link_visible {
-  position: static;
   visibility: visible;
   margin: auto;
 }
@@ -48,8 +47,8 @@
 }
 .menu__item {
   min-width: 15.25rem;
-   padding-top: 1px;
-    text-align: center;
+  padding-top: 1px;
+  text-align: center;
 }
 .menu__link {
   display: block;
@@ -137,10 +136,27 @@ section {
 main {
   display: flex;
   flex-direction: column;
+  padding-top: 4.5rem;
+}
+.main_h__start {
+  max-width: 100%;
 }
 .main__left {
   width: 97%;
 }
+.main__top {
+  max-width: 100%;
+  margin-left: 7.5%;
+}
+.main__top_p {
+  max-width: 100%;
+}
+
+
+
+
+
+
 
 
 }
