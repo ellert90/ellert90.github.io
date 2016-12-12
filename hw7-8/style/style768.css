@@ -127,6 +127,9 @@ section {
   max-width: 13.5rem;
   padding-top: 0.45rem;
 }
+.coments__hidden {
+  /*visibility: hidden;*/
+}
 
 /*******footer*******/
 
@@ -141,7 +144,7 @@ footer {
 .menu__bottom .menu__link {
   font-size: 1.25rem;
 }
-.menu__bottom .menu__list {
+.menu__bottom>.menu__list {
   max-width: 88%;
 }
 .menu__bottom {

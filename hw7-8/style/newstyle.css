@@ -323,15 +323,17 @@ main {
   box-shadow: 0px 7px 17px -16px rgba(0,0,0,0.75);
   position: relative;
 }
-.main__top::after {
-  content: '';
-  width: 0;
-  height: 0;
-  border-top: 21px solid #fff;
-	border-left: 21px solid transparent;
-  position: absolute;
-  bottom: -1.2rem;
-  left: 22.8rem;
+@media (min-width: 960px) {
+  .main__top::after {
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 21px solid #fff;
+  	border-left: 21px solid transparent;
+    position: absolute;
+    bottom: -1.2rem;
+    left: 22.8rem;
+  }
 }
 .main__top_p {
   font-size: 1rem;
@@ -453,6 +455,10 @@ input[type=radio]:checked + .button--abbout:before {
   margin-top: 1.6rem;
   margin-right: 0.9rem;
 }
+.main__link_hidden {
+  position: absolute;
+  visibility: hidden;
+}
 .main_end__link:hover {
   text-shadow: 1px 1px 1px #ccc;
 }
@@ -558,9 +564,10 @@ input[type=radio]:checked + .button--abbout:before {
   margin-left: -0.1rem;
   font-family: 'League Gothic';
   font-weight: 500;
+  text-shadow: 0.5px 0.9px 0 #fff;
 }
 .coments_p {
-  text-shadow: 0.5px 0.9px 0 white;
+  text-shadow: 0.5px 0.9px 0 #fff;
   color: #787878;
   line-height: 1.5rem;
   letter-spacing: -0.4px;
