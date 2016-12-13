@@ -2,16 +2,12 @@
 .logo {
   margin: auto;
 }
-.header {
-  max-width: 480px;
-}
-
 /********dropdown menu**********/
 
 .head--menu {
   visibility: hidden;
   position: relative;
-  width: 100%;
+
   margin-top: 1rem;
   margin-bottom: 4.6rem;
 }
@@ -95,7 +91,11 @@
 .slider__img_parent {
   max-width: 44%;
   top: 1.2rem;
-  right: -1.3rem;
+  padding-left: 10rem;
+  position: relative;
+}
+.slider__img {
+  right: 1.5rem;
 }
 
 /*********radio button**********/
@@ -175,7 +175,7 @@ main {
   right: 8.5%;
 }
 .main_end__link {
-  visibility: hidden;
+  display: none;
 }
 
 /********partners**********/

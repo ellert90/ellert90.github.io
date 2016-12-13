@@ -98,7 +98,7 @@ p {
 .head--menu {
   flex-grow: 3;
 }
-.menu__list {
+.head--menu>.menu__list {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
@@ -215,8 +215,8 @@ input[type=radio]:checked + .button--slider:before {
   color: #f3f3f3;
   background: rgba(50, 50, 50, .3);
   font-size: 42px;
-  padding-left: 1.2px;
-  line-height: 16px;
+  text-align: center;
+  line-height: 15.5px;
 }
 
 /************ABOUT*************/
@@ -360,22 +360,22 @@ main {
 .radio__button--main {
   position: relative;
   left: 40.5%;
-  top: 1.84rem;
+  margin-top: 1.84rem;
+  width: 100px;
 }
 .button--about::before {
-
 	background-color: rgba(250,250,250,.3);
   border: 1px solid #e9e9e9;
-  font-size: 13px;
-  height: 16px;
 }
-input[type=radio]:checked + .button--abbout:before {
+
+input[type=radio]:checked + .button--about:before {
   content: "\2022";
   color: black;
-  background: rgba(50, 50, 50, .3);
-  font-size: 42px;
-  padding-left: 1px;
-  line-height: 16.5px;
+  background: rgba(200, 200, 200, .3);
+  font-size: 50px;
+  text-align: center;
+  line-height: 16px;
+
 }
 
 /***************main right***************/
@@ -461,8 +461,7 @@ input[type=radio]:checked + .button--abbout:before {
   margin-right: 0.9rem;
 }
 .main__link_hidden {
-  position: absolute;
-  visibility: hidden;
+  display: none;
 }
 .main_end__link:hover {
   text-shadow: 1px 1px 1px #ccc;
