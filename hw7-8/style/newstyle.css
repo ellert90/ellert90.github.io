@@ -32,7 +32,13 @@
 }
 * {
 	box-sizing: border-box;
+}/*
+html {
+  overflow-x: hidden;
 }
+div {
+  height: "100%";
+}*/
 .h-wrp {
 	height: 100%;
   width: 100%;
@@ -55,7 +61,6 @@ footer {
 	max-width: 960px;
 	height: 100%;
 	margin: auto;
-
 }
 a {
 	text-decoration: none;
@@ -160,13 +165,13 @@ p {
   max-width: 55%;
   min-width: 35%;
 }
+
 /*позиціонуємо телефон*/
+
 .slider__img_parent {
   display: block;
   float: right;
   position: relative;
-
-
 }
 .slider__img {
   position: absolute;
@@ -210,8 +215,8 @@ input[type=radio]:checked + .button--slider:before {
   color: #f3f3f3;
   background: rgba(50, 50, 50, .3);
   font-size: 42px;
-  padding-left: 1px;
-  line-height: 17.5px;
+  padding-left: 1.2px;
+  line-height: 16px;
 }
 
 /************ABOUT*************/

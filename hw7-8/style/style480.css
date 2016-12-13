@@ -73,6 +73,7 @@
 
 
 .slider {
+  max-width: 480px;
   padding-left: 6.7%;
   padding-top: 5.8rem;
   padding-bottom: 5.9rem;
@@ -92,9 +93,9 @@
   display: none;
 }
 .slider__img_parent {
-  max-width: 47%;
+  max-width: 44%;
   top: 1.2rem;
-  right: -3.2rem;
+  right: -1.3rem;
 }
 
 /*********radio button**********/
@@ -113,11 +114,12 @@
   padding-bottom: 3rem;
 }
 section {
+  max-width: 480px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   padding-left: 4.5%;
-  padding-right: 0;
+  padding-right: 2.25%;
 }
 .about {
   max-width: 100%;
@@ -134,6 +136,7 @@ section {
 /**********main**********/
 
 main {
+  max-width: 480px;
   display: flex;
   flex-direction: column;
   padding-top: 4.5rem;
@@ -158,6 +161,9 @@ main {
 
 /*******main right********/
 
+main {
+  max-width: 480px;
+}
 .main__right {
   width: 76%;
   margin: auto;
@@ -178,6 +184,7 @@ main {
   padding-bottom: 1.4rem;
 }
 .main__partners {
+  max-width: 480px;
   flex-wrap: wrap;
   padding: 0 12% 0 12%;
   justify-content: space-around;
@@ -193,6 +200,7 @@ main {
   padding-bottom: 2rem;
 }
 .coments {
+  max-width: 480px;
   flex-direction: column;
 }
 .coments__container {
@@ -212,6 +220,7 @@ main {
 /*******footer*******/
 
 footer {
+  max-width: 480px;
   flex-direction: column;
 }
 .menu__bottom {

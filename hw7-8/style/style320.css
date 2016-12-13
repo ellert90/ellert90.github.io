@@ -1,0 +1,23 @@
+@media (max-width: 320px) {
+
+.s-wrp {
+  background: none;
+}
+.slider__content {
+  margin: auto;
+}
+.slider__img_parent {
+  display: none;
+}
+.radio__button--slider {
+  margin-top: -1rem;
+  padding-top: 0.7rem;
+}
+
+/******about*****/
+
+.about-wrp {
+  padding-top: 4.38rem;
+}
+
+}
