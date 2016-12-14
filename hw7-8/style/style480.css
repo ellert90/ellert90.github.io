@@ -7,7 +7,6 @@
 .head--menu {
   visibility: hidden;
   position: relative;
-
   margin-top: 1rem;
   margin-bottom: 4.6rem;
 }
@@ -161,9 +160,7 @@ main {
 
 /*******main right********/
 
-main {
-  max-width: 480px;
-}
+
 .main__right {
   width: 76%;
   margin: auto;
@@ -175,7 +172,7 @@ main {
   right: 8.5%;
 }
 .main_end__link {
-  display: none;
+  visibility: hidden;
 }
 
 /********partners**********/

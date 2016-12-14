@@ -315,7 +315,7 @@ main {
 .main_h__end {
   color: #edbfff;
 }
-.main__top  {
+.main__top {
   background: #fff;
   max-width: 26.8rem;
   padding-left: 2.38rem;
@@ -456,12 +456,13 @@ input[type=radio]:checked + .button--about:before {
   font-family: 'League Gothic';
   font-size: 1.125rem;
   color: #000;
-  float: right;
   margin-top: 1.6rem;
   margin-right: 0.9rem;
+  float: right;
 }
 .main__link_hidden {
-  display: none;
+  visibility: hidden;
+  position: absolute;
 }
 .main_end__link:hover {
   text-shadow: 1px 1px 1px #ccc;
