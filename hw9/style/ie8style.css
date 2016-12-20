@@ -4,14 +4,24 @@
   font-weight: normal;
   font-style: normal;
 }
-
+@font-face {
+  font-family: 'League Gothic';
+  src: url("leaguegothic-regular-webfont.eot");
+  font-weight: normal;
+  font-style: normal;
+}
 @font-face {
   font-family: 'Open Sans';
   src: url("opensans-regular-webfont.woff2");
   font-weight: normal;
   font-style: normal;
 }
-
+@font-face {
+  font-family: 'Open Sans';
+  src: url("opensans-regular-webfont.eot");
+  font-weight: normal;
+  font-style: normal;
+}
 @font-face {
   font-family: 'Open Sans Light';
   src: url("opensans-light-webfont.woff2");
@@ -19,14 +29,20 @@
   font-style: normal;
 }
 @font-face {
-  font-family: 'Myriad Pro Regular';
-  src: url("myriadpro-regular.woff2");
+  font-family: 'Open Sans Light';
+  src: url("opensans-light-webfont.eot");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'Opensans extra bold';
   src: url("opensans-extrabold.woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Opensans extra bold';
+  src: url("opensans-extrabold.eot");
   font-weight: normal;
   font-style: normal;
 }
@@ -40,10 +56,10 @@ div {
   height: "100%";
 }*/
 .h-wrp {
-	height: 100%;
+	height: 36em;
   width: 100%;
 	background-color: hsla(225, 50%, 50%, 0.5);
-	background: url(../img/bg.jpg) no-repeat top center fixed;
+	background: url(../img/bg.jpg) no-repeat top center;
 	background-size: cover;
 }
 .m-wrp {
@@ -55,10 +71,10 @@ div {
 	background-color: hsla(195, 30%, 50%, 0.5);
 	background-position: top center;
 }
-header,
 main,
 footer {
-	max-width: 960px;
+  display: block;
+	width: 960px;
 	height: 100%;
 	margin: auto;
 }
@@ -74,18 +90,17 @@ h4 {
 p {
   font-family: 'Open Sans';
 }
-.head_top {
-	padding-top: 4.375rem;
-	display: flex;
-	justify-content: space-between;
-}
+
           /*логотип*/
 .logo {
- 	font-size: 3rem;
+ 	font-size: 3em;
 	color: #fff;
 	text-shadow: 1px 1.7px 2px rgba(0, 0, 0, 0.4);
   flex-grow: 2;
   font-family: 'League Gothic';
+  display: inline;
+  float: left;
+
 }
 .head_top .logo-end {  /*колір логотипа*/
 	color: #61436f;
@@ -95,24 +110,33 @@ p {
 
 
 /********HEAD MENU************/
+
+header {
+  padding: 50px 0 0 0;
+  display: block;
+  width: 960px;
+  margin: auto;
+}
+.head_top {
+  display: inline;
+}
 .head--menu {
-  flex-grow: 3;
+  float: right;
 }
 .head--menu>.menu__list {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: space-between;
-  margin-bottom: 10.9rem;
-
+	display: inline;
+  margin-bottom: 10.9em;
 }
-
+.menu__item {
+  display: inline-block;
+  margin: 0 1.2em;
+}
 .menu__link {
 	color: #fff;
 	width: 100%;
-	font-size: 1.5rem;
+	font-size: 1.5em;
   font-weight: 400;
-	line-height: 2.35rem;
+	line-height: 2.35em;
 	text-shadow: 1px 1.7px 2px rgba(0, 0, 0, 0.4);
   font-family: 'League Gothic';
 }
@@ -124,43 +148,40 @@ p {
      /*slider*/
 
 .s-wrp {
+  height: 20em;
+  clear: both;
   background: rgba(0, 0, 0, 0.2);
 }
 .slider {
-  padding-top: 4.9rem;
-  padding-bottom: 5rem;
+  padding-top: 8em;
+  padding-bottom: 5em;
 	letter-spacing: 0.1;
   font-family: 'League Gothic';
   max-width: 960px;
   margin: auto;
-  display: flex;
-  justify-content: space-between;
   position: relative;
-
 }
 .slider__h2 {
-	font-size: 3.75rem;
+	font-size: 3.75em;
 	text-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
   color: #fff;
   letter-spacing: 0.1px;
 }
 .slider__span {
-	font-size: 2rem;
+	font-size: 2em;
 	color: #edbfff;
 	text-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
   word-wrap: normal;
 }
 .slider__p {
-  margin-top: 0.3rem;
-	font-size: 1.125rem;
+  margin-top: 0.3em;
+	font-size: 1.125em;
   line-height: 1.35em;
 	font-family: 'Open Sans Light', Arial;
   color: #fff;
   max-width: 100%;
 }
 .slider__content {
-  display: flex;
-  flex-direction: column;
   float: left;
   max-width: 55%;
   min-width: 35%;
@@ -175,16 +196,16 @@ p {
 }
 .slider__img {
   position: absolute;
-  top: -6rem;
-  width: 17.125rem;
-  right: 4.5rem;
+  top: -6em;
+  width: 17.125em;
+  right: 4.5em;
 }
 
 /*радіо кнопки під слайдером*/
 
 .radio__button--slider {
-  margin-top: 6.2rem;
-  padding-bottom: 3.4rem;
+  margin-top: 6.2em;
+  margin-bottom: 3.4em;
   margin-left: 67%;
 }
 
@@ -192,12 +213,12 @@ p {
 /************ABOUT*************/
 
 .about-wrp {
-  background-image: linear-gradient(to top, #322539 0%, #745083 100%);
+  background: #745083;
   border-top: 1px solid #33253a;
   width: 100%;
   height: 100%;
-  padding-top: 4.75rem;
-  padding-bottom: 6.4rem;
+  padding-top: 4.75em;
+  padding-bottom: 6.4em;
   box-shadow: 0px 6px 20px -10px rgba(0,0,0,0.75);
 }
 section {
@@ -205,57 +226,52 @@ section {
   font-family: 'League Gothic', Arial;
   max-width: 960px;
   margin: auto;
-  display: flex;
-  justify-content: space-between;
-  flex-grow: 1;
 }
 .about {
-  max-width: 33%;
-  max-height: 10rem;
-  margin-left: 0.7rem;
-  display: flex;
+  max-width: 300px;
+  max-height: 10em;
+  padding-left: 0.7em;
+  display: inline-block;
 }
 .about__h3 {
-  font-size: 1.875rem;
+  font-size: 1.875em;
 }
 .about__p {
   font-family: 'Open Sans Light', Arial;
   overflow: hidden;
-  height: 7.5rem;
+  height: 7.5em;
   max-width: 100%;
-  line-height: 1.5rem;
-  margin-top: 0.5rem;
+  line-height: 1.5em;
+  margin-top: 0.5em;
   word-wrap: break-word;
 }
-.about__setting {
+.about__setting,
+.about__message,
+.about__music {
   background-color: red;
-  background: url('../img/sprite.png');
-  flex: 0 0 29px;
-  height: 29px;
-  margin-top: 0.3125rem;
+  background: url('../img/Untitled-1.png');
+  width: 30px;
+  height: 30px;
+  display: block;
+  float: left;
+  margin: 6px;
 }
 .about__message {
-  background: url(../img/sprite.png) no-repeat;
-  flex: 0 0 29px;
-  background-position: -30px 0;
-  margin-top: 0.3125rem;
+  background: url('../img/Untitled-2.png') no-repeat;
 }
 .about__music {
-  background: url(../img/sprite.png) no-repeat;
-  flex: 0 0 29px;
-  background-position: -60px 0;
-  margin-top: 5px;
+  background: url('../img/Untitled-3.png') no-repeat;
 }
 .about__content {
-  margin-left: 1.45rem;
+  padding: 0 0 0 25px;
 }
 .about__link {
   color: #fff;
   float: right;
-  margin-top: 1.16rem;
-  margin-right: 1rem;
-  font-size: 1.2rem;
-  letter-spacing: 0.01rem;
+  margin-top: 1.16em;
+  margin-right: 1em;
+  font-size: 1.2em;
+  letter-spacing: 0.01em;
 }
 .about__link:hover {
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
@@ -268,32 +284,31 @@ section {
 }
 main {
   width: 100%;
-  height: 100%;
-  padding-top: 6.35rem;
-  padding-bottom: 5.6rem;
+  height: 28em;
+  padding-top: 6.35em;
+  padding-bottom: 5.6em;
   margin: auto;
   max-width: 960px;
-  display: flex;
-  justify-content: space-around;
 }
 .main__left {
   width: 49%;
+  float: left;
 }
 .main_h__start {
-  font-size: 1.875rem;
+  font-size: 1.875em;
 }
 .main_h__end {
   color: #edbfff;
 }
 .main__top {
   background: #fff;
-  max-width: 26.8rem;
-  padding-left: 2.38rem;
-  padding-top: 2rem;
-  padding-right: 2rem;
-  padding-bottom: 2.2rem;
-  line-height: 1.5rem;
-  margin-left: 1.25rem;
+  max-width: 26.8em;
+  padding-left: 2.38em;
+  padding-top: 2em;
+  padding-right: 2em;
+  padding-bottom: 2.2em;
+  line-height: 1.5em;
+  margin-left: 1.25em;
   border: 1px solid #f6f6f6;
   box-shadow: 0px 7px 17px -16px rgba(0,0,0,0.75);
   position: relative;
@@ -306,13 +321,13 @@ main {
     border-top: 21px solid #fff;
   	border-left: 21px solid transparent;
     position: absolute;
-    bottom: -1.2rem;
-    left: 22.8rem;
+    bottom: -1.2em;
+    left: 22.8em;
   }
 }
 .main__top_p {
-  font-size: 1rem;
-  padding-top: 0.75rem;
+  font-size: 1em;
+  padding-top: 0.75em;
   letter-spacing: -0.5px;
   word-spacing: 0.9px;
 }
@@ -321,8 +336,8 @@ main {
   height: 49px;
   width: 49px;
   position: absolute;
-  left: -1.5rem;;
-  top: 1.15rem;
+  left: -1.5em;;
+  top: 1.15em;
 }
 
 /***********radio__button--main************/
@@ -330,7 +345,7 @@ main {
 .radio__button--main {
   position: relative;
   left: 40.5%;
-  margin-top: 1.84rem;
+  margin-top: 1.84em;
   width: 100px;
 }
 
@@ -339,11 +354,12 @@ main {
 .main__right {
   height: 100%;
   width: 49%;
-  padding-top: 1.95rem;
-  padding-left: 1.7rem;
+  padding-top: 1.95em;
+  padding-left: 1.7em;
+  float: right;
 }
 .main_h__right {
-  font-size: 1.85rem;
+  font-size: 1.85em;
 }
 .main-r__link {
   color: #000;
@@ -351,23 +367,23 @@ main {
   letter-spacing: 0.1px;
 }
 .main__item1 {
-  padding-top: 1.3rem;
-  padding-bottom: 0.8rem;
+  padding-top: 1.3em;
+  padding-bottom: 0.8em;
   letter-spacing: -0.2px;
   word-spacing: -0.8px;
 }
 .main__item2 {
-  padding-top: 0.85rem;
+  padding-top: 0.85em;
   letter-spacing: -0.2px;
   word-spacing: -0.8px;
 }
 .main__item3 {
-  padding-top: 1.5rem;
+  padding-top: 1.5em;
   letter-spacing: -0.2px;
   word-spacing: -0.8px;
 }
 .main__p {
-  padding-top: 0.5rem;
+  padding-top: 0.5em;
 }
 .main__item1::before {
   content: '';
@@ -375,8 +391,8 @@ main {
   height: 47px;
   border-radius: 50%;
   width: 47px;
-  margin-left: 0.1rem;
-  margin-right: 1.05rem;
+  margin-left: 0.1em;
+  margin-right: 1.05em;
   display: flex;
   flex: 0 0 60px;
   background-position: 0 5px;
@@ -388,8 +404,8 @@ main {
   height: 47px;
   border-radius: 50%;
   width: 47px;
-  margin-left: 0.1rem;
-  margin-right: 1.05rem;
+  margin-left: 0.1em;
+  margin-right: 1.05em;
   display: flex;
   flex: 0 0 60px;
   background-position: 0 70px;
@@ -401,8 +417,8 @@ main {
   height: 47px;
   border-radius: 50%;
   width: 47px;
-  margin-left: 0.1rem;
-  margin-right: 1.05rem;
+  margin-left: 0.1em;
+  margin-right: 1.05em;
   display: flex;
   flex: 0 0 60px;
   background-position: 0 110px;
@@ -410,10 +426,10 @@ main {
 }
 .main_end__link {
   font-family: 'League Gothic';
-  font-size: 1.125rem;
+  font-size: 1.125em;
   color: #000;
-  margin-top: 1.6rem;
-  margin-right: 0.9rem;
+  margin-top: 1.6em;
+  margin-right: 0.9em;
   float: right;
 }
 .main__link_hidden {
@@ -431,22 +447,24 @@ main {
   border-bottom: 1px solid #d8d8d8;
   height: 100%;
   width: 100%;
-  padding-top: 1.6rem;
-  padding-bottom: 2rem;
+  padding-top: 1.6em;
+  padding-bottom: 2em;
+  clear: both;
 }
 .main__partners {
   max-width: 775px;
   height: 100%;
   margin: auto;
-  display: flex;
-  justify-content: space-between;
+}
+.partner_l {
+  margin: 0 1.5em 0 1.5em;
 }
 .partner__link1 {
   background: url('../img/partner__sprite.png');
   display: inline-block;
   height: 63px;
   width: 69px;
-  margin-left: 0.2rem;
+  margin-left: 0.2em;
 }
 .partner__link2 {
   background: url('../img/partner__sprite.png');
@@ -468,7 +486,7 @@ main {
   display: inline-block;
   height: 63px;
   width: 54px;
-  margin-left: 1rem;
+  margin-left: 1em;
 }
 .partner__link5 {
   background: url('../img/partner__sprite.png');
@@ -489,20 +507,19 @@ main {
 
 .coments_wrp {
   background-color: #ececec;
-  padding-top: 5.9rem;
-  padding-bottom: 6rem;
+  padding-top: 5.9em;
+  padding-bottom: 6em;
+  height: 25em;
   width: 100%;
 }
 .coments {
   max-width: 960px;
-  display: flex;
-  justify-content: space-between;
   margin: auto;
   font-family: 'Open Sans';
 }
 .coments_h2 {
   font-family: 'League Gothic';
-  font-size: 3rem;
+  font-size: 3em;
   display: block;
   text-shadow: inset 0 2px 3px #7a7a7a;
   background-clip: text;
@@ -517,27 +534,31 @@ main {
   font-family: 'Georgia';
   color: #ccc;
   display: block;
-  margin-top: 0.9rem;
+  margin-top: 0.9em;
   letter-spacing: -0.2px;
 }
 .coments_h3 {
-  font-size: 1.875rem;
-  margin-left: -0.1rem;
+  font-size: 1.875em;
+  margin-left: -0.1em;
   font-family: 'League Gothic';
   font-weight: 500;
   text-shadow: 0.5px 0.9px 0 #fff;
+  margin: 0 0 0 0.1em;
 }
 .coments_p {
   text-shadow: 0.5px 0.9px 0 #fff;
   color: #787878;
-  line-height: 1.5rem;
+  line-height: 1.5em;
   letter-spacing: -0.4px;
-  height: 10rem;
-  padding-top: 0.5rem;
+  height: 10em;
+  padding-top: 0.5em;
 }
 .coments__container {
-  height: 12.7rem;
+  height: 12.7em;
+  max-width: 300px;
   overflow: hidden;
+  float: left;
+  margin-left: 0.7em;
 }
 
 /************FOOTER*************/
@@ -545,32 +566,29 @@ main {
 .f-wrp {
   background: url('../img/footer__bg.jpg') no-repeat;
   background-size: cover;
-  height: 100%;
+  height: 8em;
   width: 100%;
 }
 footer {
-  display: flex;
-  padding-top: 2.4rem;
-  padding-bottom: 2.4rem;
-  display: flex;
-  justify-content: space-between;
+  padding-top: 2.4em;
+  padding-bottom: 2.4em;
 }
 footer .menu__link {
-    font-size: 1.27rem;
+    font-size: 1.27em;
 }
 .menu__bottom {
-  width: 55%;
+  width: 600px;
 }
 footer .menu__list {
-  display: flex;
-  justify-content: space-between;
+  float: left;
 }
 .author__first {
-  line-height: 2.5rem;
+  line-height: 2.5em;
   padding-right: -1px;
   color: #fff;
   font-family: 'Open Sans light';
-  font-size: 0.75rem;
+  font-size: 0.75em;
+  float: right;
 }
 .author__end {
   font-family: 'Opensans extra bold';
@@ -608,7 +626,7 @@ footer .menu__list {
 .menu__list {
   	list-style: none;
 	position: absolute;
-	margin-top: 1.11rem;
+	margin-top: 1.11em;
   	left: 50%;
   	transform: translateX(-50%);
 	z-index: 100;
@@ -617,14 +635,14 @@ footer .menu__list {
   	overflow: hidden;
 }
 .menu__item {
-  	min-width: 15.25rem;
+  	min-width: 15.25em;
     padding-top: 1px;
     text-align: center;
 }
 
 .menu__link {
   	display: block;
-	font-size: 1.5rem;
+	font-size: 1.5em;
   	color: #fff;
   	text-align: center;
   	height: 50px;
