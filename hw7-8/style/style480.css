@@ -101,7 +101,6 @@
 
 .radio__button--slider {
   width: 100px;
-  padding-left: 15px;
   margin: auto;
   padding-top: 1.75rem;
   padding-bottom: 3.5rem;
@@ -168,6 +167,7 @@ main {
 }
 .main__link_hidden {
   visibility: visible;
+  position: absolute;
   width: 100px;
   right: 8.5%;
 }
