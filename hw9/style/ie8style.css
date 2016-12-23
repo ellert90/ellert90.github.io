@@ -8,6 +8,12 @@
   font-style: normal;
 }
 @font-face {
+  font-family: 'League Gothic';
+  src: url('../fonts/leaguegothic-regular-webfont.eot');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
   font-family: 'Open Sans';
   src: url('../fonts/opensans-regular-webfont.eot');
   src: url('../fonts/opensans-regular-webfont.woff2') format('woff2'),
