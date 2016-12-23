@@ -590,7 +590,10 @@ p {
 
 /********for 768 width *********/
 
-
+@media  (max-width: 480px){
+  .logo {
+    color: red;
+  }
 
 
 
