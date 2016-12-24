@@ -758,7 +758,7 @@ footer {
 
 /********dropdown menu**********/
 
-div .head--menu {
+.head_top>.head--menu {
   float: left;
   width: 240px;
 }
@@ -820,6 +820,7 @@ div .head--menu {
   top: 1.2em;
   padding-left: 10em;
   position: relative;
+  display: none;
 }
 .slider__img {
   right: 1.5em;
