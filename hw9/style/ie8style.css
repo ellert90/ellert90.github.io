@@ -764,6 +764,7 @@ footer {
   float: left;
   width: 240px;
   clear: left;
+  margin: auto;
 }
 .menu__list {
   display: block;
