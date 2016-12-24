@@ -762,6 +762,7 @@ footer {
 
 .head_top>.head--menu {
   float: left;
+  width: 240px;
   clear: left;
 }
 .menu__list {
