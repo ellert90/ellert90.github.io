@@ -761,8 +761,6 @@ footer {
 .head--menu {
   float: left;
   width: 240px;
-  margin-left: 10%;
-  position: relative;
 }
 .menu__list {
   display: block;
