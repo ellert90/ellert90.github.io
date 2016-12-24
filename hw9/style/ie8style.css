@@ -753,6 +753,7 @@ footer {
 .logo {
   float: none;
   margin-left: 50%;
+  left: -100px;
   color: green;
   display: block;
 }
