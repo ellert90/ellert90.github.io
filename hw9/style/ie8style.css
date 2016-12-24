@@ -765,29 +765,29 @@ footer {
   width: 240px;
   clear: left;
 }
-.menu__list {
+.head--menu .menu__list {
   display: block;
   width: 244px;
   margin: auto;
   float: left;
 }
-.menu__list .menu__item {
+.head--menu .menu__list .menu__item {
   display: block;
   text-align: center;
   width: 244px;
   margin-left: 0;
 
 }
-.menu__list .menu__link {
+.head--menu .menu__list .menu__link {
   display: none;
 }
-.menu__item_active .menu__link {
+.head--menu .menu__item_active .menu__link {
   display: inline;
 }
-.menu__list:hover .menu__link {
+.head--menu .menu__list:hover .menu__link {
   display: inline;
 }
-.menu__list .menu__item:hover {
+.head--menu .menu__list .menu__item:hover {
   /*background: url('../img/ie_menu_item_bg.png');*/
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
   /*border-bottom: 2px solid rgb(237, 191, 255);*/
