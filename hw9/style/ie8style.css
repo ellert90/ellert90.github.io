@@ -601,10 +601,6 @@ p {
   padding-right: 0;
   display: block;
 }
-.menu__link_visible {
-  display: block;
-  margin: auto;
-}
 .head--menu:hover {
   display: block;
 }
@@ -631,23 +627,22 @@ p {
   text-align: center;
 }
 .menu__link {
-  display: block;
+  display: none;
 	font-size: 1.5em;
   color: #fff;
   text-align: center;
   height: 50px;
   line-height: 50px;
 }
-
+.menu__item_active .menu__link { display: inline; }
+.menu__item_active:hover .menu__link { display: inline; }
 .head--menu>.menu__list>.menu__item>.menu__link:hover {
   background-color: rgb(0, 0, 0);
   background-color: rgba(0, 0, 0, 0.3);
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
   border-bottom: 2px solid rgb(237, 191, 255);
 }
-.menu__link_visible {
-  display: block;
-}
+
 
 /********slider**********/
 

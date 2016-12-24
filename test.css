@@ -2,35 +2,19 @@
 	margin: 0;
 	padding: 0;
 }
-.wrp1 {
-	width: 100%;
-	background: #469;
+ul {
+	width: 200px;
+	left: 45%;
 }
-.wrp2 {
-	width: 100%;
-	background: #596;
+li {
+	list-style: none;
+	height: 40px;
+
 }
-.container1 {
-	background: rgba(0,0,0,.5);
-	max-width: 960px;
-	height: 300px;
-	margin: auto;
+a {
+	text-decoration: none;
+	color: black;
+	font-size: 40px;
+	
 }
-.container2 {
-	background: rgba(0,0,0,.5);
-	max-width: 960px;
-	height: 300px;
-	margin: auto;
-}
-@media (max-width: 768px) {
-	.container1,
-	.container2 {
-		background: rgba(150,0,0,.5);
-	}
-	.child {
-		height: 150px;
-		background: blue;
-		max-width: 100%;
-		margin: 0 10% 0 10%;
-	}
-}
+.
