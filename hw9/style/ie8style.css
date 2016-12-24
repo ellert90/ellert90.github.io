@@ -107,7 +107,7 @@ p {
   display: inline;
 }
 .head--menu {
-  float: right;
+  padding-left: 20%;
 }
 .head--menu>.menu__list {
 	display: inline;
@@ -753,9 +753,9 @@ footer {
 .logo {
   margin: auto;
   color: green;
-  display: inline;
-
+  display: block;
 }
+
 /********dropdown menu**********/
 
 div .head--menu {
