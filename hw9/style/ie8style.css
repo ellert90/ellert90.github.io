@@ -752,9 +752,9 @@ footer {
 @media  (max-width: 480px){
 .logo {
   float: none;
-  margin: auto;
+  margin-left: 50%;
   color: green;
-  text-align: center;
+  display: block;
 }
 
 /********dropdown menu**********/
