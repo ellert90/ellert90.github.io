@@ -758,7 +758,7 @@ footer {
 }
 /********dropdown menu**********/
 
-.head--menu {
+div .head--menu {
   float: left;
   width: 240px;
 }
