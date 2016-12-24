@@ -752,6 +752,7 @@ footer {
 @media  (max-width: 480px){
 .logo {
   width: 200px;
+  margin-left: 10%;
   margin: auto;
   color: green;
   display: block;
@@ -762,9 +763,7 @@ footer {
 
 .head_top>.head--menu {
   float: left;
-  width: 240px;
   clear: left;
-  margin: auto;
 }
 .menu__list {
   display: block;
