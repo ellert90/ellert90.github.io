@@ -753,16 +753,29 @@ footer {
 .logo {
   margin: auto;
   color: green;
+  display: inline;
+
 }
 /********dropdown menu**********/
 
+.head--menu {
+  float: left;
+  width: 240px;
+  margin-left: 10%;
+  position: relative;
+}
 .menu__list {
   display: block;
-  width: 400px;
+  width: 244px;
   margin: auto;
+  float: left;
 }
 .menu__list .menu__item {
   display: block;
+  text-align: center;
+  width: 244px;
+  margin-left: 0;
+
 }
 .menu__list .menu__link {
   display: none;
@@ -773,8 +786,10 @@ footer {
 .menu__list:hover .menu__link {
   display: inline;
 }
-.menu__list .menu__item:hover { 
-  background-color: grey;
+.menu__list .menu__item:hover {
+  /*background: url('../img/ie_menu_item_bg.png');*/
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+  /*border-bottom: 2px solid rgb(237, 191, 255);*/
 }
 
 
