@@ -751,10 +751,8 @@ footer {
 
 @media  (max-width: 480px){
 .logo {
-  margin-left: 50%;
   margin: auto;
   color: green;
-  display: block;
   text-align: center;
 }
 
