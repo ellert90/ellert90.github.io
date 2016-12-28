@@ -736,6 +736,9 @@ p {
   margin-bottom: 1rem;
 }
 }
+
+
+
 @media  (max-width: 480px){
 .logo {
   margin: auto;
@@ -970,6 +973,9 @@ p {
 .author__first {
   margin: auto;
 }
+
+
+
 }
 @media (max-width: 320px) {
 
