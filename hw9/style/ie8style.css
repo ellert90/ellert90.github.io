@@ -955,6 +955,12 @@ p {
   max-width: 480px;
   float: top;
 }
+.menu__bottom>.menu__list>.menu__item>.menu__link {
+  display: inline;
+}
+.menu__bottom>.menu__list>.menu__item {
+  margin: 0.5em 0 0.5em 0;
+}
 .menu__bottom>.menu__list {
   max-width: 100%;
   margin-top: 1em;
