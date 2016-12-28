@@ -895,7 +895,7 @@ p {
   width: 76%;
   margin: auto;
   margin-top: 2.5em;
-  height: 400px;
+  height: 380px;
 }
 .main__link_hidden {
   visibility: visible;
@@ -953,7 +953,6 @@ p {
 }
 .menu__bottom {
   width: 100%;
-  display: block;
   float: top;
 }
 .menu__bottom>.menu__list {
