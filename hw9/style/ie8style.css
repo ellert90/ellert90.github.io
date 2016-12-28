@@ -959,16 +959,17 @@ p {
   display: inline;
 }
 .menu__bottom>.menu__list>.menu__item {
-  margin: 0.5em 0 0.5em 0;
+/*  margin: 0.5em 0 0.5em 0;*/
 }
 .menu__bottom>.menu__list {
   max-width: 100%;
   margin-top: 1em;
   margin-bottom: 0.5em;
-  display: inline;
+  display: block;
   float: left;
 }
 .author__first {
+  clear: both;
   margin: auto;
   float: bottom;
 }
