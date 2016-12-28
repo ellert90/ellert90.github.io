@@ -927,7 +927,7 @@ p {
 .coments_wrp {
   padding-top: 4.5em;
   padding-bottom: 2em;
-  height: 700px;
+  height: 650px;
 }
 .coments {
   max-width: 480px;
@@ -951,10 +951,10 @@ p {
 
 .footer {
   max-width: 480px;
-  flex-direction: column;
 }
 .menu__bottom {
   width: 100%;
+  display: block;
 }
 .menu__bottom>.menu__list {
   max-width: 100%;
@@ -964,6 +964,7 @@ p {
 }
 .author__first {
   margin: auto;
+  float: none;
 }
 }
 
