@@ -102,6 +102,7 @@ p {
   display: block;
   max-width: 960px;
   margin: auto;
+  height: 100px;
 }
 .head_top {
   display: inline;
@@ -111,10 +112,9 @@ p {
 }
 .head--menu>.menu__list {
 	display: inline;
-  margin-bottom: 10.9em;
 }
 .menu__item {
-  display: inline-block;
+  display: inline;
   margin: 0 1.2em;
 }
 .menu__link {
@@ -132,13 +132,9 @@ p {
 
      /*slider*/
 
-.s-wrp {
-  height: 20em;
-  clear: both;
-  background: rgba(0, 0, 0, 0.2);
-}
 .slider {
   padding-top: 8em;
+  float: top;
   padding-bottom: 5em;
 	letter-spacing: 0.1;
   font-family: 'League Gothic';
@@ -191,8 +187,9 @@ p {
 /*радіо кнопки під слайдером*/
 
 .radio__button--slider {
+  height: 10px;
   width: 100px;
-  margin-top: 6.2em;
+  margin-top: 14.2em;
   margin-bottom: 3.4em;
   margin-left: 67%;
 }
