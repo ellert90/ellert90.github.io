@@ -558,6 +558,9 @@ p {
   padding-top: 2.4em;
   padding-bottom: 2.4em;
 }
+.menu__bottom {
+  width: 100%;
+}
 .footer .menu__link {
   font-size: 1.27em;
 }
