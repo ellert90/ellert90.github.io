@@ -927,6 +927,7 @@ p {
 .coments_wrp {
   padding-top: 4.5em;
   padding-bottom: 2em;
+  height: 100%;
 }
 .coments {
   max-width: 480px;
