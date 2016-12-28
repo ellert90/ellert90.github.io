@@ -721,7 +721,6 @@ p {
 /*******footer*******/
 
 .footer {
-  align-items: flex-end;
   padding-top: 0.95rem;
   padding-bottom: 2rem;
 }
@@ -736,7 +735,6 @@ p {
 }
 .menu__bottom {
   max-width: 100%;
-  flex-grow: 1;
 }
 .author__first {
   margin-bottom: 1rem;
@@ -958,9 +956,10 @@ p {
 }
 .menu__bottom>.menu__list {
   max-width: 100%;
-  justify-content: space-around;
   margin-top: 1em;
   margin-bottom: 0.5em;
+  display: inline;
+  float: left;
 }
 .author__first {
   margin: auto;
