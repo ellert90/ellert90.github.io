@@ -636,7 +636,7 @@ p {
   margin-top: 2.6rem;
   margin-bottom: 6rem;
 }
-section {
+.section {
   max-width: 768px;
   padding-left: 2%;
   padding-right: 2%;
@@ -720,7 +720,7 @@ section {
 
 /*******footer*******/
 
-footer {
+.footer {
   align-items: flex-end;
   padding-top: 0.95rem;
   padding-bottom: 2rem;
@@ -844,7 +844,7 @@ footer {
 .about-wrp {
   padding-bottom: 3em;
 }
-section {
+.section {
   max-width: 480px;
   display: flex;
   flex-direction: column;
@@ -866,7 +866,7 @@ section {
 
 /**********main**********/
 
-main {
+.main {
   max-width: 480px;
   display: flex;
   flex-direction: column;
@@ -948,7 +948,7 @@ main {
 
 /*******footer*******/
 
-footer {
+.footer {
   max-width: 480px;
   flex-direction: column;
 }
@@ -997,7 +997,7 @@ footer {
 
 /******main******/
 
-main {
+.main {
   padding-bottom: 5.3rem;
 }
 .main__top {
