@@ -951,6 +951,7 @@ p {
 .footer {
   max-width: 480px;
   position: relative;
+  padding-top: 0;
 }
 .menu__bottom {
   max-width: 480px;
@@ -960,7 +961,7 @@ p {
   display: inline;
 }
 .menu__bottom>.menu__list>.menu__item {
-margin: 5px 0 5px 0;
+margin: 12px 0 12px 0;
 }
 .menu__bottom>.menu__list {
   max-width: 100%;
