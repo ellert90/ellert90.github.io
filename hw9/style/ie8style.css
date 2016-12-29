@@ -959,7 +959,9 @@ p {
 }
 .menu__bottom>.menu__list>.menu__item>.menu__link {
   display: inline;
-  margin: 0 8px 0 8px;
+}
+.menu__bottom>.menu__list>.menu__item {
+margin: 0 5px 0 5px;
 }
 .footer>.menu__bottom>.menu__list {
   max-width: 100%;
