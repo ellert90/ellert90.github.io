@@ -971,10 +971,7 @@ margin: 0 5px 0 5px;
   float: left;
 }
 .author__first {
-  clear: both;
-  width: 150px;
-  margin: auto;
-  float: bottom;
+  width: 60%;
 }
 }
 
