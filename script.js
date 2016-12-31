@@ -1,12 +1,11 @@
+var a;
+var b;
 
-
-
-var a = prompt ("Введіть число", "");
-var b = prompt ("Введіть степінь", "");
-var c = a;
-var i = 1;
-for ( a > 0; i < b; i++) {
-	c *= a;
+for (i=0;i<10;i++) {
+	console.log(i);
+	if (i == 3) {
+		alert('i = 3'); break;
+	} else {
+		console.log('error');
+	}
 }
-
-console.log(c);
