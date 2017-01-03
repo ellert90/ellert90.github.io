@@ -4,6 +4,7 @@ var c = a;
 var i = 1;
 var d;
 
+function step () {
 if ( b > 0) {
 for (; i < b; i++) {
 	c *= a;
@@ -18,3 +19,6 @@ else {
 	d = a / c;
 	console.log(d);
 }
+}
+
+step();
