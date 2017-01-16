@@ -27,42 +27,15 @@ var ques = {
 
 	button: 'Check result'
 }
-var div = document.createElement('div');
-div.className = 'wrapper';
-var h1 = document.createElement('h1');
-var ol = document.createElement('ol');
-var li = document.createElement('li');
+var list = document.createElement("li");
+var arr0 = [ques.q0.ask1, ques.q0.ask2, ques.q0.ask3];
+  function addLi(arr, el) {
+	for (var i = 0; leng = arr.length, i < leng; i++) {
+		el.appendChild(addTextNode("li", arr[i]));
+		}
+	return this;
+	}
 
-var p = document.createElement('p');
-document.body.append(p);
-p.append(questions.Question_2);
-
-
-/*
-document.body.innerHTML(questions.question_2);
-var wrapper = document.body.children[0];
-var h1 = wrapper.children[1];
-var ol = wrapper.children[1];
-
-function toHTML(a, b, c, d){
-	var res0 = '<h1>' + questions.topic + '</h1>';
-	var res1 = '<ol>' + questions.question_0 + '</ol>';
-} 
-
-var aa = document.getElementById('menu');
-*/
-//function toHTML(a, b, c, d) {
-	//var res = '<h1>' + questions.topic + '</h1>';
-	//var res0 = '<h1>' + b + '</h1>';
-	//var res1 = '<h1>' + c + '</h1>';
-	//var res2 = '<h1>' + d + '</h1>';
-	//var all = res + '/n' + res0 + '/n' + res1 + '/n' + res2;
-	//return console.log(all);
-//}
-//function easyToHTML(questions) {
-	//toHTML(questions.Question_0, questions.Question_1, questions.Question_2);
-//}
-
-//easyToHTML(questions);
-
+	addLi(arr0, list);
+	document.body.appendChild(list);
 
