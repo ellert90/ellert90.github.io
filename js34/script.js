@@ -70,8 +70,8 @@ function addObj(obj) {
     var wrp = addClass("div", "wrapper");
     var hed = addClass("h1", "head");
     var ol = addClass("ol", "Numbered_li");
-		var li0 = addClass("li", "Numbered_li");
-    var ul0 = addClass("ul", "Unnumvered_li");
+		var li = addClass("li", "Numbered_li");
+    var ul = addClass("ul", "Unnumvered_li");
 		var ul1 = addClass("ul", "Unnumvered_li");
 		var ul2 = addClass("ul", "Unnumvered_li");
 		var list0 = addClass("li", "menu_item");
@@ -84,13 +84,13 @@ function addObj(obj) {
 		addLi(arr2, list2);
 
 		wrp.appendChild(addTextNode("h1", topic));
-		li0.appendChild(list0);
-		ul1.appendChild(list1);
-		ul2.appendChild(list2);
-		li0.appendChild(ul0);
-		ol.appendChild(addTextNode("li0", ask0));
-		ol.appendChild(addTextNode("li1", ask1));
-		ol.appendChild(addTextNode("li2", ask2));
+		ul.appendChild(list0);
+		ul.appendChild(list1);
+		ul.appendChild(list2);
+		li.appendChild(ul);
+		ol.appendChild(addTextNode("li", ask0));
+		ol.appendChild(addTextNode("li", ask1));
+		ol.appendChild(addTextNode("li", ask2));
 		wrp.appendChild(ol);
 		wrp.appendChild(addTextNode("button", button));
 
