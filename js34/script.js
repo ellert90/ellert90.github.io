@@ -33,9 +33,9 @@ function addObj(obj) {
 			ask1 = ques.q1.ask,
 			ask2 = ques.q2.ask,
 			button = ques.button;
-      var arr0 = [ques.q0.ask1, ques.q0.ask2, ques.q0.ask3];
-      var arr1 = [ques.q1.ask1, ques.q1.ask2, ques.q1.ask3];
-      var arr2 = [ques.q2.ask1, ques.q2.ask2, ques.q2.ask3];
+      var arr0 = [ques.q0.ans1, ques.q0.ans2, ques.q0.ans3];
+      var arr1 = [ques.q1.ans1, ques.q1.ans2, ques.q1.ans3];
+      var arr2 = [ques.q2.ans1, ques.q2.ans2, ques.q2.ans3];
 
 			function generateNodes() {
 
@@ -68,11 +68,9 @@ function addObj(obj) {
 		        }
 
     var wrp = addClass("div", "wrapper");
-    var h1 = addClass("h1", "head");
+    var hed = addClass("h1", "head");
     var ol = addClass("ol", "Numbered_li");
-		var vAsk0 = addClass("li", "ask_list");
-		var vAsk1 = addClass("li", "ask_list");
-		var vAsk2 = addClass("li", "ask_list");
+		var li0 = addClass("li", "Numbered_li");
     var ul0 = addClass("ul", "Unnumvered_li");
 		var ul1 = addClass("ul", "Unnumvered_li");
 		var ul2 = addClass("ul", "Unnumvered_li");
@@ -83,20 +81,18 @@ function addObj(obj) {
 
     addLi(arr0, list0);
     addLi(arr1, list1);
-    addLI(arr2, list2);
+		addLi(arr2, list2);
 
-		ul0.appendChild(list0);
+		wrp.appendChild(addTextNode("h1", topic));
+		li0.appendChild(list0);
 		ul1.appendChild(list1);
 		ul2.appendChild(list2);
-		vAsk0.appendChild(ul0);
-		vAsk1.appendChild(u1l);
-		vAsk2.appendChild(ul2);
-		ol.appendChild(addTextNode("vAsk0", ask0));
-		ol.appendChild(addTextNode("vAsk0", ask1));
-		ol.appendChild(addTextNode("vAsk0", ask2));
+		li0.appendChild(ul0);
+		ol.appendChild(addTextNode("li0", ask0));
+		ol.appendChild(addTextNode("li1", ask1));
+		ol.appendChild(addTextNode("li2", ask2));
 		wrp.appendChild(ol);
-		wrp.appendChild(addTextNode("h1", topic));
-		wrp.appendChild("btn", button);
+		wrp.appendChild(addTextNode("button", button));
 
 		return wrp;
     }
