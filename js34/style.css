@@ -1,6 +1,23 @@
-* {
-  font-family: arial;
+body {
+	margin: 0;
+	background: #ccc;
+	box-sizing: border-box;
 }
-li {
-  padding: 5px;
+.wrapper {
+	border: 1px solid #000;
+	background: #396;
+	display: block;
+	width: 900px;
+	height: 400px;
+	margin: auto;
+	padding: 20px;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+label {
+	display: block;
+	padding: 2px;
 }
