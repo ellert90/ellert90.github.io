@@ -48,20 +48,22 @@ var input = document.createElement('input');
 
 div.setAttribute('class', 'wrapper');							 
 
-function addLi(arr, el, par) {
-          for (var i = 0; leng = arr.length, i < leng; i++) {
-          	(function() {
+function listGenerate(arrI, el, par) {
           		val = 0;
 	          	var el = document.createElement('label');
 	          	var input = document.createElement('input');
 	          	input.setAttribute('type', 'checkbox');
 	          	input.setAttribute('value', 'val' + val++);
 	          	el.appendChild(input);
-	          	el.appendChild(document.createTextNode(arr[i]));
+	          	el.appendChild(document.createTextNode(arrI));
 	          	par.appendChild(el);
 	          	ol.appendChild(par);
 	          	console.log(el);
-          	})();
+          	};
+
+function addLi(arr, el, par) {
+          for (var i = 0; leng = arr.length, i < leng; i++) {
+          	listGenerate(arr[i], el, par);
           }
           return this;
         }
