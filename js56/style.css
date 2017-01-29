@@ -1,0 +1,43 @@
+body {
+  font-family: Arial;
+  background-color: #797;
+}
+.wrapper {
+  width: 960px;
+  height: 450px;
+  margin: auto;
+  border: 1px solid black;
+  border-radius: 3px;
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  background-color: white;
+}
+#time {
+  font-size: 200px;
+}
+.knop {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.button {
+  width: 200px;
+  height: 60px;
+  border-radius: 3px;
+  border: none;
+  margin: 0 40px 30px 40px;
+  font-size: 40px;
+  color: white;
+}
+#start {
+  background: #394;
+
+}
+.pause {
+  background: #375;
+}
+#clear {
+  background: #922;
+  position: absolute;
+  right: 0;
+}
