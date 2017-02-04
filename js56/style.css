@@ -12,8 +12,8 @@ body {
   top: 0; right: 0; bottom: 0; left: 0;
   background-color: white;
 }
-#time {
-  font-size: 200px;
+#timeId {
+  font-size: 140px;
 }
 .knop {
   position: absolute;
@@ -29,12 +29,15 @@ body {
   font-size: 40px;
   color: white;
 }
+button:acitve {
+  border: 3px solid red;
+}
 #start {
   background: #394;
 
 }
-.pause {
-  background: #375;
+#pause {
+  background: #856;
 }
 #clear {
   background: #922;
