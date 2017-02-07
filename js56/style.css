@@ -14,6 +14,7 @@ body {
 }
 #timeId {
   font-size: 140px;
+  margin-left: 50px;
 }
 .knop {
   position: absolute;
@@ -23,19 +24,21 @@ body {
 .button {
   width: 200px;
   height: 60px;
-  border-radius: 3px;
+  border-radius: 5px;
   border: none;
   margin: 0 40px 30px 40px;
   font-size: 40px;
   color: white;
+  margin-bottom: 85px;
 }
 button:acitve {
   border: 3px solid red;
 }
 #start {
   background: #394;
-
-}
+  position: absolute;
+  bottom: 0;
+  }
 #pause {
   background: #856;
 }
@@ -43,4 +46,5 @@ button:acitve {
   background: #922;
   position: absolute;
   right: 0;
+  bottom: 0;
 }
