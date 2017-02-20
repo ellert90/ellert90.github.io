@@ -7,16 +7,22 @@ $(document).ready(function () {
    $('.tab').not(tab).css({'display':'none'});
    $(tab).fadeIn(200);
  });
- 
+
  //Forms script
 
    $(function(){
-     $(".hover").mouseenter(function() {
-       var  i = $(".hover").index(this);
-       $(".info").stop().not($(".info").eq(i).show(300)).hide()
+     $('.hover').mouseenter(function() {
+       var  i = $('.hover').index(this);
+       $('.info').stop().not($('.info').eq(i).show(300)).hide();
      });
-     $(".hover").mouseleave(function() {
-       $(".info").hide(300);
+     $('.hover').keyup(function(e) {
+       if (e.keyCode == 9) {
+       var  i = $('.hover').index(this);
+       $('.info').stop().not($('.info').eq(i).show(300)).hide();
+     }
+     });
+     $('.hover').mouseleave(function() {
+       $('.info').hide(300);
      });
    });
    $('.button').click(function(){
