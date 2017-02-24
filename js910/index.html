@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Js 9-10</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<link rel="stylesheet" href="styles/jquery.fs.selecter.css">
+		<link rel="stylesheet" href="styles/style.css">
+
+</head>
+<body>
+
+<!--HEAD MENU-->
+
+	<header>
+		<ul class="head-menu">
+			<li class="menu-item"><a href="#">Home</a></li>
+			<li class="menu-item">
+				<a href="#">Menu&#9660;</a>
+				<ul class="submenu">
+					<li class="menu-item"><a href="#">Sub1</a></li>
+					<li class="menu-item">
+						<a href="#">Sub2&#9658;</a>
+						<ul class="submenu second">
+							<li class="menu-item"><a href="#">One</a></li>
+							<li class="menu-item"><a href="#">Two&#9658;</a>
+								<ul class="submenu third">
+									<li class="menu-item"><a href="#">One</a></li>
+									<li class="menu-item"><a href="#">Two</a></li>
+									<li class="menu-item"><a href="#">Three</a></li>
+								</ul>
+							</li>
+							<li class="menu-item"><a href="#">Three</a></li>
+						</ul>
+					</li>
+					<li class="menu-item"><a href="#">Sub3</a></li>
+					<li class="menu-item"><a href="#">Sub4</a></li>
+				</ul>
+			</li>
+			<li class="menu-item"><a href="#">Setting</a></li>
+			<li class="menu-item"><a href="#">Profile</a></li>
+			<li class="menu-item"><a href="#">About</a></li>
+			<li class="menu-item"><a href="#">Contacts</a></li>
+		</ul>
+	</header>
+
+	<!--Slider-->
+
+	<section class="awSlider">
+  <div  class="carousel slide" data-ride="carousel">
+
+    <ol class="carousel-indicators">
+      <li data-target=".carousel" data-slide-to="0" class="active"></li>
+      <li data-target=".carousel" data-slide-to="1"></li>
+      <li data-target=".carousel" data-slide-to="2"></li>
+      <li data-target=".carousel" data-slide-to="3"></li>
+    </ol>
+
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="http://www.adobewordpress.com/wp-content/uploads/2014/02/wallpaper-thumb-941.jpg">
+        <div class="carousel-caption">Carusel #1</div>
+      </div>
+      <div class="item">
+        <img src="http://www.adobewordpress.com/wp-content/uploads/2014/02/wallpaper-thumb-101.jpg">
+        <div class="carousel-caption">Carusel #2</div>
+      </div>
+      <div class="item">
+        <img src="http://www.adobewordpress.com/wp-content/uploads/2014/02/wallpaper-thumb-1051.jpg">
+        <div class="carousel-caption">Carusel #3</div>
+      </div>
+      <div class="item">
+        <img src="http://www.adobewordpress.com/wp-content/uploads/2013/07/wallpaper-thumb-74.jpg">
+        <div class="carousel-caption">Carusel #4</div>
+      </div>
+    </div>
+
+
+    <a class="left carousel-control" href=".carousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Geri</span>
+    </a>
+    <a class="right carousel-control" href=".carousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">İleri</span>
+    </a>
+  </div>
+</section>
+
+<!--SELECT-->
+
+<form action="#" method="get" class="form">
+	<div class="row">
+		<select name="num">
+			<option value="1">One</option>
+			<option value="2">Two</option>
+			<option value="3">Three</option>
+			<option value="4">Four</option>
+			<option value="5">Five</option>
+		</select>
+	</div>
+</form>
+
+<!--CHECKBOX-->
+
+<div class="container">
+	<div class="library">
+		<span class="checkbox">
+		  <input type="checkbox" name="one" value="1" id="one" />
+		  <span class="check"></span>
+		  <label for="one">One</label>
+	 </span>
+ 	 <span class="checkbox">
+		  <input type="checkbox" name="two" value="1" id="two" />
+		  <span class="check"></span>
+		  <label for="two">Two</label>
+ 	 </span>
+	 <span class="checkbox">
+		  <input type="checkbox" name="three" value="1" id="three" />
+		  <span class="check"></span>
+		  <label for="three">Three</label>
+ 	 </span>
+	</div>
+	<div class="custom">
+		<input type="checkbox" class="css-checkbox" id="checkbox1" />
+		<label for="checkbox1">One</label>
+		<input type="checkbox" class="css-checkbox" id="checkbox2" />
+		<label for="checkbox2">Two</label>
+		<input type="checkbox" class="css-checkbox" id="checkbox3" />
+		<label for="checkbox3">Three</label>
+	</div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="scripts/jquery.color.js"></script>
+
+<script src="scripts/jquery.fs.selecter.min.js"></script>
+<script src="scripts/modernizr.js"></script>
+
+<script src="scripts/script.js"></script>
+</body>
+</html>
