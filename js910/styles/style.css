@@ -197,3 +197,13 @@ section.awSlider > img{
 .custom {
   padding: 50px 0;
 }
+
+.submenu > li {
+animation-name: colorAnimation;
+animation-duration: 2s;
+}
+
+@keyframes colorAnimation {
+from { background-color: #9FD468; }
+to { background-color: #6cDdd8; }
+}

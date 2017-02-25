@@ -13,13 +13,6 @@ var showDropdown = function () {
 
   $('.menu-item').hover( showDropdown, hideDropdown );
 
-	jQuery(".menu-item").mouseenter(
-  function () {
-	jQuery(".submenu").animate({
-	backgroundColor:"#000"
-}, 400 );
-  });
-
 
 //Slider
 
