@@ -15,33 +15,21 @@
 	<div class="sec-wrp">
 
 		<script type="text/template" id="test">
-			<form id="myForm">
-				<ol>
-						<h1><%= data2.title %></h1>
-							<% for (var i = 0; i < data.length; i++) { %>
-								<% var val1 = val2 = val3 = 0;
-									 if (data[i].val == 1) {val1 = 1};
-									 if (data[i].val == 2) {val2 = 1};
-									 if (data[i].val == 3) {val3 = 1};
-								%>
-								<li class="question"><%= data[i].ask %>
-									<label class="label">
-										<input type="checkbox" name="test" class="single" value="val<%= val1 %>">
-										<%= data[i].ans1 %>
-									</label>
-									<label class="label">
-										<input type="checkbox" name="test" class="single" value="val<%= val2 %>">
-										<%= data[i].ans2 %>
-									</label>
-									<label class="label">
-										<input type="checkbox" name="test" class="single" value="val<%= val3 %>">
-										<%= data[i].ans3 %>
-									</label>
-								</li>
-							<%}%>
-					</ol>
-					<button type="send" id="send"><%= data2.button %></button>
-				</form>
+			<form class="thrd-wrp" id="my-form">
+				<div class="in-wrp">
+    			<% for (var i = 0; i < questions.length; i++) { %>
+               <h5 class="question"><%= questions[i].title %></h5>
+               <% for (var j = 0; j < questions[i].answers.length; j++) { %>
+                  <label class="label">
+    								 <input type="checkbox" id="<%= 'q' + i + 'a' + j %>" name="<%= 'q' + i + 'a' + j %>">
+    								 <%= questions[i].answers[j] %>
+    							</label>
+                  <div class="clearfix"></div>
+                   <% } %>
+           <% } %>
+			 	</div>
+			 	<button type="submit" id="send" name="send">Send</button>
+			</form>
 		</script>
 	</div>
 </body>

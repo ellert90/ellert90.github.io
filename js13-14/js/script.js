@@ -6,42 +6,31 @@ $(function(){
 
   var html = $('#test').html();
 
-  var myObject = [
-    {
-      ask: 'Question №1',
-      ans1: 'Answer 1-A',
-      ans2: 'Answer 1-B(true)',
-      ans3: 'Answer 1-C',
-      val: 2,
-    },
-    {
-      ask: 'Question №2',
-      ans1: 'Answer 1-A(true)',
-      ans2: 'Answer 1-B',
-      ans3: 'Answer 1-C',
-      val: 1
-    },
-    {
-      ask: 'Question №3',
-      ans1: 'Answer 1-A',
-      ans2: 'Answer 1-B',
-      ans3: 'Answer 1-C(true)',
-      val: 3,
-    }
-  ];
-
-  localStorage.setItem('question', JSON.stringify(myObject));
-  var myTest = localStorage.getItem('question');
-
-  var text = {
-    title: 'Programming test',
-    button: 'Send'
+  var test = {
+      questions: [{
+          title: 'Question №1',
+          answers: ['Answer №1', 'Answer №2(R)', 'Answer №3']
+      }, {
+          title: 'Question №2',
+          answers: ['Answer №1', 'Answer №2', 'Answer №3(R)']
+      },  {
+          title: 'Question №3',
+          answers: ['Answer №1', 'Answer №2(R)', 'Answer №3', 'Answer №4(R)']
+      }],
+      right: 674
   };
 
-  var content = tmpl(html, {
-    data: myObject,
-    data2: text
-  });
+try {
+     localStorage.setItem('ITtest', JSON.stringify(test));
+ } catch (e) {
+     alert(e);
+ }
+ try {
+     var content = tmpl('test', JSON.parse(localStorage.getItem('ITtest')));
+ } catch (e) {
+     alert(e);
+ }
+
 
   $('.sec-wrp').append(content);
 
@@ -51,31 +40,41 @@ var $body = $('body');
 var $send = $("#send");
 var $modal;
 var $modalBg;
-var $res;
-var myForm;
-
+var ln;
 
   function showModal(e){
     e.preventDefault();
     $modal = $('<div class="modal"></div>');
     $modalBg = $('<div class="modal_bg" type="reset"></div>');
 
-    // check value
-
-    console.log($('.single').val());
+    getAnswer();
 
     $body.append($modal);
     $body.append($modalBg);
     $modalBg.on('click', hideModal);
   }
+
+
   function hideModal(){
     $modal.hide();
     $modalBg.hide();
-    $('input').removeAttr("checked");
+    $('#my-form')[0].reset();
+    // $('input').removeAttr("checked");
   };
 
-  // console.log(document.input.test.value);
+  $( "form" ).on( "submit", showModal);
 
-  $send.on('click', showModal);
+function getAnswer(){
+  var elems = $("input");
+  var tmp = 0;
+    for (var i = 0; ln = elems.length, i < ln; i++) {
+     tmp += (elems[i].checked << i);
+    }
+    if (tmp == test.right) {
+      $modal.append("All answer right");
+    } else {
+      $modal.append("Something wrong");
+    }
+}
 
 });
