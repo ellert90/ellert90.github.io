@@ -30,7 +30,7 @@ $(function() {
     $.ajax({
       url: urla,
       success: function(data) {
-        for (var i = 0; i < 11; i++) {
+        for (var i = 0; i < data.hits[i].lenght; i++) {
           var $img = ('<img src="'+data.hits[i].webformatURL+'" class="search"></img>');
           $('#result').css({height: data.hits[i].webformatHeight, width: data.hits[i].webformatWidth, margin: 'auto'}).append($img);
         }
@@ -42,3 +42,48 @@ $(function() {
   }
 
 });
+
+//class
+
+function Human() {
+  this.hName = 'Yura';
+  this.hYears = 23;
+  this.hSex = 'male';
+  this.hHeight = 176;
+  this.hWeight = 58;
+}
+
+
+function Worker(workPlace, pay, years){
+  this.workPlace = workPlace || 'Self employent';
+  this.pay = pay || 1000;
+  this.years = years || this.hYears;
+  this.work = function (){
+    console.log('Working..');
+  };
+}
+
+
+function Student(studyPlace, money, watched){
+  this.studyPlace = studyPlace || 'GoIT';
+  this.money = money || 0;
+  this.watched = watched || 0;
+}
+Student.prototype.watchSerial = function () {
+  this.watched = 1;
+}
+
+
+Worker.prototype = new Human();
+Student.prototype = new Human();
+
+var firstStudent = new Student('KHNU', 700);
+var firstWorker = new Worker('Telegrup', 2000, 59);
+console.log(firstStudent);
+console.log(firstWorker);
+
+var secondStudent = new Student();
+var secondWorker = new Worker();
+console.log(secondStudent);
+console.log(secondWorker);
+
