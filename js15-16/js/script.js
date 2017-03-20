@@ -30,7 +30,8 @@ $(function() {
     $.ajax({
       url: urla,
       success: function(data) {
-        for (var i = 0; i < data.hits[i].lenght; i++) {
+
+        for (var i = 0; i < data.hits.length ; i++) {
           var $img = ('<img src="'+data.hits[i].webformatURL+'" class="search"></img>');
           $('#result').css({height: data.hits[i].webformatHeight, width: data.hits[i].webformatWidth, margin: 'auto'}).append($img);
         }
@@ -86,4 +87,3 @@ var secondStudent = new Student();
 var secondWorker = new Worker();
 console.log(secondStudent);
 console.log(secondWorker);
-
