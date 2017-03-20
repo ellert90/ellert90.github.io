@@ -22,14 +22,3 @@ else {
 }
 
 step();
-
-var s;
-var b = 0;
-
-for (var i = 1; i < 8; i++) {
-	console.log(i);
-	
-	s = b + i;
-	b = s;
-	console.log(s)
-}
