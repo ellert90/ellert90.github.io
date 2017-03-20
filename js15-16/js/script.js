@@ -31,7 +31,7 @@ $(function() {
       url: urla,
       success: function(data) {
 
-        for (var i = 0; i < 20; i++) {
+        for (var i = 0; i < data.hits.length; i++) {
           var $img = ('<img src="'+data.hits[i].webformatURL+'" class="search"></img>');
           $('#result').css({height: data.hits[i].webformatHeight, width: data.hits[i].webformatWidth, margin: 'auto'}).append($img);
         }
