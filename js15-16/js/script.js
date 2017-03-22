@@ -46,6 +46,15 @@ $(function() {
 
 //class
 
+function inherit(proto) {
+  function F() {}     // (1)
+  F.prototype = proto // (2)
+  var object = new F; // (3)
+  return object;      // (4)
+}
+
+if (!Object.create) Object.create = inherit;
+
 function Human() {
   this.hName = 'Yura';
   this.hYears = 23;
