@@ -97,7 +97,7 @@ $(function() {
   $('.bullets li').removeClass('active').eq(index).addClass('active');  // Выбранному буллету добавляется сласс .active
   clickBullets = 1;                                     // Флаг информирующий о том, что слайд выбран именно буллетом
   animate();
-  clickBullets=0;
+  clickBullets = 0;
   });
 
   slider.add(next).add(prev).hover(function() {         // Если курсор мыши в пределах слайдера
@@ -106,8 +106,9 @@ $(function() {
 
   nextSlide();                                          // Вызов функции nextSlide()
 
-
   $(function(){
+
+  //karu
 
     $(".banners__set > .banners__link").on("click", function(e){
       e.preventDefault();
@@ -127,5 +128,7 @@ $(function() {
       $('.fa-minus').text('-');
     });
   });;
+
+
 
 });

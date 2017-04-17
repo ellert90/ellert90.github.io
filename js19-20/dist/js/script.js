@@ -1,21 +1,4 @@
-;$(function() {
-  var slider = $('.slider'),
-    sliderContent = slider.html(),                      // Содержимое слайдера
-    slideWidth = $('.slider-box').outerWidth(),         // Ширина слайдера
-    slideCount = $('.slider__img').length,               // Количество слайдов
-    prev = $('.slider-box .prev'),                      // Кнопка "назад"
-    next = $('.slider-box .next'),                      // Кнопка "вперед"
-    slideNum = 1,                                       // Номер текущего слайда
-    index = 0,
-    clickBullets = 0,
-    sliderInterval = 3300,                              // Интервал смены слайдов
-    animateTime = 1000,                                 // Время смены слайдов
-    course = 1,                                         // Направление движения слайдера (1 или -1)
-    margin = - slideWidth;                              // Первоначальное смещение слайдов
-
-  for (var i=0; i<slideCount; i++)                      // Цикл добавляет буллеты в блок .bullets
-  {
-    html=$('.bullets').html() + '<li></li>';          // К текущему содержимому прибавляется один буллет
+$(function(){function e(){interval=window.setInterval(s,u)}function s(){_==-t*n-n&&1==m?(a.css({marginLeft:-n}),_=2*-n):0==_&&m==-1?(a.css({marginLeft:-n*t}),_=-n*t+n):_-=n*m,a.animate({marginLeft:_},f),0==v?i():c=o+1}function i(){if(1==m&&c!=t)c++,$(".bullets .active").removeClass("active").next("li").addClass("active");else{if(1==m&&c==t)return c=1,$(".bullets li").removeClass("active").eq(0).addClass("active"),!1;if(m==-1&&1!=c)return c--,$(".bullets .active").removeClass("active").prev("li").addClass("active"),!1;m==-1&&1==c&&(c=t,$(".bullets li").removeClass("active").eq(t-1).addClass("active"))}}function l(){window.clearInterval(interval)}for(var a=$(".slider"),n=(a.html(),$(".slider-box").outerWidth()),t=$(".slider__img").length,r=$(".slider-box .prev"),d=$(".slider-box .next"),c=1,o=0,v=0,u=3300,f=1e3,m=1,_=-n,b=0;b<t;b++)html=$(".bullets").html()+"<li></li>",$(".bullets").html(html);var C=$(".slider-box .bullets li");$(".slider-box .bullets li:first").addClass("active"),$(".slider .slider__img:last").clone().prependTo(".slider"),$(".slider .slider__img").eq(1).clone().appendTo(".slider"),$(".slider").css("margin-left",-n),r.click(function(){if(a.is(":animated"))return!1;var e=m;m=-1,s(),m=e}),d.click(function(){if(a.is(":animated"))return!1;var e=m;m=1,s(),m=e}),C.click(function(){return!a.is(":animated")&&(l(),o=C.index(this),1==m?_=-n*o:m==-1&&(_=-n*o-2*n),$(".bullets li").removeClass("active").eq(o).addClass("active"),v=1,s(),void(v=0))}),a.add(d).add(r).hover(function(){l()},e),e(),$(function(){$(".banners__set > .banners__link").on("click",function(e){e.preventDefault(),$(this).hasClass("active")?($(this).removeClass("active"),$(this).siblings(".banners__content").slideUp(500),$(".banners__set > .banners__link i").removeClass("fa-minus").addClass("fa-plus")):($(".banners__set > .banners__link i").removeClass("fa-minus").addClass("fa-plus"),$(this).find("i").removeClass("fa-plus").addClass("fa-minus"),$(".banners__set > .banners__link").removeClass("active"),$(this).addClass("active"),$(".banners__content").slideUp(200),$(this).siblings(".banners__content").slideDown(200)),$(".fa-plus").text("+"),$(".fa-minus").text("-")})})});�у прибавляется один буллет
     $('.bullets').html(html);                         // и добавляется в код
   }
   var  bullets = $('.slider-box .bullets li');          // Переменная хранит набор буллитов
@@ -97,7 +80,7 @@
   $('.bullets li').removeClass('active').eq(index).addClass('active');  // Выбранному буллету добавляется сласс .active
   clickBullets = 1;                                     // Флаг информирующий о том, что слайд выбран именно буллетом
   animate();
-  clickBullets=0;
+  clickBullets = 0;
   });
 
   slider.add(next).add(prev).hover(function() {         // Если курсор мыши в пределах слайдера
@@ -106,8 +89,9 @@
 
   nextSlide();                                          // Вызов функции nextSlide()
 
-
   $(function(){
+
+  //karu
 
     $(".banners__set > .banners__link").on("click", function(e){
       e.preventDefault();
@@ -127,5 +111,7 @@
       $('.fa-minus').text('-');
     });
   });;
+
+
 
 });

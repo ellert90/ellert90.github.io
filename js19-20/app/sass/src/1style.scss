@@ -522,8 +522,12 @@ $text_grey: #8a8a8a;
   background: url("../img/footer_sprite.png");
 }
 .bottom__img-2 {
-  background-position: 20px 0;
+  background-position: 40px 0;
 }
 .bottom__img-3 {
-  background-position: 40px 0;
+  background-position: 20px 0;
+}
+.bottom__text-link {
+  color: $text_grey;
+  text-decoration: none;
 }
