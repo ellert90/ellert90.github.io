@@ -98,6 +98,7 @@ $(function() {
   clickBullets = 1;                                     // Флаг информирующий о том, что слайд выбран именно буллетом
   animate();
   clickBullets = 0;
+  nextSlide();
   });
 
   slider.add(next).add(prev).hover(function() {         // Если курсор мыши в пределах слайдера
@@ -128,6 +129,46 @@ $(function() {
       $('.fa-minus').text('-');
     });
   });;
+
+///////////LODASH///////////////
+
+var _url = 'https://rawgit.com/goit-fe/markup_fe2o/master/js_19-20/data.json';
+
+$.getJSON(_url, function(json){
+  var jsonP = json;
+  console.log(jsonP);
+
+  //skills
+
+  var skillsArr = _.map(jsonP, 'skills');
+      skillsArr = _.flatten(skillsArr);
+      skillsArr = _.uniq(skillsArr);
+      skillsArr = _.map(skillsArr, function (a) {
+             var sort = a.toLowerCase();
+             return sort;
+            }, []);
+       skillsArr = _.sortBy(skillsArr);
+
+       console.log('Skills', skillsArr);
+
+
+//names
+
+var nameArr = _.sortBy(jsonP, 'friends.length');
+    nameArr = _.map(jsonP, 'name');
+
+    console.log('Names', nameArr);
+
+//friends
+
+var friendsArr = _.map(jsonP, 'friends');
+    friendsArr = _.flattenDeep(friendsArr);
+    friendsArr = _.map(friendsArr, 'name');
+    friendsArr = _.uniq(friendsArr);
+
+    console.log('Friends', friendsArr);
+
+});
 
 
 

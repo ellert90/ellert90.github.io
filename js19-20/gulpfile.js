@@ -10,6 +10,8 @@ var gulp = require('gulp'),
     pngquant    = require('imagemin-pngquant'), // Подключаем библиотеку для работы с png
     cache       = require('gulp-cache'), // Подключаем библиотеку кеширования
     autoprefixer = require('gulp-autoprefixer');// Подключаем библиотеку для автоматического добавления пре
+		const babel = require('gulp-babel');
+
 
 
 //Gulp настроював по цьому тотуріуалу http://webdesign-master.ru/blog/tools/2016-03-09-gulp-beginners.html
@@ -82,6 +84,17 @@ gulp.task('uglify', function() {
 			.pipe(uglify('script.js')) // Сжимаем JS файл
 			.pipe(gulp.dest('app/js')); // Выгружаем в папку app/js
 })
+
+//BABEL
+
+gulp.task('convert', () => {
+    return gulp.src('src/script.js')
+        .pipe(babel({
+            presets: ['es2015']
+        }))
+        .pipe(gulp.dest('dist'));
+});
+
 
 //CLEAN
 
