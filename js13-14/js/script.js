@@ -4,9 +4,8 @@ $(function(){
 
   //TEMPLATE
 
-  var html = $('#test').html();
 
-  var test = {
+  let test = {
       questions: [{
           title: 'Question №1',
           answers: ['Answer №1', 'Answer №2(R)', 'Answer №3']
@@ -36,21 +35,21 @@ try {
 
   // MODAL
 
-var $body = $('body');
-var $send = $("#send");
-var $modal;
-var $modalBg;
-var ln;
+let $body = document.body;
+let $send = $("#send");
+let modal;
+let $modalBg;
+let ln;
 
   function showModal(e){
     e.preventDefault();
-    $modal = $('<div class="modal"></div>');
+    modal = document.createElement('div');//$('<div class="modal"></div>');
     $modalBg = $('<div class="modal_bg" type="reset"></div>');
 
     getAnswer();
 
-    $body.append($modal);
-    $body.append($modalBg);
+    $body.appendChild(modal);
+    $body.appendChild($modalBg);
     $modalBg.on('click', hideModal);
   }
 
@@ -59,21 +58,20 @@ var ln;
     $modal.hide();
     $modalBg.hide();
     $('#my-form')[0].reset();
-    // $('input').removeAttr("checked");
   };
 
   $( "form" ).on( "submit", showModal);
 
 function getAnswer(){
-  var elems = $("input");
-  var tmp = 0;
-    for (var i = 0; ln = elems.length, i < ln; i++) {
+  let elems = $("input");
+  let tmp = 0;
+    for (let i = 0; ln = elems.length, i < ln; i++) {
      tmp += (elems[i].checked << i);
     }
     if (tmp == test.right) {
       $modal.append("All answer right");
     } else {
-      $modal.append("Something wrong");
+      modal.append("Something wrong");
     }
 }
 

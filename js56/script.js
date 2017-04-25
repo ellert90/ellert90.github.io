@@ -13,7 +13,6 @@ function timeCounter() {
 
   var date = new Date();
   var t = date.getTime() - startDate.getTime();
-
   var ms = t%1000; t-=ms;
   t = Math.floor (t/1000);
   var s = t%60; t-=s;

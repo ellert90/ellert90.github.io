@@ -1,38 +1,4 @@
-$(function() {
-  var slider = $('.slider'),
-    sliderContent = slider.html(),                      // Содержимое слайдера
-    slideWidth = $('.slider-box').outerWidth(),         // Ширина слайдера
-    slideCount = $('.slider__img').length,               // Количество слайдов
-    prev = $('.slider-box .prev'),                      // Кнопка "назад"
-    next = $('.slider-box .next'),                      // Кнопка "вперед"
-    slideNum = 1,                                       // Номер текущего слайда
-    index = 0,
-    clickBullets = 0,
-    sliderInterval = 3300,                              // Интервал смены слайдов
-    animateTime = 1000,                                 // Время смены слайдов
-    course = 1,                                         // Направление движения слайдера (1 или -1)
-    margin = - slideWidth;                              // Первоначальное смещение слайдов
-
-  for (var i=0; i<slideCount; i++)                      // Цикл добавляет буллеты в блок .bullets
-  {
-    html=$('.bullets').html() + '<li></li>';          // К текущему содержимому прибавляется один буллет
-    $('.bullets').html(html);                         // и добавляется в код
-  }
-  var  bullets = $('.slider-box .bullets li');          // Переменная хранит набор буллитов
-
-
-  $('.slider-box .bullets li:first').addClass('active');
-  $('.slider .slider__img:last').clone().prependTo('.slider');   // Копия последнего слайда помещается в начало.
-  $('.slider .slider__img').eq(1).clone().appendTo('.slider');   // Копия первого слайда помещается в конец.
-  $('.slider').css('margin-left', -slideWidth);         // Контейнер .slider сдвигается влево на ширину одного слайда.
-
-  function nextSlide(){                                 // Запускается функция animation(), выполняющая смену слайдов.
-    interval = window.setInterval(animate, sliderInterval);
-  }
-
-  function animate(){
-    if (margin==-slideCount*slideWidth-slideWidth  && course==1){     // Если слайдер дошел до конца
-      slider.css({'marginLeft':-slideWidth});           // то блок .slider возвращается в начальное положение
+$(function(){function e(){interval=window.setInterval(s,m)}function s(){b==-t*n-n&&1==f?(l.css({marginLeft:-n}),b=2*-n):0==b&&f==-1?(l.css({marginLeft:-n*t}),b=-n*t+n):b-=n*f,l.animate({marginLeft:b},u),0==v?i():d=c+1}function i(){if(1==f&&d!=t)d++,$(".bullets .active").removeClass("active").next("li").addClass("active");else{if(1==f&&d==t)return d=1,$(".bullets li").removeClass("active").eq(0).addClass("active"),!1;if(f==-1&&1!=d)return d--,$(".bullets .active").removeClass("active").prev("li").addClass("active"),!1;f==-1&&1==d&&(d=t,$(".bullets li").removeClass("active").eq(t-1).addClass("active"))}}function a(){window.clearInterval(interval)}for(var l=$(".slider"),n=(l.html(),$(".slider-box").outerWidth()),t=$(".slider__img").length,r=$(".slider-box .prev"),o=$(".slider-box .next"),d=1,c=0,v=0,m=3300,u=1e3,f=1,b=-n,C=0;C<t;C++)html=$(".bullets").html()+"<li></li>",$(".bullets").html(html);var p=$(".slider-box .bullets li");$(".slider-box .bullets li:first").addClass("active"),$(".slider .slider__img:last").clone().prependTo(".slider"),$(".slider .slider__img").eq(1).clone().appendTo(".slider"),$(".slider").css("margin-left",-n),r.click(function(){if(l.is(":animated"))return!1;var e=f;f=-1,s(),f=e}),o.click(function(){if(l.is(":animated"))return!1;var e=f;f=1,s(),f=e}),p.click(function(){return!l.is(":animated")&&(a(),c=p.index(this),1==f?b=-n*c:f==-1&&(b=-n*c-2*n),$(".bullets li").removeClass("active").eq(c).addClass("active"),v=1,s(),v=0,void e())}),l.add(o).add(r).hover(function(){a()},e),e(),$(function(){$(".banners__set > .banners__link").on("click",function(e){e.preventDefault(),$(this).hasClass("active")?($(this).removeClass("active"),$(this).siblings(".banners__content").slideUp(500),$(".banners__set > .banners__link i").removeClass("fa-minus").addClass("fa-plus")):($(".banners__set > .banners__link i").removeClass("fa-minus").addClass("fa-plus"),$(this).find("i").removeClass("fa-plus").addClass("fa-minus"),$(".banners__set > .banners__link").removeClass("active"),$(this).addClass("active"),$(".banners__content").slideUp(200),$(this).siblings(".banners__content").slideDown(200)),$(".fa-plus").text("+"),$(".fa-minus").text("-")})});var g="https://rawgit.com/goit-fe/markup_fe2o/master/js_19-20/data.json";$.getJSON(g,function(e){var s=e;console.log(s);var i=_.map(s,"skills");i=_.flatten(i),i=_.uniq(i),i=_.map(i,function(e){var s=e.toLowerCase();return s},[]),i=_.sortBy(i),console.log("Skills",i);var a=_.sortBy(s,"friends.length");a=_.map(s,"name"),console.log("Names",a);var l=_.map(s,"friends");l=_.flattenDeep(l),l=_.map(l,"name"),l=_.uniq(l),console.log("Friends",l)})}); положение
       margin=-slideWidth*2;
     }else if(margin==0 && course==-1){                  // Если слайдер находится в начале и нажата кнопка "назад"
       slider.css({'marginLeft':-slideWidth*slideCount});// то блок .slider перемещается в конечное положение
