@@ -155,6 +155,9 @@ td, th {
   padding: 0;
   margin: 0; }
 
+li {
+  list-style: none; }
+
 .wrp {
   width: 100%;
   height: 100%;
