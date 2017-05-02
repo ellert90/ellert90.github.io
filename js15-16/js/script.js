@@ -3,6 +3,7 @@
 
 $(function() {
 
+  action();
   //BUTTON
   var searchValue;
   $('#search_in').keyup(function(){
@@ -21,18 +22,18 @@ $(function() {
   function action(){
 
     $('#result').empty();
+    
     searchValue = $('#search_in').val();
 
-    // console.log(searchValue);
-
     var urla = 'https://pixabay.com/api/?key=4828969-66d42077835bb109c3bb61bef&q=' + searchValue + '&image_type=photo&pretty=true';
+
 
     $.ajax({
       url: urla,
       success: function(data) {
 
         for (var i = 0; i < data.hits.length; i++) {
-          var $img = ('<img src="'+data.hits[i].webformatURL+'" class="search"></img>');
+          var $img = ('<div class="img__container"><img src="'+data.hits[i].webformatURL+'" class="search"><span class="img__text">' + data.hits[i].tags + '</span></img></div>');
           $('#result').css({height: data.hits[i].webformatHeight, width: data.hits[i].webformatWidth, margin: 'auto'}).append($img);
         }
       },
