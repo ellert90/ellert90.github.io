@@ -28,11 +28,13 @@ $(function() {
 
 
       $.ajax({
+
         url: urla,
+
         success: function(data) {
 
           for (var i = 0; i < 7; i++) {
-            var $img = ('<div class="img__container"><img src="'+data.hits[i].webformatURL+'" class="img__search"/><span class="img__text">' + data.hits[i].tags + '</span></div>');
+            var $img = ('<div class="img__container"><div style="background: url('+data.hits[i].webformatURL+'); background-size: cover;" class="img__search"></div><span class="img__text">' + data.hits[i].tags + '</span></div>');
             $('#result').css("height", "100%").append($img);
           }
         },
@@ -40,6 +42,7 @@ $(function() {
           console.log('error fetching!');
         }
       });
+
     };
 });
 

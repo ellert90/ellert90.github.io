@@ -10,8 +10,8 @@ var gulp = require('gulp'),
     pngquant    = require('imagemin-pngquant'), // Подключаем библиотеку для работы с png
     cache       = require('gulp-cache'), // Подключаем библиотеку кеширования
     autoprefixer = require('gulp-autoprefixer'),// Подключаем библиотеку для автоматического добавления пре
-		babel = require('gulp-babel'),
-		spritesmith = require('gulp.spritesmith');
+	babel = require('gulp-babel'),
+	spritesmith = require('gulp.spritesmith');
 
 
 
@@ -126,7 +126,10 @@ gulp.task('sprite', function () {
 
 //BUILD
 
-gulp.task('build', ['clean', 'img', 'sass', 'scripts', 'combine', 'uglify'], function() {
+gulp.task('build', ['clean', 'img', 'sprite', 'sass', 'scripts', 'combine', 'uglify'], function() {
+
+			var buildSprite = gulp.src('app/sprites/*')
+			.pipe(gulp.dest('dist/sprites'))
 
     var buildCss = gulp.src([ // Переносим библиотеки в продакшен
         'app/css/main.css',
