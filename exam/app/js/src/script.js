@@ -30,7 +30,7 @@ $(function() {
       $.ajax({
         url: urla,
         success: function(data) {
-
+          console.log(data);
           for (var i = 0; i < 7; i++) {
             var $img = ('<div class="img__container"><img src="'+data.hits[i].webformatURL+'" class="img__search"/><span class="img__text">' + data.hits[i].tags + '</span></div>');
             $('#result').css("height", "100%").append($img);
