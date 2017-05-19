@@ -85,6 +85,9 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  background: url('../img/sprite/work1.png');
+  background-size: cover;
+  background-position: center;
 
   &__step {
     color: $main-white;
@@ -112,9 +115,7 @@
   }
 }
 .works-1 {
-  background: url('../img/sprite/work1.png');
-  background-size: cover;
-  background-position: center;
+  
 }
 .works-2 {
   background: url('../img/sprite/work2.png');
