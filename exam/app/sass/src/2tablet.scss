@@ -1,154 +1,200 @@
 @media (min-width: 768px) {
 
+  .wrp-header {
+    height: 700px;
+  }
+
   .header {
-    min-width: 768px;
-    max-width: 940px;
-    margin: auto;
-  }
-  .enter {
-    width: 90%;
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
+    min-width: 670px;
+    margin: 0 auto;
 
-    &__log_in {
-      width: 200px;
 
-    }
-    &__item {
-
-    }
-    &__h2 {
-      margin-top: 25px;
-    }
-  }
-
-  .holiday {
-
-    &__title {
-      font-size: 51.97px;
-      width: 60%;
-      margin: 70px auto 0 auto;
-      font-family: "Montserrat Bold";
-    }
-    &__paragraph {
-      font-size: 23.99px;
-      margin: 30px auto;
-    }
-  }
-
-  .wrp .works {
-    display: block;
-    float: left;
-    position: relative;
-    margin-right: 25px;
-    height: 400px;
-    display: flex;
-    margin-right: 10px;
-
-    &__hider-2 {
-      display: block;
-    }
-    &_inner {
-      max-width: 768px;
-      margin: auto;
-      padding-left: 0;
+    &__logo_container {
       display: flex;
-      justify-content: space-around;
+      flex-direction: row;
+      height: 7.6rem;
+      padding: 0;
+    }
+    &__enter_container {
+      height: 3rem;
+    }
+    &__title {
+      font-size: 3.25rem;
+      width: 600px;
+      line-height: 4rem;
+      margin: 5.8rem auto 1.5rem auto;
+    }
+    &__text {
+      font-size: 1.5rem;
+      margin-bottom: 2.2rem;
+    }
+  }
+
+.main {
+  min-width: 700px;
+  margin-bottom: 3.5rem;
+}
+
+//slider
+
+  .slider {
+    position: relative;
+
+    &__container {
+      display: flex;
+      justify-content: space-between;
+      min-width: 748px;
+      max-width: 940px;
+      padding-left: 0;
+    }
+    &__hider-hide {
+      display: block;
     }
     &__list {
       width: 15000px;
       padding: 0;
       position: relative;
     }
+    &__item {
+      position: relative;
+      float: left;
+      height: 400px;
+      width: 240px;
+    }
     &__hider {
       width: 240px;
       overflow: hidden;
       float: left;
     }
+    &__left {
+      position: absolute;
+      top: 50px;
+      left: 10px;
+      z-index: 3;
+      color: $main-white;
+      font-size: 90px;
+      cursor: pointer;
+      @include sprite($left);
+    }
+    &__right {
+      position: absolute;
+      top: 50px;
+      right: 10px;
+      margin-left: 50px;
+      z-index: 4;
+      color: $main-white;
+      font-size: 90px;
+      cursor: pointer;
+      @include sprite($right);
+    }
 
   }
-  .slider-left {
-    position: absolute;
-    top: 150px;
-    left: 5px;
-    z-index: 3;
-    color: $main-white;
-    font-size: 90px;
-    cursor: pointer;
-    @include sprite($left);
-  }
-  .slider-right {
-    position: absolute;
-    top: 150px;
-    right: 5px;
-    margin-left: 50px;
-    z-index: 4;
-    color: $main-white;
-    font-size: 90px;
-    cursor: pointer;
-    @include sprite($right);
-  }
-  .slider-wrp {
-    position: relative;
-  }
-  .inactive {
-    color: $main-grey;
-  }
+
+
+//partners
+
   .partners {
     width: 500px;
-  }
-  .partner {
-    float: left;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 0.4rem;
+
+
+    &__container {
+      height: 100%;
+      overflow: hidden;
+
+    }
+    &__item {
+      margin: 0.3rem 0 3.6rem 0;
+    }
   }
 
-  .img__search {
+  //img
+
+
+.img {
+    width: 748px;
+
+  &__block {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  &__result {
     height: 100%;
     width: 100%;
-    // float: left;
   }
-  .img__container {
+  &__search {
+    width: 240px;
+    padding-left: 5px;
+  }
+  &__container {
     height: 310px;
     width: 235px;
+
   }
-  .img__container:nth-child(5),
-  .img__container:nth-child(6),
-  .img__search:nth-child(5),
-  .img__search:nth-child(5) {
+  &__container:nth-child(5),
+  &__container:nth-child(6),
+  &__search:nth-child(5),
+  &__search:nth-child(5) {
     width: 480px;
   }
+  &__search_form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 420px;
+    margin: 1.5rem auto 0 auto;
+  }
+}
 
   #result{
-    height: 100%;
-    width: 768px;
+    width: 725px;
     margin: auto;
-  }
-  .holiday__search_form {
     display: flex;
-    justify-content: center;
-    margin-top: 30px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 970px;
   }
-  #button {
-    margin: 0 0 0 30px;
-  }
+
+//footer
+
 .footer {
   display: flex;
-  justify-content: space-around;
-  margin-top: 20px;
-  align-items: baseline;
-}
-.footer__menu_cont {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.footer__menu {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
-.footer__comp {
-  margin: 0;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 692px;
+  max-width: 960px;
+  margin: 20px auto 0 auto;
+
+  &__info_cont {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+    width: 470px;
+  }
+  &__menu_cont {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  &__menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+  }
+  &__comp {
+    margin: 0;
+  }
+  &__item {
+    margin-top: 0.4rem;
+  }
 }
 
-}//
+}//@@@

@@ -9,69 +9,110 @@ $main-black: #000;
 
 * {
   box-sizing: border-box;
-  font-size: 1.1429em;
+  // width: 100%;
+}
+body {
+  width: 100%;
 }
 a {
   text-decoration: none;
+  color: $main-white;
+  display: block;
 }
 li {
   list-style: none;
 }
-h2 {
-  font-family: 'Mantserrat Bold';
-}
 
 .wrp {
+  display: flex;
+  justify-content: center;
   width: 100%;
   height: 100%;
   overflow: hidden;
   background-color: $main-white;
+  font-family: "Montserrat Regular", Tahoma, Arial;
+  font-weight: 100;
+  text-align: center;
 }
 
 //main titles
+.main {
+  &_p {
+    margin: 0;
+    font-family: 'Roboto Light';
+    font-weight: 100;
+    font-size: 0.875rem;
+    line-height: 1rem;
+    color: $main-grey;
+  }
+  &_title {
+    font-size: 1.375rem;
+    color: $main-black;
+    line-height: 1.7rem;
+    margin: 1.5rem 0.5rem 0.8rem 0.5rem;
+  }
+  &_title-margin {
+    margin: 1.15rem auto 0.7rem auto;
+    letter-spacing: 0.3px;
+  }
 
-.main__p {
-  font-family: 'Roboto Light';
-  font-size: 0.875rem;
-  color: $main-grey;
-}
-.main__title {
-  font-family: 'Mantserrat Bold';
-  font-size: 22px;
-  color: $main-white;
-  text-align: center;
-}
-.main__title_big {
-  font-family: "Mantserrat Bold";
-  // font-size: 1.5rem;
-  font-size: 24px;
-  color: $main-white;
+  &_title_big {
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: $main-white;
+    letter-spacing: 0.2px;
+    line-height: 1.8rem;
+    margin: 0.6rem 0;
+  }
+  &_title-black {
+    color: $main-black;
+    font-size: 1.2rem;
+  }
 }
 
-.main__title-black {
-  font-family: "Montserrat Bold";
-  color: $main-black;
-  font-size: 1.2rem;
-}
-//
+  .circular {
+    display: block;
+    height: 40px;
+    line-height: 36px;
+    width: 280px;
+    text-align: center;
+    color: $main-red;
+    border: 2px solid $main-red;
+    border-radius: 20px;
+    margin: 1rem auto;
+    font-size: 0.875rem;
 
-.circular {
-  display: block;
-  height: 40px;
-  line-height: 36px;
-  width: 280px;
-  text-align: center;
-  color: $main-white;
-  border: 2px solid $main-white;
-  border-radius: 20px;
-  margin: auto;
+  &-red {
+    border-color: $main-red;
+    background: $main-red;
+    color: $main-white;
+  }
 }
-.clearfix:before,
-.clearfix:after {
-  content: "";
-  display: table;
-}
-.clearfix {
-  clear: both;
-  overflow: hidden;
+
+@media (min-width: 768px) {
+
+  .main {
+    &_title-margin_2 {
+      margin: 1.55rem auto 0.5rem auto;
+      letter-spacing: 0.3px;
+    }
+    &_title-tablet_m {
+      margin: 5.1rem 0 2rem 0;
+    }
+  }
+  .circular {
+    &-margin {
+      margin: 0.5rem auto 2.45rem auto;
+    }
+    &-tablet_w {
+      width: 222px;
+    }
+    &-tablet_w2 {
+      width: 190px;
+    }
+    &-tablet_w3 {
+      width: 160px;
+    }
+  }
+
 }
