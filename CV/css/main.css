@@ -1,0 +1,61 @@
+@charset "UTF-8";
+#ph {
+  background: url("../img/my.jpg") top no-repeat;
+  background-size: cover;
+  height: 250px;
+  width: 250px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  margin: 300px auto;
+  -webkit-transition: margin 1s cubic-bezier(0, 0.8, 0.9, 1);
+  transition: margin 1s cubic-bezier(0, 0.8, 0.9, 1); }
+
+.js {
+  height: 100%;
+  width: 280px;
+  margin: auto;
+  line-height: 22px;
+  font-size: 17px;
+  overflow: hidden;
+  font-family: 'Hind', sans-serif; }
+  .js__container {
+    width: 235px;
+    float: right; }
+
+.let {
+  width: 45px;
+  color: #d50000;
+  display: inline-block; }
+
+.variable {
+  color: #4A148C; }
+
+.value {
+  color: #1B5E20; }
+
+.css {
+  width: 280px;
+  margin: 200px auto;
+  font-family: 'Work Sans', sans-serif;
+  -webkit-transition: margin 1.5s cubic-bezier(0, 0.3, 0.3, 1);
+  transition: margin 1.5s cubic-bezier(0, 0.3, 0.3, 1); }
+  .css__bracket {
+    font-size: 22px;
+    color: #304FFE;
+    font-family: 'Work Sans', sans-serif; }
+  .css__selector {
+    font-size: 20px;
+    color: #4A148C; }
+  .css__text {
+    color: #263238;
+    margin-left: 15px;
+    font-family: 'Hind', sans-serif; }
+
+#anim {
+  height: 30px;
+  width: 30px;
+  background: green;
+  left: 0;
+  -webkit-transition: width 1.5s cubic-bezier(0, 0.8, 0.7, 1);
+  transition: width 1.5s cubic-bezier(0, 0.8, 0.7, 1);
+  /* JavaScript ставит значение left: 450px */ }
