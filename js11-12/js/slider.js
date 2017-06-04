@@ -16,12 +16,14 @@
           currentLeftValue += 845;
           elementsList.animate({left: currentLeftValue + "px"}, 500);
         }
+        return currentLeftValue;
       });
       rightUIEl.click(function(){
         if (currentLeftValue != minimumOffset) {
           currentLeftValue -= 845;
           elementsList.animate({left: currentLeftValue + "px"}, 500);
         }
+        return currentLeftValue;
       });
 
     return this;

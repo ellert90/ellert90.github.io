@@ -34,3 +34,23 @@ body {
   height: 50px;
   width: 100px;
   font-size: 20px; }
+
+.img__container {
+  position: relative;
+}
+.img__text {
+  display: block;
+  height: 25px;
+  width: 100%;
+  position: absolute;
+  z-index: 5;
+  font-size: 25px;
+  color: blue;
+  bottom: 50%;
+  text-align: center;
+  text-transform: capitalize;
+}
+.search {
+  position: relative;
+  z-index: 2;
+}
