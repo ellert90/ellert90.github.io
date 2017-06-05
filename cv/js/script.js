@@ -1,6 +1,5 @@
 'use strict';
 
-
 function animate({timing, draw, duration}) {
 
   let start = performance.now();
@@ -20,7 +19,7 @@ function animate({timing, draw, duration}) {
     }
 
   });
-}
+};
 
 function slideSkill(el, width) {
   animate({
@@ -34,18 +33,30 @@ function slideSkill(el, width) {
       });
 };
 
-function upAnim(el, time){
+function upAnim(el){
 
-    $(el).animate({
-      top: '-=200',
-      opacity: '+=1',
-    }, time || 2000, 'easeOutExpo')
+    // $(el).animate({
+    //   top: '-=200',
+    //   opacity: '+=1',
+    // }, time || 2000, 'easeOutExpo')
+    animate({
+          duration: 2000,
+          timing: function(timeFraction) {
+            return Math.pow(timeFraction, 5);
+          },
+          draw: function(progress) {
+            el.style.bottom = progress * 200 + 'px';
+            el.style.opacity = progress * 1 * 5;
+            console.log(progress);
+
+          }
+        });
 
 };
+var wrp = document.querySelector('.wrp');
+$(window).bind('load', upAnim(document.querySelector('.wrp')));
 
-$(window).bind('load', upAnim('.wrp'));
-
-//SKILLS
+//SKILLS'p
 
 var skillsObject = {
   'HTML': 95,
@@ -78,7 +89,7 @@ for (var key in skillsObject) {
   skillItem.appendChild(skillScale);
   skill.appendChild(skillItem);
 
-  setTimeout(slideSkill, 1100, skillScale, skillsObject[key]);
+  setTimeout(slideSkill, 1800, skillScale, skillsObject[key]);
 };
 
 $('.main').masonry({
