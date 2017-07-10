@@ -1,6 +1,13 @@
 'use strict';
 
-function animate({timing, draw, duration}) {
+// alert(window.innerWidth);
+
+let wrp = document.querySelector('.wrp'),
+    main = document.querySelector('.main'),
+    skillParent = document.querySelector('#skills');
+
+
+let animate = ({timing, draw, duration}) => {
 
   let start = performance.now();
 
@@ -21,7 +28,7 @@ function animate({timing, draw, duration}) {
   });
 };
 
-function slideSkill(el, width) {
+let slideSkill = (el, width) => {
   animate({
         duration: 1300,
         timing: function(timeFraction) {
@@ -33,12 +40,7 @@ function slideSkill(el, width) {
       });
 };
 
-function upAnim(el){
-
-    // $(el).animate({
-    //   top: '-=200',
-    //   opacity: '+=1',
-    // }, time || 2000, 'easeOutExpo')
+let upAnim = el => {
     animate({
           duration: 2000,
           timing: function(timeFraction) {
@@ -47,55 +49,67 @@ function upAnim(el){
           draw: function(progress) {
             el.style.bottom = progress * 200 + 'px';
             el.style.opacity = progress * 1 * 5;
-            console.log(progress);
-
-          }
+            }
         });
-
 };
-var wrp = document.querySelector('.wrp');
-$(window).bind('load', upAnim(document.querySelector('.wrp')));
 
-//SKILLS'p
+window.onload = upAnim(wrp);
 
-var skillsObject = {
+//SKILLS
+
+let skillsObject = {
   'HTML': 95,
   'CSS': 80,
-  'JavaScript': 50,
+  'JavaScript': 55,
   'JSON/AJAX': 60,
   'jQuery': 70,
-  'Gulp': 50,
+  'Gulp': 60,
   'SASS': 70,
   'GitHub': 70,
   'GIT': 50,
   'BEM': 60,
-  'Responsive': 60,
-  'Photoshop': 80
+  'Responsive': 75,
+  'Photoshop': 85
 };
 
-for (var key in skillsObject) {
-  var skill = document.querySelector('.skill');
-  var skillItem = document.createElement('div');
-  var skillText = document.createElement('span');
-  var skillScale = document.createElement('span');
+let skill = () => {
 
-  skillText.appendChild(document.createTextNode(key));
+  let skill = document.createElement('div');
+  skill.setAttribute('class', 'object__content skill');
 
-  skillItem.setAttribute('class', 'skill__item');
-  skillText.setAttribute('class', 'skill__text');
-  skillScale.setAttribute('class', 'skill__scale');
+  for (let key in skillsObject) {
+    let skillItem = document.createElement('div');
+    let skillText = document.createElement('span');
+    let skillScale = document.createElement('span');
 
-  skillItem.appendChild(skillText);
-  skillItem.appendChild(skillScale);
-  skill.appendChild(skillItem);
+    skillText.appendChild(document.createTextNode(key));
 
-  setTimeout(slideSkill, 1800, skillScale, skillsObject[key]);
+    skillItem.setAttribute('class', 'skill__item');
+    skillText.setAttribute('class', 'skill__text');
+    skillScale.setAttribute('class', 'skill__scale');
+
+    skillItem.appendChild(skillText);
+    skillItem.appendChild(skillScale);
+    skill.appendChild(skillItem);
+
+    setTimeout(slideSkill, 1800, skillScale, skillsObject[key]);
+  };
+
+  skillParent.appendChild(skill);
 };
 
-$('.main').masonry({
- // options
-    itemSelector: '.object',
-    columnWidth: 280,
-    isFitWidth: true,
-    gutter: 20
-  });
+
+skill();
+
+//masonry
+
+let masVal = document.querySelector('.main');
+let msnry = new Masonry(masVal, {
+  itemSelector: '.object',
+  columnWidth: 300,
+  isFitWidth: true,
+  gutter: 20
+});
+
+
+//i want to be a front end developer, because it is magic, write code which alive in browser
