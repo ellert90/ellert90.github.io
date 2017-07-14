@@ -136,7 +136,8 @@ h1, h2, h3 {
   text-align: center;
   font-family: 'Work Sans', sans-serif;
   font-size: 1.5em;
-  display: none; }
+  display: none;
+  visibility: hidden; }
 
 .portfolio {
   background: #fff;
@@ -223,4 +224,5 @@ h1, h2, h3 {
   .print {
     display: block; }
   .portfolio {
-    display: none; } }
+    display: none;
+    visibility: hidden; } }

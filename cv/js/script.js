@@ -113,5 +113,5 @@ new Masonry(masVal, {
   gutter: 20
 });
 };
-setTimeout(time, 100);
+setTimeout(time, 300);
 //i want to be a front end developer, because it is magic, write code which alive in browser
