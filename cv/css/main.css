@@ -131,6 +131,13 @@ h1, h2, h3 {
     display: block;
     margin: 5px 0 9px 3px; }
 
+.print {
+  margin: auto;
+  text-align: center;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 1.5em;
+  display: none; }
+
 .portfolio {
   background: #fff;
   margin: 0 0 30px 0;
@@ -176,7 +183,6 @@ h1, h2, h3 {
   .portfolio__img {
     width: 300px; }
   .portfolio__tags {
-    display: block;
     font-family: Arial;
     font-size: 20px;
     line-height: 40px;
@@ -212,5 +218,9 @@ h1, h2, h3 {
     font-size: 0.9em; } }
 
 @media print {
-  .object {
-    max-width: 700px; } }
+  .object__variable {
+    font-family: Arial; }
+  .print {
+    display: block; }
+  .portfolio {
+    display: none; } }

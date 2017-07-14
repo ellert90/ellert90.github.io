@@ -103,13 +103,15 @@ skill();
 
 //masonry
 
-let masVal = document.querySelector('.main');
-let msnry = new Masonry(masVal, {
+
+function time() {
+var masVal = document.querySelector('.main');
+new Masonry(masVal, {
   itemSelector: '.object',
   columnWidth: 300,
   isFitWidth: true,
   gutter: 20
 });
-
-
+};
+setTimeout(time, 100);
 //i want to be a front end developer, because it is magic, write code which alive in browser
