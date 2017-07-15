@@ -53,7 +53,7 @@ let upAnim = el => {
         });
 };
 
-window.onload = upAnim(wrp);
+// window.onload = upAnim(wrp);
 
 //SKILLS
 
@@ -92,26 +92,28 @@ let skill = () => {
     skillItem.appendChild(skillScale);
     skill.appendChild(skillItem);
 
+
     setTimeout(slideSkill, 1800, skillScale, skillsObject[key]);
   };
 
   skillParent.appendChild(skill);
 };
 
-
 skill();
 
 //masonry
 
+window.onload = function myMasonry() {
 
-function time() {
-var masVal = document.querySelector('.main');
-new Masonry(masVal, {
-  itemSelector: '.object',
-  columnWidth: 300,
-  isFitWidth: true,
-  gutter: 20
-});
+  let animEl = document.querySelector('.wrp');
+  animEl.style.top = 0;
+  animEl.style.opacity = 1;
+
+  let masVal = document.querySelector('.main');
+  new Masonry(masVal, {
+    itemSelector: '.object',
+    columnWidth: 300,
+    isFitWidth: true,
+    gutter: 20
+  });
 };
-setTimeout(time, 300);
-//i want to be a front end developer, because it is magic, write code which alive in browser
