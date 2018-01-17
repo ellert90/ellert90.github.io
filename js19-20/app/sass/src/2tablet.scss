@@ -1,0 +1,153 @@
+@media (min-width: 768px) {
+
+  .header {
+    min-width: 768px;
+    max-width: 940px;
+    margin: auto;
+  }
+  .enter {
+    width: 90%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+
+    &__log_in {
+      width: 200px;
+
+    }
+    &__item {
+
+    }
+    &__h2 {
+      margin-top: 25px;
+    }
+  }
+
+  .holiday {
+
+    &__title {
+      font-size: 51.97px;
+      width: 60%;
+      margin: 70px auto 0 auto;
+      font-family: "Montserrat Bold";
+    }
+    &__paragraph {
+      font-size: 23.99px;
+      margin: 30px auto;
+    }
+  }
+
+  .wrp .works {
+    display: block;
+    float: left;
+    position: relative;
+    margin-right: 25px;
+    height: 400px;
+    display: flex;
+    margin-right: 10px;
+
+    &__hider-2 {
+      display: block;
+    }
+    &_inner {
+      max-width: 768px;
+      margin: auto;
+      padding-left: 0;
+      display: flex;
+      justify-content: space-around;
+    }
+    &__list {
+      width: 15000px;
+      padding: 0;
+      position: relative;
+    }
+    &__hider {
+      width: 240px;
+      overflow: hidden;
+      float: left;
+    }
+
+  }
+  .slider-left {
+    position: absolute;
+    top: 150px;
+    left: 5px;
+    z-index: 3;
+    color: $main-white;
+    font-size: 90px;
+    cursor: pointer;
+    @include sprite($left);
+  }
+  .slider-right {
+    position: absolute;
+    top: 150px;
+    right: 5px;
+    margin-left: 50px;
+    z-index: 4;
+    color: $main-white;
+    font-size: 90px;
+    cursor: pointer;
+    @include sprite($right);
+  }
+  .slider-wrp {
+    position: relative;
+  }
+  .inactive {
+    color: $main-grey;
+  }
+  .partners {
+    width: 500px;
+  }
+  .partner {
+    float: left;
+  }
+
+  .img__search {
+    height: 100%;
+    width: 100%;
+  }
+  .img__container {
+    height: 310px;
+    width: 235px;
+  }
+  .img__container:nth-child(5),
+  .img__container:nth-child(6),
+  .img__search:nth-child(5),
+  .img__search:nth-child(5) {
+    width: 480px;
+  }
+
+  #result{
+    height: 100%;
+    width: 768px;
+    margin: auto;
+  }
+  .holiday__search_form {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  #button {
+    margin: 0 0 0 30px;
+  }
+.footer {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  align-items: baseline;
+}
+.footer__menu_cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer__menu {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.footer__comp {
+  margin: 0;
+}
+
+}//

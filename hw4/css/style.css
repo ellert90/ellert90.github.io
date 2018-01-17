@@ -1,0 +1,247 @@
+body {
+	background-image: linear-gradient(to bottom, #1297b7 0%,#1297b7 0%,#128aa7 0%,#128aa7 3%,#5ef0ff 3%,#11cee1 3%,#18cfe2 4%,#2dd4e5 5%,#4fdae9 7%,#baf0f7 12%,#daf8fa 13%,#f1fcfd 15%,#ffffff 16.15%,#40c6d3 16.15%,#38bbcd 21%,#1496b3 30%,#1191b1 32%,#0f8cad 48%,#0c77a1 86%,#0c739f 100%); 
+	font-family: "Tahoma";
+}
+
+	
+.wrapper {
+	margin: 0 auto;
+	background: white;
+	padding-top: 10px;
+	width: 1000px;
+	box-shadow: 0px 2px 14px 2px rgba(0,0,0,0.75);
+	margin-bottom: 3px;
+}
+
+/* TOP PART OF SITE ----WHITE BACKGROUND----*/
+
+.top {
+	width: 1000px;
+	position: relative;
+	display: inline-block;
+	border-bottom: 1px solid #128aa7;
+	color: #128aa7;
+	font-size: 14px;
+}
+.logo {
+	margin-left: 28px;
+	margin-bottom: -3px;
+}
+.logo h1{
+	position: absolute;
+	left: 95px;
+	top: 95px;
+	font-size: 12px;
+	font-weight: normal;
+
+}
+.logo {
+	float: left;
+}
+.contact {
+	position: absolute;
+	width: 655px;
+	float: right;
+	left: 843px;
+	top: 2px;
+	color: #5fa5bb
+	
+}
+.contact li {
+	font-size: 12px;
+	line-height: 18px;
+}
+.contact:first-line {
+	font-weight: 600;
+}
+.countries {
+	float: right;
+	width: 655px;
+	text-align: right;
+	line-height: 16px;
+	margin-top: 95px;
+	padding-right: 33px;
+
+}
+.country {
+	display: inline-block;
+	margin-left: 10px;
+	text-align: center;
+	font-size: 10px;
+}
+.country:nth-child(5) {
+  margin-left: 6px;
+}
+
+.country:nth-child(6) {
+  margin-left: 6px;
+}
+.india {
+  background-image: url("../img/1.jpg");
+  background-repeat: no-repeat;
+  width: 42px;
+  height: 42px;
+  margin: 0 auto;
+}
+
+.nepal {
+  background-image: url("../img/2.jpg");
+  background-repeat: no-repeat;
+  width: 42px;
+  height: 42px;
+  margin: 0 auto;
+}
+
+.tibet {
+  background-image: url("../img/3.jpg");
+  background-repeat: no-repeat;
+  width: 42px;
+  height: 42px;
+  margin: 0 auto;
+}
+
+.butan {
+  background-image: url("../img/4.jpg");
+  background-repeat: no-repeat;
+  width: 42px;
+  height: 42px;
+  margin: 0 auto;
+}
+
+.shrilanka {
+  background-image: url("../img/5.jpg");
+  background-repeat: no-repeat;
+  width: 42px;
+  height: 42px;
+  margin: 0 auto;
+}
+
+.maldivu {
+  background-image: url("../img/6.jpg");
+  background-repeat: no-repeat;
+  width: 42px;
+  height: 42px;
+  margin: 0 auto;
+}
+
+/* TOP PART OF SITE ----IMAGE BACKGROUND-----*/
+
+.topimage {
+	margin-top: -2px;
+	border-bottom: 1px solid #128aa7;
+}
+
+.topimage {
+	height: 235px;
+	background: url(../img/photo.jpg);
+}
+.menu {
+	position: relative;
+	height: 30px;
+	background: linear-gradient(to top, #303030, #373737);
+	border-top: 1px solid #cacbcb;
+	border-bottom: 1px solid #000;
+	box-shadow: 0px 4px 3px 0px rgba(0,0,0,0.75);
+}
+
+/*********DROP-DOWN MENU**********/
+
+.nav {
+	display: block;
+	position: absolute;
+}
+.nav a {
+	color: #fff;
+	text-decoration: none;
+	line-height: 30px;
+	padding-left: 32px;
+	padding-right: 32px;
+	font-size: 14px;
+}
+.nav > li {
+	display: inline-block;
+	height: 30px;
+	position: relative;
+
+}
+
+.nav > li > ul {
+	position: absolute;
+	top: 20px;
+	display: none;
+	background: #303030;
+	line-height: 24px;
+	border-top: 1px solid #000;
+	margin-top: 10px; 
+	box-shadow: 0px 6px 18px -1px rgba(0,0,0,0.75);
+
+}
+
+.nav > li:hover > ul {
+	display: block;
+}
+.nav span {
+	padding-left: 3px;
+}
+
+/*********CONTANT***********/
+
+.info {
+  width: 193px;
+  display: table-cell;
+  background: #edeef0;
+  padding-bottom: 10px;
+  border-left: 1px solid #c7cacf;
+  border-right: 1px solid #c7cacf;
+  padding-left: 15px;
+}
+
+.container {
+  display: table;
+  line-height: 26px;
+  font-size: 14px;
+}
+.contant {
+  display: table-cell;
+  width: 580px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 10px;
+}
+
+.news {
+  display: table-cell;
+  width: 193px;
+  padding-bottom: 10px;
+  border-left: 1px solid #c7cacf;
+  border-right: 1px solid #c7cacf;
+  background: #edeef0;
+  padding-left: 15px;
+}
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  display: table;
+}
+
+.clearfix::after {
+  clear: both;
+}
+h2 {
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 40px;
+	padding-left: 53px;
+}
+.info h2 {
+	padding-left: 25px;
+}
+.footer {
+	background: #0c739f;
+	line-height: 30px;
+	width: 100%;
+
+	margin: 0 auto;
+	text-align: center;
+	float: top;
+}

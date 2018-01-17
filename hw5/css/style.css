@@ -1,0 +1,248 @@
+body {
+	font-family: 'Helvetica Neue', Tahoma;
+	background: url('../img/background.jpg') no-repeat;
+	background-size:cover;
+	background-position: center center;
+	background-attachment: fixed;
+}
+			/**************HEADER**************/
+/*.wrapper {
+	background: url(../img/background.jpg) no-repeat;
+    background-size: cover;
+    background-position: cover;
+    position: relative;
+    height: 100vh;
+}*/
+.header {
+	height: 36px;
+	width: 100%;
+	background: url('../img/bg.jpg');
+}
+
+.header li {
+	display: inline-block;
+}
+
+.header ul {
+	float: right;
+
+}
+
+.header a {
+	color: #60b5ed;
+	text-decoration: none;
+	display: inline-block;
+	height: 36px;
+	line-height: 35px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+
+li:nth-child(5)::after {
+	content: '';
+	display: inline-block;
+	width: 1px;
+	height: 30px;
+	vertical-align: middle;
+	margin-bottom: 3px;
+	background-color: #60b5ed;
+}
+/*   
+ul:first-of-type>li:first-child:before {
+	content: '\1288;';
+	background-image: url('../img/flag.png');
+ 	display: inline-block;
+ 	width: 25px;
+  	height: 27px;
+  	vertical-align: top;
+  	margin: 5px;
+  	position: relative;
+  	margin-left: 20px;
+}*/
+
+ul:first-of-type>li:nth-child(6):before {
+	content: '\f024';
+	font-family: FontAwesome;
+	color: #fff;
+	margin-left: 15px;
+	margin-right: -5px;
+	font-size: 24px;	
+	position: relative;
+	top: 2px;
+}
+
+.header span {
+	/*text-decoration: underline;*/
+	border-bottom: 2px solid #aec8e5;
+	padding-bottom: 1px;
+	display: inline-block;
+	line-height: 14px;
+}
+
+ul:first-of-type>li:first-child>a {
+	padding-left: 5px;
+}
+li:nth-child(6)>a,
+li:nth-child(7)>a {
+	color: #fff;
+}
+
+ul>li:last-of-type {
+	background: #60b5ed;
+	height: 36px;
+	box-sizing: border-box;
+	border: 1px solid #50afdc;
+	background-image: linear-gradient(to bottom, #50afdc, #2e7ac4);
+}
+
+ul>li>.hv:hover {
+	margin-top: -3px;
+	display: inline-block;
+	background: #4eabda;
+	color: #fff;
+	border-top: 1px solid #4eabda;
+	border-bottom: 1px solid transparent;
+	box-sizing: border-box;
+	vertical-align: middle;
+}
+
+
+
+       /***************REGISTRATION CONTAINER***************/
+
+.form {
+	height: 635px;
+	width: 560px;
+	background: rgba(0, 0, 0,.5);
+ 	position: absolute;
+  	top: 50%; 
+  	left: 50%;
+  	margin-left: -280px;
+  	margin-top: -280px;
+}
+.form h1 {
+	border-bottom: 1px solid #fff;
+	line-height: 62px;
+	text-align: center;
+	color: #fff;
+	font-size: 24px;
+}
+
+.container {
+	width: 275px;
+	margin: 0 auto;
+
+}
+
+.facebook {
+	margin-top: 35px;
+	margin-bottom: 35px;
+	width: 275px;
+}
+
+.line {
+	overflow: hidden;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.line:before,
+.line:after {
+	content: '';
+	display: inline-block;
+	vertical-align: middle;
+	box-sizing: border-box;
+	width: 275px;
+	height: 2px;
+	background: linear-gradient(to bottom, #666 0%, #666 49%, #000 50%, #000 100%);
+}
+.line:before {
+	margin-left: -100%;
+
+}
+.line:after {
+	margin-right: -100%;
+}
+.line span {
+	text-align: center;
+	padding-left: 5px;
+	padding-right: 5px;
+	color: #999;
+}
+input {
+	box-sizing: border-box;
+}
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+	width: 100%;
+	height: 35px;
+	margin-bottom: 18px;
+	background: linear-gradient(to top, #111, #111010);
+	border: 0;
+	border-bottom: 1px solid #999;
+	padding-left: 20px;
+	color: #fff;
+}
+
+input:focus {
+	color: #fff;
+	box-shadow: 0px 0px 9px 2px rgba(104,155,204,1);
+	border-bottom: 1px solid #689bcc;
+	outline: none;
+	background-image: linear-gradient(to top, #1f5384, #1e4b76);
+}
+form:focus:active {
+	color: #fff;
+}
+
+label {
+	font-size: 14px;
+	color: #fff;
+	font-weight: 300;
+
+	display: inline-block;
+}
+input[type="checkbox"] {
+	margin-bottom: 0;
+	vertical-align: bottom;
+}
+input[type="submit"] {
+	height: 35px;
+	width: 148px;
+	background: #4299d2;
+	border: none;
+	border-radius: 2px;
+	display: block;
+	margin: 0 auto;
+	color: #fff;
+	border: 1px solid rgba(66,153,210,.5);
+	margin-top: 24px;
+	background-image: linear-gradient(to bottom, #50aedb, #2e7ac4);
+}
+
+.form p {
+	text-align: center;
+	color: #ccc;
+	font-size: 11px;
+	margin-top: 20px;
+	margin-left: 115px;
+	margin-right: 115px;
+}
+
+
+
+
+	 				/********FONTS**********/
+
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('helveticaneue-thin-webfont.woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
