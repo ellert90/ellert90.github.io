@@ -1,11 +1,7 @@
 body {
   max-width: 600px;
   margin: auto;
-}
-@media (min-width: 320px) {
-  body {
-    min-width: 320px;
-  }
+  font-family: Arial;
 }
 .head_text {
   padding: 50px 0;
@@ -13,7 +9,6 @@ body {
 .title {
   position: static;
   padding: 5px;
-  width: 100%;
   margin: 0;
 }
 .dop{
@@ -39,4 +34,10 @@ body {
 }
 .container:nth-child(7) .title{
   background: #966;
+}
+
+@media (min-width: 320px) {
+  body {
+    min-width: 320px;
+  }
 }
