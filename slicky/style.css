@@ -1,0 +1,37 @@
+body {
+  width: 600px;
+  margin: auto;
+}
+.head_text {
+  padding: 50px 0;
+}
+.title {
+  position: static;
+  padding: 5px;
+  width: 600px;
+  margin: 0;
+}
+.dop{
+  height: 37px;
+}
+.container:nth-child(1) .title {
+  background: #456;
+}
+.container:nth-child(2) .title{
+  background: #976;
+}
+.container:nth-child(3) .title{
+  background: #494;
+}
+.container:nth-child(4) .title{
+  background: #557;
+}
+.container:nth-child(5) .title{
+  background: #376;
+}
+.container:nth-child(6) .title{
+  background: #887;
+}
+.container:nth-child(7) .title{
+  background: #966;
+}
