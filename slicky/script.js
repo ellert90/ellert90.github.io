@@ -9,6 +9,9 @@ var titleStyle = getComputedStyle(titleElem);
 function resize () {
   fixTitle.style.width = titleStyle.width;
 }
+window.addEventListener("orientationchange", function() {
+    alert("the orientation of the device is now " + screen.orientation.angle);
+});
 
 window.onresize = resize();
 
