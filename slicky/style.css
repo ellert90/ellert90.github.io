@@ -8,8 +8,11 @@ body {
 }
 .title {
   position: static;
+  max-width: 600px;
   padding: 5px;
   margin: 0;
+  overflow: hidden;
+  display: block;
 }
 .dop{
   height: 37px;

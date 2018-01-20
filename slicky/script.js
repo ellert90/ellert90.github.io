@@ -2,24 +2,35 @@ var container = document.querySelectorAll('.container');
 var fixTitle = document.getElementById('head_title');
 var wrapper = document.getElementById('wrp');
 var titleElem = document.querySelector('.title');
-var titleStyle = getComputedStyle(titleElem);
+
+//забезпечує коректну довжину плаваючого заголовка, при переході на горизонтальний режим на мобільному
+
+window.addEventListener("orientationchange", function() {
+  var interval = setInterval(function() {
+    var titleWidth = document.getElementById('orientationchange');
+    var titleWidthStyle = getComputedStyle(titleWidth);
+    fixTitle.style.minWidth = titleWidthStyle.width;
+    setTimeout(function(){
+      clearInterval(interval);
+    },5);
+  },4);
+});
 
 //щоб плавающий заголовок завжди був на всю ширину звичайного заголовка
 
 function resize () {
-  fixTitle.style.width = titleStyle.width;
+  var titleStyle = getComputedStyle(titleElem);
+  fixTitle.style.minWidth = titleStyle.width;
 }
-window.addEventListener("orientationchange", function() {
-    alert("the orientation of the device is now " + screen.orientation.angle);
-});
 
 window.onresize = resize();
+
+//прикріплює плаваючий заголовок до верху сторінки коли він виявляється у зоні текстів.
 
 window.onscroll = function () {
   var wrpScroll = fixTitle.getBoundingClientRect();
   var wrpVar = wrapper.getBoundingClientRect();
 
-//прикріплює плаваючий заголовок до верху сторінки коли він виявляється у робочій зоні
   if (wrpVar.top <= 0) {
     fixTitle.style.position = 'fixed';
     fixTitle.style.visibility = 'visible';
@@ -42,8 +53,8 @@ window.onscroll = function () {
       var readNode = container[i].firstElementChild.innerHTML;
       fixTitle.innerHTML = readNode;
       fixTitle.style.top = 0;
-      var fixStyle = getComputedStyle(container[i].firstElementChild);
-      fixTitle.style.background = fixStyle.background;
+      var fixTitleStyle = getComputedStyle(container[i].firstElementChild);
+      fixTitle.style.background = fixTitleStyle.backgroundColor;
     }
   }
 }
