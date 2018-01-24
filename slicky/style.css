@@ -8,7 +8,7 @@ body {
 }
 .title {
   position: static;
-  max-width: 590px;
+  width: 600px;
   padding: 5px 0;
   text-align: center;
   margin: 0;

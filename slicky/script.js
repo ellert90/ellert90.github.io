@@ -5,6 +5,8 @@ let fixTitle = document.getElementById('head_title');
 let wrapper = document.getElementById('wrp');
 let titleElem = document.querySelector('.title');
 
+let titleHeight = getComputedStyle(titleElem);
+
 // забезпечує коректну довжину плаваючого заголовка, при переході на горизонтальний режим на мобільному
 
 // window.addEventListener('orientationchange', () => {
