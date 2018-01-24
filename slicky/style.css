@@ -8,8 +8,9 @@ body {
 }
 .title {
   position: static;
-  max-width: 600px;
-  padding: 5px;
+  max-width: 590px;
+  padding: 5px 0;
+  text-align: center;
   margin: 0;
   overflow: hidden;
   display: block;
@@ -18,29 +19,28 @@ body {
   height: 37px;
 }
 .container:nth-child(1) .title {
-  background: #456;
+  background: #F06292;
 }
 .container:nth-child(2) .title{
-  background: #976;
+  background: #64B5F6;
 }
 .container:nth-child(3) .title{
-  background: #494;
+  background: #4DB6AC;
 }
 .container:nth-child(4) .title{
-  background: #557;
+  background: #66BB6A;
 }
 .container:nth-child(5) .title{
-  background: #376;
+  background: #FDD835;
 }
 .container:nth-child(6) .title{
-  background: #887;
+  background: #FF7043;
 }
 .container:nth-child(7) .title{
-  background: #966;
+  background: #607D8B;
 }
-
-@media (min-width: 320px) {
-  body {
-    min-width: 320px;
+@media (max-width: 600px) {
+  .title {
+    width: 100%;
   }
 }

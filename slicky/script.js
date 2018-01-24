@@ -1,44 +1,49 @@
-var container = document.querySelectorAll('.container');
-var fixTitle = document.getElementById('head_title');
-var wrapper = document.getElementById('wrp');
-var titleElem = document.querySelector('.title');
+'use strict';
 
-//забезпечує коректну довжину плаваючого заголовка, при переході на горизонтальний режим на мобільному
+let container = document.querySelectorAll('.container');
+let fixTitle = document.getElementById('head_title');
+let wrapper = document.getElementById('wrp');
+let titleElem = document.querySelector('.title');
 
-window.addEventListener("orientationchange", function() {
-  var interval = setInterval(function() {
-    var titleWidth = document.getElementById('orientationchange');
-    var titleWidthStyle = getComputedStyle(titleWidth);
-    fixTitle.style.minWidth = titleWidthStyle.width;
-    setTimeout(function(){
-      clearInterval(interval);
-    },5);
-  },4);
-});
+// забезпечує коректну довжину плаваючого заголовка, при переході на горизонтальний режим на мобільному
+
+// window.addEventListener('orientationchange', () => {
+//   let interval = setInterval(function() {
+//     let titleWidth = document.getElementById('orientationchange');
+//     let titleWidthStyle = getComputedStyle(titleWidth);
+//     fixTitle.style.width = document.body.offsetWidth + 'px';
+//     setTimeout(function(){
+//       clearInterval(interval);
+//     },100);
+//   },4);
+// });
+
 
 //щоб плавающий заголовок завжди був на всю ширину звичайного заголовка
 
-function resize () {
-  var titleStyle = getComputedStyle(titleElem);
-  fixTitle.style.minWidth = titleStyle.width;
-}
+// let resize = () => {
+//     if (innerWidth <= 600) fixTitle.style.width = '100%';
+//     if (innerWidth >= 600) fixTitle.style.width = 600 + 'px';
+// }
 
-window.onresize = resize();
+// window.addEventListener('resize', resize());
 
 //прикріплює плаваючий заголовок до верху сторінки коли він виявляється у зоні текстів.
 
-window.onscroll = function () {
-  var wrpScroll = fixTitle.getBoundingClientRect();
-  var wrpVar = wrapper.getBoundingClientRect();
+window.onscroll = () => {
+  let wrpScroll = fixTitle.getBoundingClientRect();
+  let wrpVar = wrapper.getBoundingClientRect();
 
+//прикріпляє заголовок
   if (wrpVar.top <= 0) {
     fixTitle.style.position = 'fixed';
     fixTitle.style.visibility = 'visible';
-
   }
+
+  //
   if (wrpVar.bottom <= 0) {
     fixTitle.style.position = 'static';
-    fixTitle.style.visibility = 'visible';
+    fixTitle.style.visibility = 'hidden';
   }
   if (wrpVar.top >= 0) {
     fixTitle.style.position = 'static';
@@ -46,15 +51,16 @@ window.onscroll = function () {
   }
 
 //перебирає блоки з текстом і заголовком, зчитує текст і колір потрібного заголовка і додає до плаваючого
-  for (var i = 0; i < container.length; i++) {
-    var cicle = container[i].getBoundingClientRect();
+
+  for (let i = 0; i < container.length; i++) {
+    let cicle = container[i].getBoundingClientRect();
 
     if (cicle.top <= 0) {
-      var readNode = container[i].firstElementChild.innerHTML;
+      let readNode = container[i].firstElementChild.innerHTML;
       fixTitle.innerHTML = readNode;
       fixTitle.style.top = 0;
-      var fixTitleStyle = getComputedStyle(container[i].firstElementChild);
+      let fixTitleStyle = getComputedStyle(container[i].firstElementChild);
       fixTitle.style.background = fixTitleStyle.backgroundColor;
     }
   }
-}
+};
