@@ -1,13 +1,12 @@
 'use strict';
 
+// alert(window.innerWidth);
 
 let wrp = document.querySelector('.wrp'),
     main = document.querySelector('.main'),
     skillParent = document.querySelector('#skills'),
     animEl = document.querySelector('.wrp');
 
-animEl.style.top = 200 + 'px';
-animEl.style.opacity = 0;
 
 //start anim skill
 
@@ -93,15 +92,12 @@ let skill = () => {
 skill();
 
 //masonry
-setTimeout(function(){
-  animEl.style.top = 0;
-  animEl.style.opacity = 1;
-},1);
 
 window.onload = function myMasonry() {
 
 
-
+  animEl.style.top = 0;
+  animEl.style.opacity = 1;
 
   let masVal = document.querySelector('.main');
   new Masonry(masVal, {
