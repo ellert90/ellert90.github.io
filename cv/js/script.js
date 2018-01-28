@@ -93,13 +93,14 @@ let skill = () => {
 skill();
 
 //masonry
+setTimeout(function(){
+  animEl.style.top = 0;
+  animEl.style.opacity = 1;
+},1);
 
 window.onload = function myMasonry() {
 
-  setTimeout(function(){
-    animEl.style.top = 0;
-    animEl.style.opacity = 1;
-  },1);
+
 
 
   let masVal = document.querySelector('.main');
