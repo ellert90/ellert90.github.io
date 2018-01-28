@@ -63,6 +63,7 @@ window.onscroll = () => {
       fixTitle.style.top = 0;
       let fixTitleStyle = getComputedStyle(container[i].firstElementChild);
       fixTitle.style.background = fixTitleStyle.backgroundColor;
+      document.querySelector('meta[name="theme-color"]').setAttribute("content", fixTitleStyle.backgroundColor);
     }
   }
 };
