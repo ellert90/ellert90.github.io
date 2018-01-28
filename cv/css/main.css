@@ -224,7 +224,10 @@ h1, h2, h3 {
   .object__variable {
     font-family: Arial; }
   .print {
-    display: block; }
+    display: block;
+    visibility: visible;
+    padding-bottom: 30px;
+   }
   .portfolio {
     display: none;
     visibility: hidden; } }
