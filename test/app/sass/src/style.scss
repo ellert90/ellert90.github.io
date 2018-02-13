@@ -1,0 +1,157 @@
+body {
+  background: #f2f2f2;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Alegreya Sans', Arial, Tahoma;
+}
+.wrapper {
+  position: relative;
+}
+.test {
+  background: #fff;
+  box-shadow: 0 1px 5px rgba(0,0,0,.75);
+  padding: 25px 7px;
+  margin: 0;
+  min-width: 306px;
+  z-index: 1;
+
+  &__question_number {
+    padding-right: 6px;
+  }
+  &__answer {
+    list-style-position: inside;
+    cursor: pointer;
+    padding: 5px 3px;
+    border-radius:1.5px;
+    font-size: 18px;
+    &_list {
+      padding-left: 20px;
+    }
+    &--green {
+      background: #2ecc71;
+      color: #fff;
+    }
+    &--red {
+      background: #e44b39;
+      color: #fff;
+    }
+  }
+}
+.test h2 {
+  font-size: 20px;
+}
+.answer_not_set,
+.no_answer_set {
+  font-size: 18px;
+  font-weight: 600;
+  color: #e44b39;
+  margin: 0 10px 10px 7px;
+  display: none;
+}
+.button {
+  display: inline-block;
+  height: 35px;
+  width: 145px;
+  border-radius: 3px;
+  border: none;
+  background: #fff;
+  border: 1px solid #f3f3f3;
+  color: #fff;
+  font-size: 15px;
+
+  &_container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+}
+.button:active {
+  box-shadow: inset 0px 0px 2px 1px rgba(0,0,0,0.75);
+  border: none;
+}
+.button:focus {
+  border: none;
+}
+.send {
+  background-color: #43A047;
+}
+.result {
+  background-color: #3F51B5;
+}
+
+.modal {
+  position: absolute;
+  z-index: 3;
+  top: 50%;
+  margin-top: -100px;
+  height: 200px;
+  width: 100%;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+  &_bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    min-width: 320px;
+    background-color: rgba(0,0,0,.75);
+    z-index: 2;
+    display: none;
+  }
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    min-width: 280px;
+    max-width: 380px;
+  }
+  &__text {
+    width: 215px;
+  }
+}
+@media (min-width: 500px) {
+  .wrapper {
+    width: 100%;
+  }
+  .button_container {
+    width: 480px;
+  }
+  .test {
+    padding: 25px 10px;
+    &__answer {
+      width: 470px;
+    }
+  }
+  .modal {
+    width: 370px;
+    top: 50%;
+    left: 50%;
+    margin-top: -115px;
+    margin-left: -185px;
+    padding: 15px 0;
+    font-size: 18px;
+  }
+}
+  @media (min-width: 700px) {
+    .test {
+      width: 700px;
+      margin: auto;
+      &__answer {
+        font-size: 18px;
+        padding: 5px 8px;
+      }
+    }
+    .test h2 {
+      font-size: 20px;
+    }
+    .button {
+      height: 45px;
+      width: 200px;
+      font-size: 18px
+    }
+  }

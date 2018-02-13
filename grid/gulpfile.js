@@ -18,11 +18,12 @@ const	pixrem 			  = require('gulp-pixrem');
 
 
 gulp.task('sass', () =>
-     gulp.src(['app/sass/src/**/*.+(scss|sass)']) // Берем источник
-				.pipe(concat('main.sсss'))
+     gulp.src('app/sass/src/**/*.+(scss|sass)') // Берем источник
+				// .pipe(concat('main.sсss'))
         .pipe(sass().on('error', sass.logError)) // Преобразуем Sass в CSS посредством gulp-sass
         .pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true })) // Создаем префиксы
 				.pipe(gulp.dest('app/css')) // Выгружаем результата в папку app/css
+				// .pipe(pixrem())                         // Перетворює пікселі в реми
         .pipe(browserSync.reload({stream: true})) // Обновляем CSS на странице при изменении
 );
 
@@ -52,14 +53,13 @@ gulp.task('watch', ['browser-sync', 'sass', 'combine'], () =>
 
 gulp.task('combine', () => {
     gulp.src('app/js/src/**/*.js')
-        .pipe(concat('script.js'))
+        .pipe(concat('script.js', {newLine: ';'}))
         .pipe(gulp.dest('app/js'))
 				.pipe(browserSync.reload({stream: true}))
-        // .on('error', gutil.log)
 });
 
 gulp.task('minify', () => {
-    gulp.src('js/script.js')
+    gulp.src('app/js/script.js')
         .pipe(uglify())
         .pipe(rename({suffix: '.min'}))
         .pipe(gulp.dest('dist/js'))
@@ -106,20 +106,20 @@ gulp.task('sprite', () => {
 
 //BUILD
 
-gulp.task('build', ['clean', 'img', 'sass', 'minify'], () => {
+gulp.task('build', ['clean', 'img', 'sprite', 'sass', 'minify'], () => {
 
-		// let buildSprite = gulp.src('app/sprites/*')
-		// .pipe(gulp.dest('dist/sprites'))
+		let buildSprite = gulp.src('app/sprites/*')
+		.pipe(gulp.dest('dist/sprites'))
 
     let buildCss = gulp.src('app/css/main.css')
 
-		// .pipe(cssnano())
+		.pipe(cssnano())
     .pipe(gulp.dest('dist/css'))
 
     let buildFonts = gulp.src('app/fonts/**/*')
     .pipe(gulp.dest('dist/fonts'))
 
-    let buildJs = gulp.src('app/js/script.js')
+    let buildJs = gulp.src('app/js/*')
     .pipe(gulp.dest('dist/js'))
 
     let buildHtml = gulp.src('app/*.html')
