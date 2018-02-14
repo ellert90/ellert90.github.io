@@ -1,10 +1,22 @@
+'use strict';
+var obj = {};
+
+const url = 'js/question.json';
+fetch(url)
+.then(response => response.json())
+.then(data => obj = data)
+.catch(error => console.log(error));
+
 var question = document.querySelector('.test__question'),
+    answersList = document.getElementsByTagName('ol'),
     answersElem = document.querySelectorAll('.test__answer'),
     send = document.querySelector('.send'),
     result = document.querySelector('.result'),
+    startButn = document.querySelector('.start'),
     quesNumb = document.querySelector('.test__question_number'),
     close = document.querySelector('.close'),
     modal = document.querySelector('.modal_bg'),
+    modalWhite = document.querySelector('.modal--white'),
     modalTotal = document.querySelector('.modal__question_count'),
     modalRight = document.querySelector('.modal__right_count'),
     modalPercent = document.querySelector('.modal__percents_count'),
@@ -12,17 +24,21 @@ var question = document.querySelector('.test__question'),
     answerErr1 = document.querySelector('.no_answer_set'),
     variablesArr = [],
     rand,
-    i = 0,     //кількість правильних
-    total = 0, //загальна кількість
-    coantity = 0,
-    lastArrElem = 0;
+    selectedSpan,
+    i = 0,            //кількість правильних
+    total = 0,        //загальна кількість
+    coantity = 0,     //кількість кліків на питання
+    lastArrElem = 0,
+    selectedAnswer,
+    rightAnswer;
+
 
 function add (numb) {
 
   question.innerHTML = obj[numb].q;
   let answersArr = [obj[numb].a0,obj[numb].a1,obj[numb].a2,obj[numb].a3,obj[numb].a4];
 
-  for (var key in answersElem) {
+  for (let key in answersElem) {
     if (key <= 4) {
       answersElem[key].removeAttribute('value');
       answersElem[key].innerHTML = answersArr[key];
@@ -31,29 +47,34 @@ function add (numb) {
       }
     }
   }
+
 }
 
 
+startButn.onclick = random;
 send.onclick = random;
-window.onload = random;
+
 
 function random () {
-
+    console.log(selectedSpan);
+    if (selectedSpan) {
+      selectedAnswer.classList.remove('test__answer--green');
+      selectedAnswer.classList.remove('test__answer--red');
+    }
+    if (rightAnswer) {
+      rightAnswer.classList.remove('test__answer--green');
+    }
     answerErr1.style.display = 'none';
     if (coantity === 0) {
       if (total >= 1) {
         answerErr0.style.display = 'block';
-        return false;
-      }
+          }
+      modalWhite.style.display = 'none';
     }
 
-    if (total >= 1) {
-      selectedSpan.classList.remove('test__answer--green');
-      selectedSpan.classList.remove('test__answer--red');
-    }
+console.log(answersElem[0].getAttribute('value'));
 
     rand = Math.floor(Math.random() * Object.keys(obj).length) + 0;
-
     if (variablesArr.indexOf(rand) >= 0) {
       random ();
       if (total >= variablesArr.lenght) {
@@ -67,38 +88,47 @@ function random () {
       add(rand);
     }
     return total, coantity = 0;
+
   }
 
-var answersList = document.getElementsByTagName('ol');
-var selectedSpan;
 
 answersList[0].onclick = showAns;
 
-  function showAns(event) {
 
+var even = function(element) {
+  console.log(element.getAttribute('value'));
+  if (element.getAttribute('value') == 1) {
+    console.log('yaho');
+  }
+}
+
+  function showAns(event) {
 
     var target = event.target;
     coantity++;
     if (target.tagName != 'DIV') return;
 
-    if (selectedSpan) {
-      selectedSpan.classList.remove('test__answer--green');
-      selectedSpan.classList.remove('test__answer--red');
-    }
     selectedSpan = target;
-    if (target.getAttribute('value') == 1) {
+    if (target.getAttribute('value') == 1 && coantity == 1) {
       selectedSpan.classList.add('test__answer--green');
       answerErr0.style.display = 'none';
-      if (coantity === 1) {
         i++;
-      }
-
+        selectedAnswer = selectedSpan;
     }
-    else {
+     if (target.getAttribute('value') != 1 && coantity == 1) {
       selectedSpan.classList.add('test__answer--red');
       answerErr0.style.display = 'none';
+      selectedAnswer = selectedSpan;
+      for(let key in answersElem) {
+        let anserKey = answersElem[key].getAttribute('value');
+        if (anserKey == 1) {
+          answersElem[key].classList.add('test__answer--green');
+          rightAnswer = answersElem[key];
+        }
+      }
     }
     return i, variablesArr, coantity;
+
   }
 
 
@@ -111,7 +141,6 @@ answersList[0].onclick = showAns;
       modalRight.innerHTML = i;
       modalPercent.innerHTML = ((i / (total - 1)) *  100).toFixed(1) + '%';
       lastArrElem = variablesArr[variablesArr.length - 1];
-      // console.log(lastArrElem);
       variablesArr = [];
       variablesArr.push(lastArrElem);
     }
@@ -120,5 +149,6 @@ answersList[0].onclick = showAns;
   close.onclick = function () {
     modal.style.display = 'none';
     total = 0;
+    i = 0;
     random();
   }

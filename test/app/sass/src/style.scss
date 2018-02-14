@@ -11,11 +11,11 @@ body {
 .test {
   background: #fff;
   box-shadow: 0 1px 5px rgba(0,0,0,.75);
-  padding: 25px 7px;
+  padding: 10px 7px 30px 7px;
   margin: 0;
   min-width: 306px;
   z-index: 1;
-
+  // height: auto;
   &__question_number {
     padding-right: 6px;
   }
@@ -23,14 +23,18 @@ body {
     list-style-position: inside;
     cursor: pointer;
     padding: 5px 3px;
-    border-radius:1.5px;
+    border-radius:3px 3px 4px 4px;
     font-size: 18px;
+    user-select: none;
+    border-bottom: 1px solid #fff;
     &_list {
       padding-left: 20px;
+      margin-top: 7px;
     }
     &--green {
       background: #2ecc71;
       color: #fff;
+      transition: background-color 1.5s cubic-bezier(.3, -0.3, .3, 1.5);
     }
     &--red {
       background: #e44b39;
@@ -40,6 +44,7 @@ body {
 }
 .test h2 {
   font-size: 20px;
+  margin: 0;
 }
 .answer_not_set,
 .no_answer_set {
@@ -93,6 +98,17 @@ body {
   justify-content: space-around;
   align-items: center;
 
+  &--white {
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   &_bg {
     position: absolute;
     top: 0;
