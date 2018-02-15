@@ -32,6 +32,7 @@ var question = document.querySelector('.test__question'),
     selectedAnswer,
     rightAnswer;
 
+// var coantity = 0;
 
 function add (numb) {
 
@@ -51,12 +52,11 @@ function add (numb) {
 }
 
 
-startButn.onclick = random;
-send.onclick = random;
+startButn.addEventListener('click', random);
+send.addEventListener('click', random);
 
 
 function random () {
-    console.log(selectedSpan);
     if (selectedSpan) {
       selectedAnswer.classList.remove('test__answer--green');
       selectedAnswer.classList.remove('test__answer--red');
@@ -65,42 +65,39 @@ function random () {
       rightAnswer.classList.remove('test__answer--green');
     }
     answerErr1.style.display = 'none';
+    console.log(total);
     if (coantity === 0) {
       if (total >= 1) {
         answerErr0.style.display = 'block';
           }
       modalWhite.style.display = 'none';
     }
+    if (coantity >= 1 || total === 0) {
+      rand = Math.floor(Math.random() * Object.keys(obj).length) + 0;
+      if (variablesArr.indexOf(rand) >= 0) {
+        random ();
+        if (total >= variablesArr.lenght) {
+          variablesArr = [];
+        }
 
-console.log(answersElem[0].getAttribute('value'));
-
-    rand = Math.floor(Math.random() * Object.keys(obj).length) + 0;
-    if (variablesArr.indexOf(rand) >= 0) {
-      random ();
-      if (total >= variablesArr.lenght) {
-        variablesArr = [];
+      } else {
+        variablesArr.push(rand);
+        total++;
+        quesNumb.innerHTML = (total + '.');
+        add(rand);
       }
-
-    } else {
-      variablesArr.push(rand);
-      total++;
-      quesNumb.innerHTML = (total + '.');
-      add(rand);
     }
+
+
+
+
     return total, coantity = 0;
 
   }
 
 
-answersList[0].onclick = showAns;
+answersList[0].addEventListener('click', showAns);
 
-
-var even = function(element) {
-  console.log(element.getAttribute('value'));
-  if (element.getAttribute('value') == 1) {
-    console.log('yaho');
-  }
-}
 
   function showAns(event) {
 
@@ -120,8 +117,8 @@ var even = function(element) {
       answerErr0.style.display = 'none';
       selectedAnswer = selectedSpan;
       for(let key in answersElem) {
-        let anserKey = answersElem[key].getAttribute('value');
-        if (anserKey == 1) {
+        let anserKey = answersElem[key].hasAttribute('value');
+        if (anserKey == true) {
           answersElem[key].classList.add('test__answer--green');
           rightAnswer = answersElem[key];
         }
@@ -132,7 +129,7 @@ var even = function(element) {
   }
 
 
-  result.onclick = function() {
+function showResultModal () {
     if (total === 1) {
       answerErr1.style.display = 'block';
     } else {
@@ -146,7 +143,12 @@ var even = function(element) {
     }
 
   }
-  close.onclick = function () {
+
+  result.addEventListener('click', showResultModal);
+  close.addEventListener('click', closeResultModal);
+
+
+  function closeResultModal () {
     modal.style.display = 'none';
     total = 0;
     i = 0;
