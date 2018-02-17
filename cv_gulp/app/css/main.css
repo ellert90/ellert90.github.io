@@ -68,9 +68,7 @@ h1, h2, h3 {
           border-radius: 50%;
   margin: 0 auto;
   border: 1px solid #008857; }
-.link {
-  text-decoration: underline;
-}
+
 .object a:hover {
   text-decoration: underline; }
 
@@ -93,8 +91,7 @@ h1, h2, h3 {
     background-color: #008857;
     font-family: 'Raleway', sans-serif;
     font-size: 20px;
-    color: #fff;
- }
+    color: #fff; }
   .object__title--inner {
     background-color: transparent;
     color: #008857;
@@ -110,14 +107,8 @@ h1, h2, h3 {
   .object__variable {
     font-weight: 700;
     color: #000; }
-  .object__variable--green {
-    color: #008857;
-  }
   .object__value {
     color: #000; }
-  .object__value--print {
-    visibility: hidden;
-  }
 
 .object:first-child {
   border: 0; }
@@ -203,7 +194,6 @@ h1, h2, h3 {
     vertical-align: bottom;
     font-size: 100%; }
 
-
 @media (min-width: 680px) {
   .wrp {
     margin: auto; }
@@ -233,18 +223,8 @@ h1, h2, h3 {
 @media print {
   .object__variable {
     font-family: Arial; }
-  .object__variable--hide_to_print {
-    display: none;
-  }
   .print {
-    display: block;
-    visibility: visible;
-    padding-bottom: 30px;
-   }
+    display: block; }
   .portfolio {
     display: none;
-    visibility: hidden; }
-  .object__value--print{
-    /* display: block; */
-    visibility: visible;
-    } }
+    visibility: hidden; } }
