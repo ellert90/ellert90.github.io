@@ -1,0 +1,200 @@
+@media (min-width: 768px) {
+
+  .wrp-header {
+    height: 700px;
+  }
+
+  .header {
+    min-width: 670px;
+    margin: 0 auto;
+
+
+    &__logo_container {
+      display: flex;
+      flex-direction: row;
+      height: 7.6rem;
+      padding: 0;
+    }
+    &__enter_container {
+      height: 3rem;
+    }
+    &__title {
+      font-size: 3.25rem;
+      width: 600px;
+      line-height: 4rem;
+      margin: 5.8rem auto 1.5rem auto;
+    }
+    &__text {
+      font-size: 1.5rem;
+      margin-bottom: 2.2rem;
+    }
+  }
+
+.main {
+  min-width: 700px;
+  margin-bottom: 3.5rem;
+}
+
+//slider
+
+  .slider {
+    position: relative;
+
+    &__container {
+      display: flex;
+      justify-content: space-between;
+      min-width: 748px;
+      max-width: 940px;
+      padding-left: 0;
+    }
+    &__hider-hide {
+      display: block;
+    }
+    &__list {
+      width: 15000px;
+      padding: 0;
+      position: relative;
+    }
+    &__item {
+      position: relative;
+      float: left;
+      height: 400px;
+      width: 240px;
+    }
+    &__hider {
+      width: 240px;
+      overflow: hidden;
+      float: left;
+    }
+    &__left {
+      position: absolute;
+      top: 50px;
+      left: 10px;
+      z-index: 3;
+      color: $main-white;
+      font-size: 90px;
+      cursor: pointer;
+      @include sprite($left);
+    }
+    &__right {
+      position: absolute;
+      top: 50px;
+      right: 10px;
+      margin-left: 50px;
+      z-index: 4;
+      color: $main-white;
+      font-size: 90px;
+      cursor: pointer;
+      @include sprite($right);
+    }
+
+  }
+
+
+//partners
+
+  .partners {
+    width: 500px;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 0.4rem;
+
+
+    &__container {
+      height: 100%;
+      overflow: hidden;
+
+    }
+    &__item {
+      margin: 0.3rem 0 3.6rem 0;
+    }
+  }
+
+  //img
+
+
+.img {
+    width: 748px;
+
+  &__block {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  &__result {
+    height: 100%;
+    width: 100%;
+  }
+  &__search {
+    width: 240px;
+    padding-left: 5px;
+  }
+  &__container {
+    height: 310px;
+    width: 235px;
+
+  }
+  &__container:nth-child(5),
+  &__container:nth-child(6),
+  &__search:nth-child(5),
+  &__search:nth-child(5) {
+    width: 480px;
+  }
+  &__search_form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 420px;
+    margin: 1.5rem auto 0 auto;
+  }
+}
+
+  #result{
+    width: 725px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 970px;
+  }
+
+//footer
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 692px;
+  max-width: 960px;
+  margin: 20px auto 0 auto;
+
+  &__info_cont {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+    width: 470px;
+  }
+  &__menu_cont {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  &__menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+  }
+  &__comp {
+    margin: 0;
+  }
+  &__item {
+    margin-top: 0.4rem;
+  }
+}
+
+}//@@@

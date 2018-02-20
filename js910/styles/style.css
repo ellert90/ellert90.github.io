@@ -1,0 +1,209 @@
+body{
+  /*background:#000;*/
+  box-sizing: border-box;
+}
+
+/*********HEAD MENU***********/
+
+.head-menu {
+  width: 600px;
+  padding: 100px;
+  margin: auto;
+
+}
+li {
+  list-style: none;
+  background-color: #ccc;
+}
+.menu-item {
+  float: left;
+  padding: 7px;
+}
+
+.submenu>.menu-item {
+  float: none;
+  background: #479;
+
+}
+.submenu a {
+  color: white;
+  display: block;
+  border-bottom: 2px solid #589;
+  margin: 0 1px;
+}
+.second {
+  top: 36px;
+  left: 60px;
+  position: absolute;
+}
+.third {
+  position: absolute;
+  top: 36px;
+  left: 55px;
+}
+.submenu {
+  display: none;
+  position: absolute;
+  padding: 0;
+  background-color: #025;
+  z-index: 200;
+}
+
+
+
+
+
+section.awSlider .carousel{
+  display:table;
+  z-index:2;
+  -moz-box-shadow: 0 0 4px #444;
+	-webkit-box-shadow: 0 0 4px #444;
+	box-shadow: 0 0 15px rgba(1,1,1,.5);
+}
+
+section.awSlider{
+  margin:30px auto;
+  padding:30px;
+  position:relative;
+  display:table;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  clear: both;
+}
+
+section.awSlider:hover > img{
+  -ms-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  opacity:1;
+}
+
+section.awSlider img{
+   pointer-events: none;
+}
+
+section.awSlider > img{
+  position:absolute;
+  top:30px;
+  z-index:1;
+  transition:all .3s;
+  filter: blur(1.8vw);
+  -webkit-filter: blur(2vw);
+  -moz-filter: blur(2vw);
+  -o-filter: blur(2vw);
+  -ms-filter: blur(2vw);
+  -ms-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  opacity:.5;
+}
+
+/*********CHECKBOX*********/
+
+.form {
+  margin-left: 600px;
+}
+
+.checkbox {
+
+}
+.library {
+
+}
+.custom {
+
+}
+
+.checkbox{
+  cursor:pointer;
+  display:inline-block;
+  height:27px;
+  padding:0;
+  margin:0;
+}
+.checkbox:hover{
+  background:none;
+}
+.checkbox:hover .check{
+  border-color:none;
+}
+.checkbox input{
+  display:none;
+}
+.checkbox .check{
+  float:left;
+  width:27px;
+  height:27px;
+  background: #fff url(checkbox.png) no-repeat 0 -4px;
+  padding: 0;
+}
+.checkbox.checked .check{
+  background: url(checkbox.png) no-repeat 0px -31px;
+}
+
+/********CUSTOM CHECKBOX***********/
+
+.css-checkbox + label {
+  cursor: pointer;
+}
+.css-checkbox:not(checked) {
+  position: absolute;
+  opacity: 0;
+}
+.css-checkbox:not(checked) + label {
+  position: relative; /* будем позиционировать псевдочекбокс относительно label */
+  padding: 0 0 0 60px;
+}
+.css-checkbox:not(checked) + label:before {
+  content: '';
+  position: absolute;
+  top: -4px;
+  left: 0;
+  width: 50px;
+  height: 26px;
+  border-radius: 13px;
+  background: #CDD1DA;
+  box-shadow: inset 0 2px 3px rgba(0,0,0,.2);
+}
+.css-checkbox:not(checked) + label:after {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: 2px;
+  width: 22px;
+  height: 22px;
+  border-radius: 10px;
+  background: #FFF;
+  box-shadow: 0 2px 5px rgba(0,0,0,.3);
+  transition: all .2s; /* анимация, чтобы чекбокс переключался плавно */
+}
+.css-checkbox:checked + label:before {
+  background: #9FD468;
+}
+.css-checkbox:checked + label:after {
+  left: 26px;
+}
+
+.container {
+  width: 340px;
+  margin: auto;
+  padding: 50px 0;
+}
+.librery,
+.custom {
+  padding: 50px 0;
+}
+
+.submenu > li {
+animation-name: colorAnimation;
+animation-duration: 2s;
+}
+
+@keyframes colorAnimation {
+from { background-color: #9FD468; }
+to { background-color: #6cDdd8; }
+}

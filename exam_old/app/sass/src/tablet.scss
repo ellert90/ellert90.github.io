@@ -1,0 +1,124 @@
+@media (min-width: 768px) {
+
+  .header {
+    // min-width: 768px;
+  }
+  .enter {
+    width: 90%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+
+    &__log_in {
+      width: 200px;
+
+    }
+    &__item {
+
+    }
+    &__h2 {
+      margin-top: 25px;
+    }
+  }
+
+  .holiday {
+
+    &__title {
+      font-size: 51.97px;
+      width: 60%;
+      margin: 70px auto 0 auto;
+      font-family: "Montserrat Bold";
+    }
+    &__paragraph {
+      font-size: 23.99px;
+      margin: 30px auto;
+    }
+  }
+
+  .wrp .works {
+    display: block;
+    float: left;
+    position: relative;
+    margin-right: 25px;
+    height: 400px;
+    display: flex;
+    margin-right: 10px;
+
+    &_inner {
+      // width: 100%;
+      padding-left: 0;
+      display: flex;
+      justify-content: space-around;
+    }
+    &__list {
+      width: 15000px;
+      padding: 0;
+      position: relative;
+    }
+    &__hider {
+      width: 300px;
+      overflow: hidden;
+      float: left;
+    }
+
+  }
+  .slider-left {
+    position: absolute;
+    top: 130px;
+    left: 5px;
+    z-index: 3;
+    color: $main-white;
+    font-size: 90px;
+    cursor: pointer;
+  }
+  .slider-right {
+    position: absolute;
+    top: 130px;
+    right: 5px;
+    margin-left: 50px;
+    z-index: 4;
+    color: $main-white;
+    font-size: 90px;
+    cursor: pointer;
+  }
+  .slider-wrp {
+    position: relative;
+  }
+  .inactive {
+    color: $main-grey;
+  }
+  .partner {
+    float: left;
+  }
+
+  .img__search {
+    height: 100%;
+    width: 100%;
+    // float: left;
+  }
+  .img__container {
+    height: 310px;
+    width: 235px;
+  }
+  .img__container:nth-child(5),
+  .img__container:nth-child(6),
+  .img__search:nth-child(5),
+  .img__search:nth-child(5) {
+    width: 480px;
+  }
+
+  #result{
+    height: 100%;
+    width: 768px;
+    margin: auto;
+
+    // display: flex;
+    // flex-wrap: wrap;
+    // align-content: space-between;
+  }
+  .holiday__search_form {
+    display: flex;
+  }
+
+
+}//
