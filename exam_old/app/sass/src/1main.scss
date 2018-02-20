@@ -1,0 +1,77 @@
+@import "../../sprites/sprite.scss";
+
+//main colors
+
+$main-red: #ff4e50;
+$main-grey: #cccccc;
+$main-white: #fff;
+$main-black: #000;
+
+* {
+  box-sizing: border-box;
+  font-size: 1.1429em;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+h2 {
+  font-family: 'Mantserrat Bold';
+}
+
+.wrp {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: $main-white;
+}
+
+//main titles
+
+.main__p {
+  font-family: 'Roboto Light';
+  font-size: 0.875rem;
+  color: $main-grey;
+}
+.main__title {
+  font-family: 'Mantserrat Bold';
+  font-size: 22px;
+  color: $main-white;
+  text-align: center;
+}
+.main__title_big {
+  font-family: "Mantserrat Bold";
+  // font-size: 1.5rem;
+  font-size: 24px;
+  color: $main-white;
+}
+
+.main__title-black {
+  font-family: "Montserrat Bold";
+  color: $main-black;
+  font-size: 1.2rem;
+}
+//
+
+.circular {
+  display: block;
+  height: 40px;
+  line-height: 36px;
+  width: 280px;
+  text-align: center;
+  color: $main-white;
+  border: 2px solid $main-white;
+  border-radius: 20px;
+  margin: auto;
+}
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix {
+  clear: both;
+  overflow: hidden;
+}

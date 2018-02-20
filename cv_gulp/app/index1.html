@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Task 3</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <style>
+    .wrp {
+      width: 600px;
+      margin: auto;
+    }
+    .form {
+      height: 100px;
+      width: 300px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+    }
+    .form_button_container {
+      display: flex;
+      justify-content: space-between;
+    }
+    .form_text {
+
+    }
+  </style>
+</head>
+<body>
+    <div class="wrp">
+      <form action="GET" class="form">
+        <input type="text" class="form_text" id="search_in">
+        <div class="form_button_container">
+          <input type="reset" class="form_button" id="button_reset">
+          <input type="submit" class="form_button" id="button">
+        </div>
+      </form>
+      <div id="result"></div>
+    </div>
+<script>
+
+$(function() {
+
+  action();
+  //BUTTON
+  var searchValue;
+  $('#search_in').keyup(function(){
+      if(event.keyCode==13)
+         {
+            action();
+         }
+  })
+
+  $('#button').on('click', function(e) {
+    e.preventDefault();
+    action();
+
+
+  });
+  function action(){
+
+    $('#result').empty();
+
+    searchValue = $('#search_in').val();
+
+    var urla = 'https://universities.hipolabs.com/search?country=' + searchValue;
+
+
+    $.ajax({
+      url: urla,
+      success: function(data) {
+        console.log(data);
+        // for (var i = 0; i < data.hits.length; i++) {
+        //   var $img = ('<div class="img__container"><img src="'+data.hits[i].webformatURL+'" class="search"><span class="img__text">' + data.hits[i].tags + '</span></img></div>');
+        //   $('#result').css({height: data.hits[i].webformatHeight, width: data.hits[i].webformatWidth, margin: 'auto'}).append($img);
+        // }
+      },
+      error: function() {
+        console.log('error fetching!');
+      }
+    });
+  }
+
+});
+
+</script>
+</body>
+</html>
