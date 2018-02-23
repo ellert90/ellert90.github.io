@@ -1,50 +1,43 @@
+html {
+  box-sizing: border-box;
+}
 body {
   font-family: Arial;
-  background-color: #797;
+  /*background-color: #797;*/
+  padding: 0;
+  margin: 0;
 }
 .wrapper {
-  width: 960px;
-  height: 450px;
-  margin: auto;
-  border: 1px solid black;
-  border-radius: 3px;
-  position: absolute;
-  top: 0; right: 0; bottom: 0; left: 0;
-  background-color: white;
+  width: 100%;
+  display: grid;
+  grid-row: row;
+  /*grid-template-columns: auto 1fr 1fr;*/
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-gap: 10px;
 }
 #timeId {
-  font-size: 140px;
-  margin-left: 50px;
-}
-.knop {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
+  font-size: 14vw;
+  text-align: center;
+
 }
 .button {
-  width: 200px;
-  height: 60px;
-  border-radius: 5px;
+  height: 40px;
   border: none;
-  margin: 0 40px 30px 40px;
-  font-size: 40px;
-  color: white;
-  margin-bottom: 85px;
-}
-button:acitve {
-  border: 3px solid red;
+  padding: 0;
+  font-size: 20px;
+  color: #fff;
 }
 #start {
-  background: #394;
-  position: absolute;
-  bottom: 0;
-  }
-#pause {
-  background: #856;
+  background: #4CAF50;
 }
 #clear {
-  background: #922;
-  position: absolute;
-  right: 0;
-  bottom: 0;
+  background: #F4511E;
+}
+
+@media (min-width: 480px) {
+  .wrapper {
+    grid-wrap: wrap;
+    grid-template-columns: 2fr 1fr 1fr;
+  }
 }

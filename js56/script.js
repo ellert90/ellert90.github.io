@@ -13,23 +13,23 @@ function timeCounter() {
 
   var date = new Date();
   var t = date.getTime() - startDate.getTime();
-  var ms = t%1000; t-=ms;
-  t = Math.floor (t/1000);
-  var s = t%60; t-=s;
-  t = Math.floor (t/60);
-  var m = t%60; t-=m;
-  t = Math.floor (t/60);
-  var h = t%60;
+  var ms = t % 1000; t -= ms;
+  t = Math.floor (t / 1000);
+  var s = t % 60; t -= s;
+  t = Math.floor (t / 60);
+  var m = t % 60; t -= m;
+  t = Math.floor (t / 60);
+  var h = t % 60;
 
-  if (h<10) h='0'+h;
-  if (m<10) m='0'+m;
-  if (s<10) s='0'+s;
-  if (ms<10) ms='00'+ms;
-  if (ms<100) ms= '0' + ms;
+  if (h < 10) h = '0' + h;
+  if (m < 10) m = '0' + m;
+  if (s < 10) s = '0' + s;
+  if (ms < 10) ms = '00' + ms;
+  if (ms < 100) ms = '0' + ms;
 
   show = h + ':' + m + ':' + s + '.' + ms;
   if (init == 1) timeId.innerHTML = show;
-  clocktimer = setTimeout("timeCounter()",4);
+  clocktimer = setTimeout("timeCounter()", 4);
   return show;
 }
 
