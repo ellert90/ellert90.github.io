@@ -4,11 +4,8 @@
 
 let wrp = document.querySelector('.wrp'),
     main = document.querySelector('.main'),
-    skillParent = document.querySelector('#skills'),
-    animEl = document.querySelector('.wrp');
+    skillParent = document.querySelector('#skills');
 
-
-//start anim skill
 
 let animate = ({timing, draw, duration}) => {
 
@@ -31,8 +28,6 @@ let animate = ({timing, draw, duration}) => {
   });
 };
 
-//end anim skill
-
 let slideSkill = (el, width) => {
   animate({
         duration: 1300,
@@ -44,6 +39,21 @@ let slideSkill = (el, width) => {
         }
       });
 };
+
+let upAnim = el => {
+    animate({
+          duration: 2000,
+          timing: function(timeFraction) {
+            return Math.pow(timeFraction, 5);
+          },
+          draw: function(progress) {
+            el.style.bottom = progress * 200 + 'px';
+            el.style.opacity = progress * 1 * 5;
+            }
+        });
+};
+
+// window.onload = upAnim(wrp);
 
 //SKILLS
 
@@ -95,7 +105,7 @@ skill();
 
 window.onload = function myMasonry() {
 
-
+  let animEl = document.querySelector('.wrp');
   animEl.style.top = 0;
   animEl.style.opacity = 1;
 
