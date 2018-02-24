@@ -3,15 +3,11 @@
     margin: auto;
   }
   .portfolio {
-    height: 250px;
 
     &__container {
-      width: 90%;
-      flex-direction: row;
-      justify-content: space-between;
+      grid-template-columns: repeat(2, 1fr);
     }
     &__link {
-      width: 32%;
     }
     &__img {
       width: 100%;
@@ -24,17 +20,27 @@
     width: 980px;
     font-size: 0.9em;
   }
+  .portfolio__container {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 @media print {
   .object__variable {
     font-family: Arial;
   }
+  .object__variable--hide_to_print {
+    display: none;
+  }
   .print {
     display: block;
+    visibility: visible;
+    padding-bottom: 30px;
   }
   .portfolio {
-    display: none;
     visibility: hidden;
+  }
+  .object__value--print{
+    visibility: visible;
   }
 }
