@@ -25,8 +25,6 @@ slideLeft.addEventListener('click', moveRight);
 function moveRight(){
     if (index > 0) {
 
-
-
       slideImg[index].classList.remove('slider_item-block');
       slideImg[--index].classList.add('slider_item-block');
       slideRight.style.opacity = '1';
