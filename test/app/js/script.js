@@ -2,7 +2,7 @@
 (function(){
   let obj = {};
 
-  const url = 'js/question.json';
+  const url = 'js/ohta.json';
   fetch(url)
   .then(response => response.json())
   .then(data => obj = data)
