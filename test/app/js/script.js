@@ -5,7 +5,10 @@
   const url = 'js/ohta.json';
   fetch(url)
   .then(response => response.json())
-  .then(data => obj = data)
+  .then(data => {
+    obj = data;
+    random();
+  })
   .catch(error => console.log(error));
 
   let $ = (selector) => document.querySelector(selector);
@@ -17,7 +20,6 @@
       answersElem = $$('.test__answer'),
       send = $('.send'),
       result = $('.result'),
-      startButn = $('.start'),
       quesNumb = $('.test__question_number'),
       close = $('.close'),
       modal = $('.modal_bg'),
@@ -56,7 +58,6 @@
   }
 
 
-  startButn.addEventListener('click', random);
   send.addEventListener('click', random);
 
 
@@ -73,8 +74,7 @@
       if (coantity === 0) {
         if (total >= 1) {
           answerErr0.style.display = 'block';
-            }
-        modalWhite.style.display = 'none';
+        }
       }
       if (coantity >= 1 || total === 0) {
         rand = Math.floor(Math.random() * Object.keys(obj).length) + 0;
