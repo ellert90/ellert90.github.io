@@ -1,0 +1,1164 @@
+<div class="container"><div class="krt_question">Осмотичний гемолiз еритроцитiв вiдбудеться при зануренi їх в:</div><div class="list-group-item">
+
+5 % р-н сахарози</div><div class="list-group-item">
+
+10 % р-н глюкози</div><div class="list-group-item correct">
+
+0,3 % р-н NaCl</div><div class="list-group-item">
+
+0,9 % р-н NaCl</div><div class="list-group-item">
+
+3 % р-н NaCl</div>
+
+
+</div><div class="container"><div class="krt_question">Вирiшальну роль в обмiнi води мiж кров'ю i тканинами вiдiграють:</div><div class="list-group-item">
+
+еритроцити</div><div class="list-group-item correct">
+
+бiлки плазми</div><div class="list-group-item">
+
+тромбоцити</div><div class="list-group-item">
+
+лейкоцити</div><div class="list-group-item">
+
+NaCl</div>
+</div><div class="container"><div class="krt_question">Кров, що вiдткає вiд iнтенсивно працюючої тканини, переважно вмiщує:</div><div class="list-group-item">
+
+оксигемоглобiн</div><div class="list-group-item correct">
+
+дезоксигемоглобiн</div><div class="list-group-item">
+
+карбоксигемоглобiн</div><div class="list-group-item">
+
+метгемоглобiн</div></div><div class="container"><div class="krt_question">Гемолiз еритроцитiв, що виникає пiсля укуса змiї може бути:</div><div class="list-group-item">
+
+механiчним</div><div class="list-group-item">
+
+осмотичним</div><div class="list-group-item correct">
+
+бiологiчним</div><div class="list-group-item">
+
+хiмiчним</div><div class="list-group-item">
+
+термiчним</div></div><div class="container"><div class="krt_question">Найбiльш сильно стимулюють утворення нових гранулоцитiв,
+
+моноцитiв такi фактори, як:</div><div class="list-group-item correct">
+
+ГЦ-МЦ-КСФ</div><div class="list-group-item">
+
+гiперкапнiя</div><div class="list-group-item">
+
+СТГ</div><div class="list-group-item">
+
+АКТГ</div><div class="list-group-item">
+
+ТТГ</div></div><div class="container"><div class="krt_question">Т-хелпери головним чином ...
+
+утворюють антитiла</div><div class="list-group-item correct">
+
+регулюють пролiферацiю, диференцiацiю В-лiмфоцитiв</div><div class="list-group-item">
+
+репрезентують антиген</div><div class="list-group-item">
+
+регулюють кiлькiсть моноцитiв</div><div class="list-group-item">
+
+регулюють кiлькiсть гранулоцитiв</div></div><div class="container"><div class="krt_question">
+До неосновних групових систем кровi належать:</div><div class="list-group-item">
+
+CDEcde</div><div class="list-group-item correct">
+
+MNSskk</div><div class="list-group-item">
+
+ABO</div><div class="list-group-item">
+
+Oав(I)</div><div class="list-group-item">
+
+Ав(I)</div></div><div class="container"><div class="krt_question">
+Кiлькiсть ретикулоцитiв в нормальнiй кровi є показником
+
+iнтенсивностi:</div><div class="list-group-item">
+
+руйнування еритроцитiв</div><div class="list-group-item correct">
+
+утворення еритроцитiв</div><div class="list-group-item">
+
+утворення моноцитiв</div><div class="list-group-item">
+
+утворення нейтрофiлiв</div><div class="list-group-item">
+
+руйнування тромбоцитiв</div></div><div class="container"><div class="krt_question">
+При пошкодженнi cудин в їх iнтимi оголюється колаген,
+
+що сприяє коагуляцiйному гемостазу завдяки
+
+безпосереднiй активацiї факторiв плазми:</div><div class="list-group-item correct">
+
+XII</div><div class="list-group-item">
+
+IX</div><div class="list-group-item">
+
+VII</div><div class="list-group-item">
+
+II</div><div class="list-group-item">
+
+XIII</div></div>
+<div class="container"><div class="krt_question">
+	При визначенi групи кровi отримали аглютинацiю еритроцитiв
+
+	в цолiклонi анти-А i плазми з стандартними еритроцитами В.
+
+	Група кровi пiддослiдного належить до:</div><div class="list-group-item">
+
+	О</div><div class="list-group-item correct">
+
+	А</div><div class="list-group-item">
+
+	В</div><div class="list-group-item">
+
+	АВ</div>
+</div>
+<div class="container"><div class="krt_question">
+
+Гематокритний показник зменшується, якщо має мicце:</div><div class="list-group-item">
+
+втрата води</div><div class="list-group-item correct">
+
+еритропенiя</div><div class="list-group-item">
+
+еритроцитоз</div><div class="list-group-item">
+
+лейкоцитоз</div><div class="list-group-item">
+
+NaCl</div></div><div class="container"><div class="krt_question">
+Пicля периливання бiлкових кровозамiнникiв
+
+зменшиться перш за все:</div><div class="list-group-item correct">
+
+гематокритний показник</div><div class="list-group-item">
+
+онкотичний тиск</div><div class="list-group-item">
+
+рН кровi</div><div class="list-group-item">
+
+ШОЕ</div></div><div class="container"><div class="krt_question">
+Якщо ШОЕ збiльшилась, то це означає, зокрема,
+
+що в плазмi кровi збiльшилась кiлькiсть:</div><div class="list-group-item">
+
+альбумiнiв</div><div class="list-group-item correct">
+
+глобулiнiв</div><div class="list-group-item">
+
+еритроцитiв</div><div class="list-group-item">
+
+тромбоцитiв</div><div class="list-group-item">
+
+NaCl</div></div><div class="container"><div class="krt_question">
+Осмотичний гемолiз еритроцитiв можна викликати зануренням
+
+їх в 3 % р-н глюкози i цей гемолiз виникає в зв'язку з:</div><div class="list-group-item correct">
+
+входом води в еритроцити</div><div class="list-group-item">
+
+входом глюкози в еритроцити</div><div class="list-group-item">
+
+виходом води iз еритроцитiв</div><div class="list-group-item">
+
+виходом глюкози iз еритроцитiв</div><div class="list-group-item">
+
+входом NaCl в еритроцити</div></div><div class="container"><div class="krt_question">
+При визначеннi групи кровi отримали аглютинацiю еритроцитiв
+
+з цолiклоном анти-А та з цолiклоном анти-В; не отримали
+
+аглютинацiї плазми кровi з стандартними еритроцитами A та
+
+з стандартними еритроцитами В. Група кровi дослiджуваного:</div><div class="list-group-item">
+
+0ав(I)</div><div class="list-group-item">
+
+Ав(II)</div><div class="list-group-item">
+
+Ва(III)</div><div class="list-group-item correct">
+
+АВо(IV)</div></div><div class="container"><div class="krt_question">
+Гемоглобiн F новонародженнного вiдрiзняється
+
+вiд гемоглобiну А дорослого:</div><div class="list-group-item">
+
+конфiгурацiєю молекули Нb</div><div class="list-group-item">
+
+структурою гема</div><div class="list-group-item correct">
+
+амiнокислотним складом глобiну</div><div class="list-group-item">
+
+валентнiстю залiза</div><div class="list-group-item">
+
+кiлькiстю амiнокислотних ланцюгiв</div></div><div class="container"><div class="krt_question">
+Еритропоетини утворюються в нирках безпосередньо при:</div><div class="list-group-item correct">
+
+гiпоксемiї</div><div class="list-group-item">
+
+гiперкапнiї</div><div class="list-group-item">
+
+гiпероксiї</div><div class="list-group-item">
+
+гiперпротеiнемiї</div><div class="list-group-item">
+
+еритропенiї</div></div>
+<div class="container"><div class="krt_question">
+	Нормальна киснева ємкiсть кровi cтановить:</div><div class="list-group-item correct">
+
+	19 - 20 об %</div><div class="list-group-item">
+
+	10 - 20 г/л</div><div class="list-group-item">
+
+	15 - 20 об %</div><div class="list-group-item">
+
+	120 г/л</div><div class="list-group-item">
+
+	4*10^12/ л</div>
+</div>
+<div class="container"><div class="krt_question">
+Лейкопоетини (ГЦ-МЦ-КСФ, ТНФ, ГЦ-КСФ, МЦ-КСФ),
+
+що стимулюють утворення гранулоцитiв/моноцитiв
+
+видiляються переважно:</div><div class="list-group-item correct">
+
+макрофагами</div><div class="list-group-item">
+
+лiмфоцитами</div><div class="list-group-item">
+
+гепатоцитами</div><div class="list-group-item">
+
+ентероцитами</div><div class="list-group-item">
+
+мiоцитами</div>
+</div>
+<div class="container"><div class="krt_question">
+В адгезiї тромбоцитiв приймають участь безпосередньо:</div><div class="list-group-item">
+
+адреналiн</div><div class="list-group-item">
+
+фiбрiноген</div><div class="list-group-item correct">
+
+фактор Виллебранда</div><div class="list-group-item">
+
+арахiдонова кислота</div><div class="list-group-item">
+
+тромбiн</div>
+</div>
+<div class="container">
+<div class="krt_question">
+Первиннi антикоагулянти активно утворюються:</div><div class="list-group-item correct">
+
+постiйно</div><div class="list-group-item">
+
+тiльки при пошкодженнях</div><div class="list-group-item">
+
+при загрозi пошкодження</div><div class="list-group-item">
+
+пiд час гемокоагуляцiї</div><div class="list-group-item">пiд час фiбрiнолiзу</div>
+</div>
+<div class="container"><div class="krt_question">
+Гематокритний показник збiльшується якщо має мiсце:</div><div class="list-group-item correct">
+
+втрата води</div><div class="list-group-item">
+
+кровотеча</div><div class="list-group-item">
+
+надлишок води</div><div class="list-group-item">
+
+еритропенiя</div><div class="list-group-item">
+
+гiперпротеiнемiя</div></div><div class="container"><div class="krt_question">
+Пiсля переливання 100 мл 0,9% розчину NaCl або
+
+100 мл 5% розчину глюкози виникне:</div><div class="list-group-item correct">
+
+iзоосмiя</div><div class="list-group-item">
+
+гiпоосмiя</div><div class="list-group-item">
+
+гiперосмiя</div><div class="list-group-item">
+
+ацидоз</div><div class="list-group-item">
+
+алкалоз</div></div><div class="container"><div class="krt_question">
+Якщо онкотичний тиск на 15 мм Hg бiльше в капiлярах,
+
+нiж в мiжклiтиннiй рiдинi, то через стiнку капiляра вода
+
+рухатиметься:</div><div class="list-group-item correct">
+
+в кров iз мiжклiтинної рiдини</div><div class="list-group-item">
+
+iз кровi в мiжклiтинну рiдину</div><div class="list-group-item">
+
+в лiмфу з мiжклiтинної рiдини</div><div class="list-group-item">
+
+в клiтини iз мiжклiтинної рiдини</div><div class="list-group-item">
+
+в еритроцити з плазми кровi</div><div class="list-group-item">
+
+2</div></div><div class="container"><div class="krt_question">
+Онкотичний тиск плазми кровi створюється:</div><div class="list-group-item">
+
+лiпiдами</div><div class="list-group-item correct">
+
+бiлками</div><div class="list-group-item">
+
+еритроцитами</div><div class="list-group-item">
+
+мiнеральними солями</div><div class="list-group-item">
+
+буферними системами</div><div class="list-group-item">
+
+2</div></div><div class="container"><div class="krt_question">
+ШОЕ 10 мм/год, обумовлено, перш за все,
+
+тфкими показниками кровi:</div><div class="list-group-item correct">
+
+А/Г=1,5</div><div class="list-group-item">
+
+рН=7,4</div><div class="list-group-item">
+
+Ронк=25 мм рт. ст.</div><div class="list-group-item">
+
+Рг=30 мм рт. ст.</div><div class="list-group-item">
+
+2</div></div><div class="container"><div class="krt_question">
+Валентнiсть залiза в гемi метгемоглобiну:</div><div class="list-group-item">
+
+2+</div><div class="list-group-item correct">
+
+3+</div><div class="list-group-item">
+
+1+</div><div class="list-group-item">
+
+4+</div><div class="list-group-item">
+
+5+</div></div><div class="container"><div class="krt_question">
+При утвореннi АТФ в пентозофосфатному циклi
+
+синтезується 2,3-дифосфоглiцерат, який:</div><div class="list-group-item">
+
+пiдвищує спорiдненiсть Hb до кисню</div><div class="list-group-item correct">
+
+знижує спорiдненсть Hb до кисню</div><div class="list-group-item">
+
+перешкоджає диссоцiацiї оксигемоглобiну</div><div class="list-group-item">
+
+сприяє диссоцiацiї оксигемоглобiну</div><div class="list-group-item">
+
+сприяє утворенню карбгемоглобiну</div></div><div class="container"><div class="krt_question">
+Окислювачi, якi сприяють утворенню метгемоглобiну,
+
+є токсичними тому, що безпосередньо:</div><div class="list-group-item">
+
+конкурують з киснем</div><div class="list-group-item correct">
+
+утворюють мiцний ковалентний зв'язок з залiзом</div><div class="list-group-item">
+
+взаємодiють з глобiном</div><div class="list-group-item">
+
+викликають ацидозвикликають ацидоз</div><div class="list-group-item">
+
+викликають гiпоксемiю</div></div><div class="container"><div class="krt_question">
+В стимуляцiї еритропоезу найбiльше значення
+
+мають безпосередньо:</div><div class="list-group-item">
+
+катехоламiни</div><div class="list-group-item">
+
+кортизол</div><div class="list-group-item correct">
+
+еритропоетини</div><div class="list-group-item">
+
+тестостерон</div><div class="list-group-item">
+
+iнсулiн</div></div><div class="container"><div class="krt_question">
+Для полегшення пiдрахунку еритроцитiв пiд
+
+мiкроскопом кров розводять:</div><div class="list-group-item">
+
+1% розчином глюкози</div><div class="list-group-item correct">
+
+3% розчином NaCl</div><div class="list-group-item">
+
+0</div><div class="list-group-item"> н розчином HCl</div><div class="list-group-item">
+
+5% розчином цитрату Na</div><div class="list-group-item">
+
+0,5% розчином NaCl</div></div><div class="container"><div class="krt_question">
+Людинi для проведення детоксикацiї було
+
+введено NaCl з концентрацiєю:</div><div class="list-group-item">
+
+0,3%</div><div class="list-group-item correct">
+
+0,9%</div><div class="list-group-item">
+
+1%</div><div class="list-group-item">
+
+2%</div><div class="list-group-item">
+
+5,4%</div></div><div class="container"><div class="krt_question">
+Загальнi час зсiдання кровi = 5 хв. Протромбiновий iндекс 100%.
+
+При таких показниках тривалiсть 1 фази коагуляцiйного
+
+гемостазу найiмовiрнiше становить:</div><div class="list-group-item">
+
+5 хв</div><div class="list-group-item">
+
+15 хв</div><div class="list-group-item correct">
+
+5 сек</div><div class="list-group-item">
+
+15 сек</div><div class="list-group-item">
+
+2 хв</div></div>
+<div class="container"><div class="krt_question">
+У людини кiлькiсть тромбоцитiв в периферiчнiй кровi 300*10^9/л,
+
+нормальна кiлькiсть фактору Виллебранда. Чому буде
+
+дорiвнювати час кровотечi (проба Дьюка) при таких показниках?
+</div><div class="list-group-item">
+
+5 сек</div><div class="list-group-item correct">
+
+5 хв</div><div class="list-group-item">
+
+2 хв</div><div class="list-group-item">
+
+10 хв</div><div class="list-group-item">
+
+15 хв</div></div>
+<div class="container"><div class="krt_question">
+При визначеннi групи кровi отримали аглютинацiю еритроцитiв
+
+з цолiклоном анти-B; плазми кровi з стандартними
+
+еритроцитами A. Група кровi дослiджуваного:</div>
+<div class="list-group-item">0ав(I)</div>
+<div class="list-group-item">Ав(II)</div>
+<div class="list-group-item correct">Ва(III)</div>
+<div class="list-group-item">АВо(IV)</div>
+</div>
+<div class="container"><div class="krt_question">
+Еозинофiли здатнi безпосередньо:</div><div class="list-group-item correct">
+
+фагоцитувати, приймати участь в алергiчних реакцiях</div><div class="list-group-item">
+
+активувати зсiдання кровi</div><div class="list-group-item">
+
+синтезувати антитiла</div><div class="list-group-item">
+
+утаорювати плазматичнi клiтини</div><div class="list-group-item">
+
+стимулювати лiмфопоез</div></div>
+<div class="container"><div class="krt_question">
+Гуморальнi фактори, якi регулюють клiтиннi iмуннi реакцiї i
+
+взаємодiю мiж Т i В - лiмфоцитами:</div><div class="list-group-item correct">
+
+лiмфокiни</div><div class="list-group-item">
+
+лейкопоетини</div><div class="list-group-item">
+
+аглютинiни</div><div class="list-group-item">
+
+лiзоцим</div><div class="list-group-item">
+
+комплемент</div></div><div class="container"><div class="krt_question">
+Оптимальна концентрацiя антитiл пiсля першого надходження
+
+антигена в нормальний органiзм виникає протягом:</div><div class="list-group-item">
+
+доби</div><div class="list-group-item correct">
+
+тижнiв</div><div class="list-group-item">
+
+мiсяцiв</div><div class="list-group-item">
+
+рокiв</div><div class="list-group-item">
+
+5 хвилин</div></div><div class="container"><div class="krt_question">
+В груповiй системi CDE природженi аглютинiни:</div><div class="list-group-item correct">
+
+вiдсутнi</div><div class="list-group-item">
+
+присутнi а, в</div><div class="list-group-item">
+
+присутнi cde</div><div class="list-group-item">
+
+присутнi CDE</div></div><div class="container"><div class="krt_question">
+При визначеннi групи кровi отримали аглютинацiю еритроцитiв
+
+з цолiклоном анти-А; плазми кровi з стандартними
+
+еритроцитами В. Група кровi дослiджуваного:</div><div class="list-group-item">
+
+0ав(I)</div><div class="list-group-item correct">
+
+Ав(II)</div><div class="list-group-item">
+
+Ва(III)</div><div class="list-group-item">
+
+АВо(IV)</div>
+
+</div><div class="container"><div class="krt_question">
+
+Базофiли утаорюються з промiєлоцитiв в червоному
+
+кiстковому мозку i можуть:</div><div class="list-group-item correct">
+
+фагоцитувати, стимулювати лiполiз, видiляти гепарин</div><div class="list-group-item">
+
+виробляти iнтерлейкiни</div><div class="list-group-item">
+
+утворювати прокоагулянти</div><div class="list-group-item">
+
+утворювати лiзоцим</div><div class="list-group-item">
+
+утворювати атитiла</div></div><div class="container"><div class="krt_question">
+Найважливiша функцiя нейтрофiлiв:</div><div class="list-group-item">
+
+утворення антитiл</div><div class="list-group-item">
+
+синтез лейкотриєнiв</div><div class="list-group-item correct">
+
+мiкрофагоцитоз</div><div class="list-group-item">
+
+утворення тромбоксану А2</div><div class="list-group-item">
+
+транспорт гепарину</div></div><div class="container"><div class="krt_question">
+При визначеннi групи кровi дослiджуваного з'явилась
+
+аглютинацiя в краплi з цолiклоном анти-В i плазми
+
+дослiджуваної кровi з стандартними еритроцитами А.
+
+Не вiдбулося аглютинацiї з цолiклоном анти-А та
+
+стандартними еритроцитами В. Яка група кровi?
+
+0ав(I)</div><div class="list-group-item">
+
+Ав(II)</div><div class="list-group-item correct">
+
+Ва(III)</div><div class="list-group-item">
+
+АВо(IV)</div></div><div class="container"><div class="krt_question">
+Пацiєнту пiсля кровотечi необхiдна гемотрансфузiя. Група
+
+кровi у нього АВо(IV). Кров якої групи ви використаєте
+
+для переливання?
+
+0ав(I), Rh+</div><div class="list-group-item">
+
+Ав(II), Rh+</div><div class="list-group-item">
+
+Ва(III), Rh+</div><div class="list-group-item correct">
+
+АВо(IV), Rh+</div><div class="list-group-item">
+
+</div></div><div class="container"><div class="krt_question">
+У рецiпiєнта 0ав(I) група кровi за системою АВ0 i Rh+.
+
+Яку кров ви використаєте для гемотрансфузiї?</div><div class="list-group-item correct">
+
+0ав(I), Rh+</div><div class="list-group-item">
+
+АВо(IV), Rh+</div><div class="list-group-item">
+
+АВо(IV), Rh-</div><div class="list-group-item">
+
+0ав(I), Rh-</div><div class="list-group-item">
+
+Ав(II), Rh+</div></div><div class="container"><div class="krt_question">
+При визначеннi групи кровi не отримали аглютинацiю еритроцитiв
+
+з цолiклоном анти-А i з цолiклоном анти-В; але отримали
+
+аглютинацiю плазми кровi з стандартними еритроцитами А та
+
+з стандартними еритроцитами В. Група кровi дослiджуваного:</div><div class="list-group-item correct">
+
+0ав(I)</div><div class="list-group-item">
+
+Ав(II)</div><div class="list-group-item">
+
+Ва(III)</div><div class="list-group-item">
+
+АВо(IV)</div></div><div class="container"><div class="krt_question">
+Прокоагулянти всiх фаз зсiдання присутнi в кровi:</div><div class="list-group-item correct">
+
+постiйно</div><div class="list-group-item">
+
+при пошкодженнях судин</div><div class="list-group-item">
+
+пiд час фiзичного навантаження</div><div class="list-group-item">
+
+при стресах</div><div class="list-group-item">
+
+при пологах</div></div><div class="container"><div class="krt_question">
+Внутрiшнiй (кров'яний) механiзм утаорення протромбiнази
+
+починається з активацiї факторiв плахми кровi:</div><div class="list-group-item">
+
+протромбiну</div><div class="list-group-item correct">
+
+XII</div><div class="list-group-item">
+
+XIII</div><div class="list-group-item">
+
+VII</div><div class="list-group-item">
+
+V</div></div><div class="container"><div class="krt_question">
+Для активацiї зовнiшнього механiзму утворення протромбiнази
+
+необхiдна активацiя, перш за все:</div><div class="list-group-item">
+
+фактора Виллебранда</div><div class="list-group-item correct">
+
+VII</div><div class="list-group-item">
+
+X</div><div class="list-group-item">
+
+II</div><div class="list-group-item">
+
+V</div></div><div class="container"><div class="krt_question">
+Кiлькiсть кровi в органiзмi здорової людини масою 70 кг
+
+становить в середньому:</div><div class="list-group-item correct">
+
+5,5 л</div><div class="list-group-item">
+
+4,9 л</div><div class="list-group-item">
+
+4 л</div><div class="list-group-item">
+
+4,5 л</div><div class="list-group-item">
+
+6 л</div></div><div class="container"><div class="krt_question">
+Жiнка з резуc-позитивною кров'ю вагiтна. Плiд має
+
+резус-негативну кров. Якi антигени мiстяться у неї в кровi?
+
+CDE cde</div><div class="list-group-item correct">
+
+CD</div><div class="list-group-item">
+
+cde</div><div class="list-group-item">
+
+c'd'e' c''d''e''</div></div><div class="container"><div class="krt_question">
+У спортсмена пiд час змагання загальний час зсiданя кровi
+
+дорiвнює 3,5 хв. Який з перелiчених факторiв найвiрогiднiше
+
+призведе до прискорення гемокоагуляцiї?</div><div class="list-group-item correct">
+
+адреналiн</div><div class="list-group-item">
+
+ацетiлхолiн</div><div class="list-group-item">
+
+гепарин</div><div class="list-group-item">
+
+вазопресин</div><div class="list-group-item">
+
+соматолiберин</div></div><div class="container"><div class="krt_question">
+Ретракцiя кров'яного згустку становить 20 %. Кiлькiсть якого
+
+з факторiв гемокоагуляцiї буде порушена?
+
+фiбрiноген</div><div class="list-group-item">
+
+серотонiн</div><div class="list-group-item correct">
+
+тромбостенiн</div><div class="list-group-item">
+
+фiбрiназа</div><div class="list-group-item">
+
+протромбiн</div></div><div class="container"><div class="krt_question">
+Вмiст бiлкiв плазми кровi 68 г/л , з них:</div><div class="list-group-item"> альбумiнiв - 40 г/л ,
+
+глобулiнiв - 28 г/л. При таких величинах буде спостерiгатись:</div><div class="list-group-item">
+
+збiльшення Ронк.</div><div class="list-group-item">
+
+зменшення Ронк.</div><div class="list-group-item correct">
+
+нормальний Ронк.</div><div class="list-group-item">
+
+збiльшення Росм.</div><div class="list-group-item">
+
+зменшення Росм.</div></div><div class="container"><div class="krt_question">
+У людини осмотична резистентнicть ерiтроцитiв:
+
+min 0,4 % NaCl
+
+max 0,34 % NaCl
+
+Такi показники свiдчать про:</div><div class="list-group-item correct">
+
+нормальну стiйкiсть мембрани ерiтроцитiв до гiпотонiчних розчинiв</div><div class="list-group-item">
+
+знижену стiйкiсть мембрани ерiтроцитiв до гiпотонiчних розчинiв</div><div class="list-group-item">
+
+пiдвищену стiйкiсть мембрани ерiтроцитiв до гiпотонiчних розчинiв</div><div class="list-group-item">
+
+знижену стiйкiсть мембрани ерiтроцитiв до гiпертонiчних розчинiв</div><div class="list-group-item">
+
+пiдвищену стiйкiсть мембрани ерiтроцитiв до гiпертонiчних розчинiв</div></div><div class="container"><div class="krt_question">
+Аглютинiни групової системи АВО належать до:</div><div class="list-group-item">
+
+альфа-глобулiнiв</div><div class="list-group-item">
+
+бетта-глобулiнiв</div><div class="list-group-item correct">
+
+гамма-глобулiнiв</div><div class="list-group-item">
+
+альфа-альбумiнiв</div><div class="list-group-item">
+
+бетта-альбумiнiв</div></div><div class="container"><div class="krt_question">
+Гiпертонiчний розчин глюкози це:</div><div class="list-group-item">
+
+5,4 %</div><div class="list-group-item correct">
+
+10 %</div><div class="list-group-item">
+
+0,9 %</div><div class="list-group-item">
+
+1 %</div><div class="list-group-item">
+
+2 %</div></div><div class="container"><div class="krt_question">
+У людини при пiднiманнi в гори вiдбувається збiльшення
+
+кiлькостi ерiтроцитiв з 5*10^12/л до 8*10^12/л. Cтимуляцiя
+
+еритропоезу вiдбулась завдяки змiнам в артерiальнiй кровi:</div><div class="list-group-item">
+
+збiльшення рО2 в артерiальнiй кровi</div><div class="list-group-item correct">
+
+зменшення рО2 в артерiальнiй кровi</div><div class="list-group-item">
+
+збiльшення рСО2 в артерiальнiй кровi</div><div class="list-group-item">
+
+зменшення рСО2 в артерiальнiй кровi</div><div class="list-group-item">
+
+збiльшення рН в артерiальнiй кровi</div></div>
+<div class="container"><div class="krt_question">
+Пiсля вдиху чадного газу утворюється:</div>
+<div class="list-group-item">
+
+дезоксигемоглобiн</div><div class="list-group-item">
+
+оксигемоглобiн</div><div class="list-group-item">
+
+метгемоглобiн</div><div class="list-group-item">
+
+карбгемоглобiн</div><div class="list-group-item correct">
+
+карбоксигемоглобiн</div>
+
+</div><div class="container"><div class="krt_question">
+У людини через 10 дiб пiсля крововтрати вiдбувається
+
+стимуляцiя еритропоезу завдяки:</div><div class="list-group-item correct">
+
+зниженню рО2 артерiальної кровi</div><div class="list-group-item">
+
+пiдвищенню кiлькостi еритропоетинiв</div><div class="list-group-item">
+
+збудженню симпатичних впливiв на червоний кiстковий мозок</div><div class="list-group-item">
+
+пiдвищенню рСО2</div><div class="list-group-item">
+
+зменшенню об'єму кровi</div>
+
+</div><div class="container"><div class="krt_question">
+
+Стимулюють еритропоез безпосередньо:</div><div class="list-group-item">
+
+соматолiберiни</div><div class="list-group-item correct">
+
+еритропоетини</div><div class="list-group-item">
+
+тiреолiберiни</div><div class="list-group-item">
+
+соматомедiни</div><div class="list-group-item">
+
+катехоламiни</div></div><div class="container"><div class="krt_question">
+Величина колiрного показника кровi свiдчить безпосередньо про:</div><div class="list-group-item">
+
+кiлькiсть гемоглобiна</div><div class="list-group-item">
+
+кiсневу емнiсть кровi</div><div class="list-group-item correct">
+
+насиченiсть еритроцитiв гемоглобiном</div><div class="list-group-item">
+
+кiлькiсть еритроцитiв</div><div class="list-group-item">
+
+стан еритропоезу</div></div><div class="container"><div class="krt_question">
+1г Нb може приєднати в нормi:</div><div class="list-group-item">
+
+1,8 мл кисню</div><div class="list-group-item">
+
+2 мл кисню</div><div class="list-group-item correct">
+
+1,34 мл кисню</div><div class="list-group-item">
+
+1,64 мл кисню</div><div class="list-group-item">
+
+2,34 мл кисню</div></div><div class="container"><div class="krt_question">
+У людини 3 роки тому видалено шлунок в зв'язку з
+
+патологiчним процесом. Зараз в аналiзi кровi:
+
+еритроцитiв 3,5*10^12/л; гемоглобiн - 125 г/л; КП - 1,4.
+
+Яка ймовiрна причина цих показникiв?</div><div class="list-group-item correct">
+
+зменшення утворення внутрiшнього фактора Кастла</div><div class="list-group-item">
+
+зменшення утворення еритропоетинiв в нирках</div><div class="list-group-item">
+
+зменшення рО2 артерiальної кровi</div><div class="list-group-item">
+
+зменшення всмоктування залiза</div><div class="list-group-item">
+
+зменшення рСО2 артерiальної кровi</div>
+</div><div class="container"><div class="krt_question">
+В умовах гипоксiї на стимуляцiю еритропоезу в червононму
+
+кiстковому мозку впливають переважно:</div><div class="list-group-item">
+
+статевi гормони</div><div class="list-group-item">
+
+Т3, Т4</div><div class="list-group-item">
+
+СТГ</div><div class="list-group-item">
+
+АКТГ</div><div class="list-group-item correct">
+
+еритропоетини</div></div><div class="container"><div class="krt_question">
+Вiтамiн К впливає на синтез в печiнцi переважно факторiв:</div><div class="list-group-item correct">
+
+протромбiна</div><div class="list-group-item">
+
+плазмiна</div><div class="list-group-item">
+
+гепарiна</div><div class="list-group-item">
+
+фiбрiнази</div><div class="list-group-item">
+
+фiбрина</div></div><div class="container"><div class="krt_question">
+Для активацiї зовнiшнього механiзма коагуляцiйного гемостаза
+
+необхiдна активацiя безпосередньо факторiв:</div><div class="list-group-item correct">
+
+VII</div><div class="list-group-item">
+
+VIII</div><div class="list-group-item">
+
+IX</div><div class="list-group-item">
+
+XII</div><div class="list-group-item">
+
+X</div></div><div class="container"><div class="krt_question">
+Найбiльшу активнiсть в системi CDE cde мають антигени:</div><div class="list-group-item">
+
+C</div><div class="list-group-item correct">
+
+D</div><div class="list-group-item">
+
+E</div><div class="list-group-item">
+
+c</div><div class="list-group-item">
+
+d</div></div><div class="container"><div class="krt_question">
+Групова система CDE має в своєму складi таку кiлькiсть
+
+основних антигенiв:</div><div class="list-group-item">
+
+6</div><div class="list-group-item correct">
+
+3</div><div class="list-group-item">
+
+4</div><div class="list-group-item">
+
+1</div><div class="list-group-item">
+
+2</div></div><div class="container"><div class="krt_question">
+Слина i шлунковий сiк людинин, у якої група кровi Ав(II),
+
+мiстять аглютинiни:</div><div class="list-group-item">
+
+альфа, бета</div><div class="list-group-item correct">
+
+бета</div><div class="list-group-item">
+
+альфа</div><div class="list-group-item">
+
+А</div><div class="list-group-item">
+
+В</div></div><div class="container"><div class="krt_question">
+
+В лiмфi i мiжклiтиннiй рiдинi людинии, у якої група кровi Ва(III),
+
+мiстяться аглютинiни:</div><div class="list-group-item">
+
+альфа, бета</div><div class="list-group-item correct">
+
+альфа</div><div class="list-group-item">
+
+бета</div><div class="list-group-item">
+
+бета1</div><div class="list-group-item">
+
+бета2</div></div><div class="container"><div class="krt_question">
+До фiзичного навантаження кiлькiсть лейкоцитiв - 6,5*10^9/л,
+
+пiсля - 10*10^9/л. Це є наслiдком, перш за все:</div><div class="list-group-item correct">
+
+виходом лейкоцитiв з депо в циркулюючу кров</div><div class="list-group-item">
+
+посилення лейкопоезу</div><div class="list-group-item">
+
+збiльшення симпатичних впливiв на червоний кiстковий мозок</div><div class="list-group-item">
+
+збiльшення кiлькостi гормонiв</div><div class="list-group-item">
+
+зменшення рО2 в артерiальнiй кровi пiд час фiзичного навантаження</div></div><div class="container"><div class="krt_question">
+Продукти розпаду еритроцитiв:</div><div class="list-group-item">
+
+накопичуються макрофагами</div><div class="list-group-item correct">
+
+виводяться через ШКТ</div><div class="list-group-item">
+
+виводяться через нирки</div><div class="list-group-item">
+
+використовуються для ресинтезу гемоглобiну</div><div class="list-group-item">
+
+накопичуються в червоному кiстковому мозковi</div></div><div class="container"><div class="krt_question">
+Наявнiсть у новонародженого в еритроцитах F-гемоглобiну сприяє:</div><div class="list-group-item correct">
+
+пiдвищенню спорiдненостi гемоглобiну до кисню</div><div class="list-group-item">
+
+зниженню спорiдненостi гемоглобiну до кисню</div><div class="list-group-item">
+
+дисоцiацiї оксигемоглобiну</div><div class="list-group-item">
+
+утворення карбгемоглобiну</div><div class="list-group-item">
+
+збiльшення буферної ємностi</div></div><div class="container"><div class="krt_question">
+При реакцiї окислення гемоглобiну валентнiсть залiза в гемi:</div><div class="list-group-item correct">
+
+змiнюється з 2+ на 3+</div><div class="list-group-item">
+
+змiнюється з 3+ на 2+</div><div class="list-group-item">
+
+не змiнюється</div><div class="list-group-item">
+
+змiнюється з 3+ на 4+</div><div class="list-group-item">
+
+змiнюється з 4+ на 5+</div></div><div class="container"><div class="krt_question">
+У дитини 10 рокiв в аналiзi кровi спостеригається лейкоцитоз.
+
+Кiлькiсть нейтрофiлiв - 47%, еозинофiлiв - 5%, базофiлiв - 1%,
+
+лiмфоцитiв - 45%, моноцитiв - 2%. Збiльшення кiлькостi
+
+лейкоцитiв вiдбулося завдяки збiльшенню:</div><div class="list-group-item correct">
+
+лiмфоцитiв</div><div class="list-group-item">
+
+моноцитiв</div><div class="list-group-item">
+
+еозинофiлiв</div><div class="list-group-item">
+
+базофiлiв</div><div class="list-group-item">
+
+нейтрофiлiв</div></div><div class="container"><div class="krt_question">
+Визначте в лiтрах скiльки плазми мiститься в кровi людини,
+
+якщо вiдомо, що маса - 80 кг, гематокрiт - 50%.
+
+2,5 л</div><div class="list-group-item correct">
+
+2,8 л</div><div class="list-group-item">
+
+3 л</div><div class="list-group-item">
+
+3,5 л</div><div class="list-group-item">
+
+3,8 л</div></div>
+<div class="container"><div class="krt_question">
+У спортсмена до тренування гематокрит - 48%. Пiсля тренування
+
+ще раз визначили гематокрит. Яким вiн буде?</div><div class="list-group-item correct">
+
+55%</div><div class="list-group-item">
+
+45%</div><div class="list-group-item">
+
+40%</div><div class="list-group-item">
+
+35%</div><div class="list-group-item">
+
+30%</div></div><div class="container"><div class="krt_question">
+У дитини 10 рокiв в аналiзi кровi спостеригається лейкоцитоз (11*10^9/л).
+
+Кiлькiсть нейтрофiлiв - 64%, еозинофiлiв - 5%, базофiлiв - 1%,
+
+лiмфоцитiв - 25%, моноцитiв - 5%. Збiльшення кiлькостi лейкоцитiв
+
+вiдбулося завдяки збiльшенню:</div><div class="list-group-item">
+
+лiмфоцитiв</div><div class="list-group-item">
+
+моноцитiв</div><div class="list-group-item">
+
+еозинофiлiв</div><div class="list-group-item">
+
+базофiлiв</div><div class="list-group-item correct">
+
+нейтрофiлiв</div></div><div class="container"><div class="krt_question">
+У людини в пустелi протягом двох дiб не було води. Який з
+
+показникiв кровi найвiрогiднiше буде змiнений?
+
+ШОЕ</div><div class="list-group-item correct">
+
+гематокрит</div><div class="list-group-item">
+
+КП кровi</div><div class="list-group-item">
+
+загальний час зсiдання кровi</div><div class="list-group-item">
+
+рН</div></div>
+<div class="container"><div class="krt_question">
+
+Бiлки плазми кровi переважно синтезуються в:</div><div class="list-group-item correct">
+
+печiнцi</div><div class="list-group-item">
+
+червоний кiстковий мозок</div><div class="list-group-item">
+
+в лiмфатичних вузлах</div><div class="list-group-item">
+
+плазматичних клiтинах</div><div class="list-group-item">
+
+м'язах</div></div><div class="container"><div class="krt_question">
+Внаслiдок тривалого голодування у людини кiлькiсть бiлка - 56 г/л,
+
+P-онкотичний - 20 мм рт.ст. До яких наслiдкiв це призведе:</div><div class="list-group-item">
+
+пiдвищенню руйнування еритроцитiв</div><div class="list-group-item">
+
+посилення еритропоезу</div><div class="list-group-item correct">
+
+переходу води з кровi в мiжклiтинну рiдину</div><div class="list-group-item">
+
+переходу води з мiжклiтинного середовища в кров</div><div class="list-group-item">
+
+збiльшення ОЦК</div></div><div class="container"><div class="krt_question">
+Гiпотонiчний розчин NaCl - це:</div><div class="list-group-item">
+
+1</div><div class="list-group-item">5%</div><div class="list-group-item">
+
+0,88%</div><div class="list-group-item correct">
+
+0,4%</div><div class="list-group-item">
+
+0,9%</div><div class="list-group-item">
+
+1%</div></div><div class="container"><div class="krt_question">
+Онкотичний тиск складає частину осмотичного i дорiвнює:</div><div class="list-group-item">
+
+0</div><div class="list-group-item">1 атм</div><div class="list-group-item">
+
+0</div><div class="list-group-item">2 атм</div><div class="list-group-item correct">
+
+0</div><div class="list-group-item">3 атм</div><div class="list-group-item">
+
+0,3 атм</div><div class="list-group-item">
+
+0,5 атм</div></div><div class="container"><div class="krt_question">
+Пiд впливом спиртiв та ефiрiв виникає гемолiз еритроцитiв:</div><div class="list-group-item correct">
+
+хiмiчний</div><div class="list-group-item">
+
+бiологiчний</div><div class="list-group-item">
+
+осмотичний</div><div class="list-group-item">
+
+термiчний</div><div class="list-group-item">
+
+механiчний</div></div><div class="container"><div class="krt_question">
+До бiлкiв, якi мають найбiльше значення в пiдтримцi
+
+онкотичного тиску, належать:</div><div class="list-group-item correct">
+
+альбумiни</div><div class="list-group-item">
+
+альфа1 - глобулiни</div><div class="list-group-item">
+
+альфа2 - глобулiни</div><div class="list-group-item">
+
+бета - глобулiни</div><div class="list-group-item">
+
+гама - глобулiни</div></div><div class="container"><div class="krt_question">
+У лiкарню доставлено чоловiка з пошкодженням стегнової артерiї.
+
+Необхiдна гемотрансфузiя. Яку пробу, з обов'язкових,
+
+ви виконаєте найостаннiшою?</div><div class="list-group-item correct">
+
+бiологiчну пробу</div><div class="list-group-item">
+
+визначення групи кровi реципiєнта в системi ABO</div><div class="list-group-item">
+
+визначення групи кровi реципiєнта в системi CDE</div><div class="list-group-item">
+
+визначення групи кровi донора в системi АВО</div><div class="list-group-item">
+
+на iндивiдуальну cумiснiсть</div></div><div class="container"><div class="krt_question">
+Вiдбулась аглютинацiя iз стандартними сироватками Оав (I),
+
+Ав(II), АВ(IV) груп кровi i не вiдбулася iз стандартною
+
+сироваткою Ва (III) групи кровi. Яка це група кровi?
+
+Oaв (I)</div><div class="list-group-item">
+
+Aв (II)</div><div class="list-group-item">
+
+АВ (IV)</div><div class="list-group-item correct">
+
+Ba (III)</div><div class="list-group-item">
+
+група кровi не визначається</div></div><div class="container"><div class="krt_question">
+Вiдбулася аглютинацiя iз стандартними сироватками 0ав(I),
+
+Ва(III), ABo(IV) груп кровi i не вiдбулася iз стандартною
+
+сироваткою Ав(II) групи кровi.
+
+Яка це група кровi?</div><div class="list-group-item">
+
+0aв(I)</div><div class="list-group-item correct">
+
+Ав(II)</div><div class="list-group-item">
+
+Ва(III)</div><div class="list-group-item">
+
+АВо(IV)</div><div class="list-group-item">
+
+група кровi не визначається</div>
+</div>

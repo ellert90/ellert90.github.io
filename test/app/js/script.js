@@ -1,12 +1,12 @@
 'use strict';
 (function(){
-  let obj = {};
+  let arr = [];
 
-  const url = 'js/ohta.json';
+  const url = 'js/test.json';
   fetch(url)
   .then(response => response.json())
   .then(data => {
-    obj = data;
+    arr = data;
     random();
   })
   .catch(error => console.log(error));
@@ -37,22 +37,22 @@
       coantity = 0,     //кількість кліків на питання
       lastArrElem = 0,
       selectedAnswer,
-      rightAnswer;
+      rightAnswer,
+      testRight;
 
 
   let add = numb => {
 
-    question.innerHTML = obj[numb].q;
-    let answersArr = [obj[numb].a0,obj[numb].a1,obj[numb].a2,obj[numb].a3,obj[numb].a4];
+    let arrLength = arr[numb].length,
+        right = arr[numb][0];
+        question.innerHTML = arr[numb][1];
 
-    for (let key in answersElem) {
-      if (key <= 4) {
-        answersElem[key].removeAttribute('value');
-        answersElem[key].innerHTML = answersArr[key];
-        if (key == obj[numb].r) {
-          answersElem[key].setAttribute('value', 1);
-        }
-      }
+    for (let i = 2; i < arrLength; i++) {
+      // let answers = document.createElement()
+      answersElem[i-2].removeAttribute('value');
+      answersElem[i-2].innerHTML = arr[numb][i];
+      answersElem[right].setAttribute('value', 1);
+      // testRight =
     }
 
   }
@@ -77,7 +77,7 @@
         }
       }
       if (coantity >= 1 || total === 0) {
-        rand = Math.floor(Math.random() * Object.keys(obj).length) + 0;
+        rand = Math.floor(Math.random() * Object.keys(arr).length) + 0;
         if (variablesArr.indexOf(rand) >= 0) {
           random ();
           if (total >= variablesArr.lenght) {
@@ -102,6 +102,7 @@
     function showAns(event) {
 
       var target = event.target;
+      console.log(target);
       coantity++;
       if (target.tagName != 'DIV') return;
       selectedSpan = target;
