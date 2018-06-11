@@ -16,6 +16,7 @@
 
 
   let answersList = document.getElementsByTagName('ol'),
+      answerItem = document.getElementsByTagName('li'),
       question = $('.test__question'),
       answersElem = $$('.test__answer'),
       send = $('.send'),
@@ -42,16 +43,16 @@
 
 
   let add = numb => {
-
+    console.log(arr.length);
     let arrLength = arr[numb].length,
         right = arr[numb][0];
         question.innerHTML = arr[numb][1];
 
     for (let i = 2; i < arrLength; i++) {
       // let answers = document.createElement()
-      answersElem[i-2].removeAttribute('value');
+      answersElem[i-2].removeAttribute('data');
       answersElem[i-2].innerHTML = arr[numb][i];
-      answersElem[right].setAttribute('value', 1);
+      answersElem[right].setAttribute('data', 1);
       // testRight =
     }
 
@@ -97,28 +98,29 @@
 
 
   answersList[0].addEventListener('click', showAns);
+  answersList[0].addEventListener('mousedown', showAns);
 
 
     function showAns(event) {
 
       var target = event.target;
-      console.log(target);
+
       coantity++;
-      if (target.tagName != 'DIV') return;
+      if (target.tagName == 'Ol') return;
       selectedSpan = target;
-      if (target.getAttribute('value') == 1 && coantity == 1) {
+      if (target.getAttribute('data') == 1 && coantity == 1) {
         selectedSpan.classList.add('test__answer--green');
         answerErr0.style.display = 'none';
           i++;
           selectedAnswer = selectedSpan;
       }
 
-       if (target.getAttribute('value') != 1 && coantity == 1) {
+       if (target.getAttribute('data') != 1 && coantity == 1) {
         selectedSpan.classList.add('test__answer--red');
         answerErr0.style.display = 'none';
         selectedAnswer = selectedSpan;
         for(let key = 0; key < answersElem.length; key++) {
-          let anserKey = answersElem[key].hasAttribute('value');
+          let anserKey = answersElem[key].hasAttribute('data');
           if (anserKey == true) {
             answersElem[key].classList.add('test__answer--green');
             rightAnswer = answersElem[key];

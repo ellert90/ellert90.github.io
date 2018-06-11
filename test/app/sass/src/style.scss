@@ -7,6 +7,7 @@ body {
 }
 .wrapper {
   position: relative;
+  user-select: none;
 }
 .test {
   background: #fff;
@@ -24,12 +25,12 @@ body {
     cursor: pointer;
     padding: 5px 3px;
     border-radius:3px 3px 4px 4px;
-    font-size: 18px;
-    user-select: none;
+    font-size: 20px;
+
     border-bottom: 1px solid #fff;
     &_list {
-      padding-left: 20px;
-      margin-top: 7px;
+      margin: 7px 0 10px 20px;
+      padding: 0;
     }
     &--green {
       background: #2ecc71;
@@ -56,19 +57,25 @@ body {
 }
 .button {
   display: inline-block;
-  height: 35px;
-  width: 145px;
+  height: 50px;
+  width: 87%;
   border-radius: 3px;
   border: none;
   background: #fff;
   border: 1px solid #f3f3f3;
   color: #fff;
-  font-size: 15px;
+  font-size: 18px;
+  letter-spacing: -0.5px;
+  margin-bottom: 15px;
 
   &_container {
     width: 100%;
+    margin: auto;
     display: flex;
     justify-content: space-around;
+    // flex-direction: column-reverse;
+    align-items: center;
+
   }
 }
 .button:active {
@@ -119,16 +126,20 @@ body {
     width: 215px;
   }
 }
-@media (min-width: 500px) {
+@media (min-width: 480px) {
   .wrapper {
     width: 100%;
   }
-  .button_container {
-    width: 480px;
+  .button {
+    width: 45%;
+    &_container {
+      // width: 480px;
+      flex-direction: row;
+    }
   }
   .test {
     padding: 25px 10px;
-    &__answer {
+    &__answer_list {
       width: 470px;
     }
   }
@@ -148,15 +159,21 @@ body {
       margin: auto;
       &__answer {
         font-size: 18px;
-        padding: 5px 8px;
+        // padding: 5px 8px;
+        // position: absolute;
+        // width: 1px;
+        &_list {
+          width: 600px;
+        }
       }
+
     }
     .test h2 {
       font-size: 20px;
     }
     .button {
-      height: 45px;
-      width: 200px;
-      font-size: 18px
+      height: 55px;
+      width: 250px;
+      // font-size: 18px
     }
   }
