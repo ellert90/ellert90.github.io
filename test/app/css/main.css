@@ -7,11 +7,7 @@ body {
   font-family: 'Alegreya Sans', Arial, Tahoma; }
 
 .wrapper {
-  position: relative;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none; }
+  position: relative; }
 
 .test {
   background: #fff;
@@ -30,9 +26,13 @@ body {
     -webkit-border-radius: 3px 3px 4px 4px;
             border-radius: 3px 3px 4px 4px;
     font-size: 20px;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
     border-bottom: 1px solid #fff; }
     .test__answer_list {
-      margin: 7px 0 10px 20px;
+      margin: 7px 0 10px 1px;
       padding: 0; }
     .test__answer--green {
       background: #2ecc71;
@@ -81,7 +81,11 @@ body {
     -webkit-box-align: center;
     -webkit-align-items: center;
         -ms-flex-align: center;
-            align-items: center; }
+            align-items: center;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none; }
 
 .button:active {
   -webkit-box-shadow: inset 0px 0px 2px 1px rgba(0, 0, 0, 0.75);

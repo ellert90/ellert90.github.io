@@ -43,16 +43,16 @@
 
 
   let add = numb => {
-    console.log(arr.length);
     let arrLength = arr[numb].length,
         right = arr[numb][0];
         question.innerHTML = arr[numb][1];
 
     for (let i = 2; i < arrLength; i++) {
       // let answers = document.createElement()
+      console.log('right index ' + right);
       answersElem[i-2].removeAttribute('data');
       answersElem[i-2].innerHTML = arr[numb][i];
-      answersElem[right].setAttribute('data', 1);
+      answersElem[arr[numb][0]].setAttribute('data', "1");
       // testRight =
     }
 
