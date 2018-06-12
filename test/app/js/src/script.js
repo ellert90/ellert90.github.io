@@ -45,15 +45,17 @@
   let add = numb => {
     let arrLength = arr[numb].length,
         right = arr[numb][0];
+
         question.innerHTML = arr[numb][1];
+        console.log(arr[numb]);
+        console.log('question id ' + numb);
 
     for (let i = 2; i < arrLength; i++) {
       // let answers = document.createElement()
-      console.log('right index ' + right);
       answersElem[i-2].removeAttribute('data');
       answersElem[i-2].innerHTML = arr[numb][i];
-      answersElem[arr[numb][0]].setAttribute('data', "1");
-      // testRight =
+      answersElem[right].setAttribute('data', "1");
+
     }
 
   }
@@ -63,19 +65,21 @@
 
 
   function random () {
-      if (selectedSpan) {
-        selectedAnswer.classList.remove('test__answer--green');
-        selectedAnswer.classList.remove('test__answer--red');
+      // if (selectedSpan) {
+      //   selectedAnswer.classList.remove('test__answer--green');
+      //   selectedAnswer.classList.remove('test__answer--red');
+      // }
+      for (let i=0; i < answersElem.length; i++) {
+          answersElem[i].classList.remove('test__answer--red');
+          answersElem[i].classList.remove('test__answer--green');
       }
       if (rightAnswer) {
         rightAnswer.classList.remove('test__answer--green');
       }
       answerErr1.style.display = 'none';
 
-      if (coantity === 0) {
-        if (total >= 1) {
-          answerErr0.style.display = 'block';
-        }
+      if (coantity === 0 && total >= 1) {
+        answerErr0.style.display = 'block';
       }
       if (coantity >= 1 || total === 0) {
         rand = Math.floor(Math.random() * Object.keys(arr).length) + 0;
