@@ -1,48 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ua">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans" rel="stylesheet">
   <link rel="stylesheet" href="css/main.css">
-  <title>Фізіологія тести</title>
+  <title>Тести</title>
 </head>
 <body>
   <div class="wrapper">
-    <div class="test">
-      <h2><span class="test__question_number"></span><span class="test__question"></span></h2>
-      <ol class="test__answer_list">
-        <li class="test__answer"></li>
-        <li class="test__answer"></li>
-        <li class="test__answer"></li>
-        <li class="test__answer"></li>
-        <li class="test__answer"></li>
-      </ol>
-      <div class="answer_not_set">Не вибраний варіант відповіді</div>
-      <div class="no_answer_set">Повинно буто пройдене хочa б одне питання</div>
-      <div class="button_container">
-        <button class="button result">Завершити Тест</button>
-        <button class="button send">Наступне питання</button>
-      </div>
-    </div>
+    <header class="header">
+      <span class="header__title">Тести з медицини</span>
+    </header>
+    <main class="main">
 
+        <a href="physiology1term.html" class="main__link">Нормальна фізіологія 1 семестр</a>
+        <a href="physiology2term.html" class="main__link" >Нормальна фізіологія 2 семестр</a>
+        <a href="biochemistry.html" class="main__link" >Біохімія</a>
 
+    </main>
   </div>
-  <div class="modal_bg">
-    <div class="modal">
-      <div class="modal__container">
-        <div class="modal__text">Кількість запитань:</div><div class="modal__question_count"></div>
-      </div>
-      <div class="modal__container">
-        <div class="modal__text">Правильних відповідей:</div><div class="modal__right_count"></div>
-      </div>
-      <div class="modal__container">
-        <div class="modal__text">Відсоток правильних відповідей:</div><div class="modal__percents_count"></div>
-      </div>
-      <button class="button send close">Пройти ще раз</button>
-    </div>
-  </div>
-  <script src="js/script.js"></script>
+
 </body>
 </html>

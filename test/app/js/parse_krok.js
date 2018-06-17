@@ -61,7 +61,7 @@ function start () {
     }
 
         if (el[i].childNodes[j].classList.contains('correct')) {
-          let right = '' + j;
+          let right = '' + (j-1);
           localArr.unshift(right);
        }
   }
@@ -69,3 +69,4 @@ function start () {
 }
 	console.log(globalArr);
 }
+start();

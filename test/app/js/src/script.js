@@ -2,17 +2,18 @@
 (function(){
   let arr = [];
 
-  const url = 'js/test.json';
+
   fetch(url)
   .then(response => response.json())
   .then(data => {
     arr = data;
-    random();
+    nextQues();
   })
   .catch(error => console.log(error));
 
   let $ = (selector) => document.querySelector(selector);
   let $$ = (selector) => document.querySelectorAll(selector);
+
 
 
   let answersList = document.getElementsByTagName('ol'),
@@ -30,6 +31,7 @@
       modalPercent = $('.modal__percents_count'),
       answerErr0 = $('.answer_not_set'),
       answerErr1 = $('.no_answer_set'),
+      test = $('.test'),
       variablesArr = [],
       rand,
       selectedSpan,
@@ -39,36 +41,37 @@
       lastArrElem = 0,
       selectedAnswer,
       rightAnswer,
-      testRight;
+      random;
 
 
   let add = numb => {
-    let arrLength = arr[numb].length,
-        right = arr[numb][0];
+    let right = parseInt(arr[numb].splice(0,1));
+    let nRight;
 
-        question.innerHTML = arr[numb][1];
-        console.log(arr[numb]);
-        console.log('question id ' + numb);
+        question.innerHTML = arr[numb].splice(0,1);
 
-    for (let i = 2; i < arrLength; i++) {
-      // let answers = document.createElement()
-      answersElem[i-2].removeAttribute('data');
-      answersElem[i-2].innerHTML = arr[numb][i];
-      answersElem[right].setAttribute('data', "1");
+        let inArr = arr[numb];
+        let arrLength = inArr.length;
+        random = Math.floor((Math.random() * arrLength));
+        nRight = (right + random) % 5;
+
+        inArr = inArr.splice(-random).concat(inArr);
+
+    for (let i = 0; i < arrLength; i++) {
+
+      answersElem[i].removeAttribute('data');
+      answersElem[i].innerHTML = inArr[i];
+      answersElem[nRight].setAttribute('data', "1");
 
     }
-
   }
 
 
-  send.addEventListener('click', random);
+  send.addEventListener('click', nextQues);
 
 
-  function random () {
-      // if (selectedSpan) {
-      //   selectedAnswer.classList.remove('test__answer--green');
-      //   selectedAnswer.classList.remove('test__answer--red');
-      // }
+  function nextQues () {
+
       for (let i=0; i < answersElem.length; i++) {
           answersElem[i].classList.remove('test__answer--red');
           answersElem[i].classList.remove('test__answer--green');
@@ -81,11 +84,14 @@
       if (coantity === 0 && total >= 1) {
         answerErr0.style.display = 'block';
       }
+      if (total === arr.length) {
+        variablesArr = [];
+      }
       if (coantity >= 1 || total === 0) {
-        rand = Math.floor(Math.random() * Object.keys(arr).length) + 0;
+        rand = Math.floor(Math.random() * arr.length) + 0;
         if (variablesArr.indexOf(rand) >= 0) {
-          random ();
-          if (total >= variablesArr.lenght) {
+          nextQues ();
+          if (total === arr.lenght) {
             variablesArr = [];
           }
 
@@ -160,7 +166,7 @@
       modal.style.display = 'none';
       total = 0;
       i = 0;
-      random();
+      nextQues();
     }
 
 })();
