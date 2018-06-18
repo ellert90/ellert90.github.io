@@ -56,7 +56,7 @@
         nRight = (right + random) % 5;
 
         inArr = inArr.splice(-random).concat(inArr);
-
+        console.log(inArr);
     for (let i = 0; i < arrLength; i++) {
 
       answersElem[i].removeAttribute('data');
