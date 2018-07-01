@@ -6,7 +6,7 @@ body {
   font-family: 'Alegreya Sans', Arial, Tahoma;
 }
 .wrapper {
-  
+
 
 }
 .test {
@@ -14,9 +14,10 @@ body {
   box-shadow: 0 1px 5px rgba(0,0,0,.75);
   padding: 10px 7px 30px 7px;
   margin: 0;
+  min-height: calc(100vh - 110px);
   min-width: 306px;
   z-index: 1;
-  height: 95vh;
+  // height: 95vh;
   &__question_number {
     padding-right: 6px;
   }
