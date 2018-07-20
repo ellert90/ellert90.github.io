@@ -6,21 +6,37 @@ body {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-justify-content: space-around;
-      -ms-flex-pack: distribute;
-          justify-content: space-around; }
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
 
 .header__item {
   height: 70px;
-  width: 150px;
-  border: 1px solid lightgreen;
+  border: 1px solid #489;
   text-align: center;
-  line-height: 20px; }
+  line-height: 20px;
+  margin: 10px 5px; }
 
 .header__item_title {
-  border-bottom: 1px solid lightgreen;
-  background: lightgreen;
+  padding: 5px 1px;
+  background: #489;
   color: #fff; }
+
+.header__item_value {
+  font-size: 24px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  line-height: 40px; }
 
 .main {
   width: 80%;

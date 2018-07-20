@@ -3,20 +3,27 @@ body {
 }
 .header {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 .header__item {
   height: 70px;
-  width: 150px;
-  border: 1px solid lightgreen;
+  // width: 150px;
+  border: 1px solid #489;
   text-align: center;
   line-height: 20px;
-  // float: left;
+  margin: 10px 5px;
 }
 .header__item_title {
-  border-bottom: 1px solid lightgreen;
-  background: lightgreen;
+  padding: 5px 1px;
+  background: #489;
   color: #fff;
+}
+.header__item_value {
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  line-height: 40px;
 }
 .main {
   width: 80%;

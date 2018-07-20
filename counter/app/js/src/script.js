@@ -9,7 +9,6 @@ let items = document.querySelectorAll('.main__item_value');
     let target = event.target;
     let index = event.target.getAttribute('data');
     localStorage.setItem(index, target.value);
-    console.log(event.target.value);
   }
 
 let left = 0,
@@ -21,11 +20,10 @@ for(let i = 0; i < items.length; i++) {
     left += parseInt(localStorage.getItem(day));
     leftIndex++;
   }
-  // console.log(left);
+
   items[i].value = localStorage.getItem(day);
-  // console.log(obj.n);
+
 }
-console.log(leftIndex);
 
 let summa = document.querySelector('#sum'),  //всього грошей
     zal = document.querySelector('#zal'),   //скільки залишилося
