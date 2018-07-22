@@ -1,8 +1,6 @@
 let obj = localStorage,
     item = document.querySelector('.main'),
     items = document.querySelectorAll('.main__item_value'),
-    left = 0,
-    leftIndex = 0,
     summa = document.querySelector('#sum'),   //всього грошей
     zal = document.querySelector('#zal'),     //скільки залишилося
     serD = document.querySelector('#ser'),    //середні трати за день
@@ -19,28 +17,37 @@ item.addEventListener('change', showAns);
     let target = event.target,
         index = target.getAttribute('data'),
         targetVal = parseInt(target.value),
-        localItem = parseInt(localStorage.getItem(index));
+        localItem = parseInt(localStorage.getItem(index)),
+        newVal = parseInt(target.value);
 
-    if (localItem && targetVal > 0) {
-      let newVal = parseInt(target.value);
+    if (localItem > 0 && targetVal > 0) {
       let totalVal = localItem + newVal;
       localStorage.setItem(index, totalVal);
       reDraw();
+    } else {
+      localStorage.setItem(index, newVal);
+      reDraw();
     }
-    localStorage.setItem(index, target.value);
+
+
   }
 
 
 
 
 function reDraw () {
+  let left = 0,
+      leftIndex = 0;
   for(let i = 0; i < items.length; i++) {
-    let day = i + 1;
-    if (localStorage.getItem(day) != undefined) {
-      left += parseInt(localStorage.getItem(day));
+    let day = i + 1,
+        local = localStorage.getItem(day);
+    if (local != undefined && local != 0 && isNaN(local) == false) {
+      left += parseInt(local);
       leftIndex++;
+    } if (isNaN(local) == false) {
+      items[i].value = local;
     }
-    items[i].value = localStorage.getItem(day);
+
   }
 
   let zalSMath = Math.floor(summa.textContent / 15) - Math.floor(left / leftIndex);
