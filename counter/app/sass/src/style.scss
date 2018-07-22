@@ -45,9 +45,11 @@ body {
   border-bottom: 1px solid lightgreen;
 }
 .main__item_value {
-  height: 60px;
+  height: 59px;
   width: 96px;
   border: none;
+  padding: none;
+  margin: none;
   font-size: 30px;
   text-align: center;
 }
