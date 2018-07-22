@@ -39,7 +39,17 @@ body {
   line-height: 40px; }
 
 .main {
-  width: 80%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: 15px auto; }
 
 .main__item {
@@ -47,7 +57,6 @@ body {
   width: 100px;
   border: 1px solid lightgreen;
   text-align: center;
-  float: left;
   margin: 5px; }
 
 .main__item_day {
